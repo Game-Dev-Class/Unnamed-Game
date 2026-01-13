@@ -1,1 +1,16 @@
 This is where we will store our preferences for the game design, content, and style, as well as share general ideas.
+
+Basic overview of the game as it is:
+Platformer
+made in Godot
+
+
+Logan's preferences:
+I'd like the project to be in C# or at least not GDscript
+I'd like the game to not take itself seriously, in the style of Undertale and Deltarune
+
+Colter's preferences:
+
+Ashton's preferences:
+
+Brainstorming section:
