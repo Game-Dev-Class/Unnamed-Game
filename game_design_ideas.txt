@@ -10,6 +10,10 @@ characters have unique abilities
 3 stages to the game: tutorial, main stage, boss level
 Unique abilities apply to both puzzles and combat
 starting abilities ideas: whip, projectile, magic, barbarian, grower/shrinker, universal stomp
+enemies have vulnerabilities to certain characters
+enemies are color-coded to the characters that can kill them
+Anyone can swap to extra characters
+All characters are in the world, even when they aren't being controlled
 
 Logan's preferences:
 I'd like the project to be in C# or at least not GDscript
@@ -21,6 +25,7 @@ Ashton's preferences:
 
 Brainstorming section:
 
+
 Goals:
-Starting area, with jumping puzzles
+Starting area, with jumping puzzles and rudimentary combat
 character exists and has a hitbox and gravity
