@@ -4,6 +4,12 @@ Basic overview of the game as it is:
 Platformer
 made in Godot
 
+1-2 players
+ability to switch between characters
+characters have unique abilities
+3 stages to the game: tutorial, main stage, boss level
+Unique abilities apply to both puzzles and combat
+starting abilities ideas: whip, projectile, magic, barbarian, grower/shrinker, universal stomp
 
 Logan's preferences:
 I'd like the project to be in C# or at least not GDscript
@@ -14,3 +20,7 @@ Colter's preferences:
 Ashton's preferences:
 
 Brainstorming section:
+
+Goals:
+Starting area, with jumping puzzles
+character exists and has a hitbox and gravity
