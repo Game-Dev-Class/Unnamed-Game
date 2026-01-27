@@ -1,10 +1,10 @@
 This is where we will store our preferences for the game design, content, and style, as well as share general ideas.
 
 Basic overview of the game as it is:
-Platformer
+Platformer side-scroller
 made in Godot
 
-1-2 players
+1-4 players
 ability to switch between characters
 characters have unique abilities
 3 stages to the game: tutorial, main stage, boss level
