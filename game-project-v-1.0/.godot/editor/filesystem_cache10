@@ -1,5 +1,13 @@
+<<<<<<< HEAD
+63f7b34db8d8cdea90c76aacccf841ec
+::res://::1769527596
+change.svg::CompressedTexture2D/CompressedTexture2D::5338639821021729725::1769526609::1769527598::1::::<><><>0<>0<>e262bf5dcc435eef3fb4510cc42a3398<>res://.godot/imported/change.svg-628b5a6594c4ffb9c665de6ee47d7966.ctex::
+icon.svg::CompressedTexture2D/CompressedTexture2D::8349551825098459537::1769526184::1769527598::1::::<><><>0<>0<>43b1e8af9c7dcda7e66851ad1bb3f02d<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+test_scene.tscn::PackedScene::3008209464036267337::1769526184::0::1::::<><><>0<>0<><>::
+=======
 ea4bc82a6ad023ab7ee23ee620429895
 ::res://::1769527068
 change.svg::CompressedTexture2D/CompressedTexture2D::5338639821021729725::1769319845::1769319845::1::::<><><>0<>0<>972295cd9e2aa36d99012cb777d31fa6<>res://.godot/imported/change.svg-628b5a6594c4ffb9c665de6ee47d7966.ctex::
 icon.svg::CompressedTexture2D/CompressedTexture2D::8349551825098459537::1769098829::1769319022::1::::<><><>0<>0<>e8dd362b4c5817cf6cfc9ac58f478ce7<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 test_scene.tscn::PackedScene/PackedScene::3008209464036267337::1769319148::0::1::::<><><>0<>0<><>::
+>>>>>>> 99135b0eba70875b94ee20291eab541af7224843
