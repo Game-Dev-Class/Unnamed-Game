@@ -13,7 +13,7 @@ public partial class Hud : CanvasLayer
 		// Logic to switch to the game scene
 		if (GameScene != null)
 		{
-			GetTree().ChangeSceneToPacked(GameScene); // Change the current scene to the game scene
+			//GetTree().ChangeSceneToPacked(GameScene); // Change the current scene to the game scene
 	 	}
 	}
 
