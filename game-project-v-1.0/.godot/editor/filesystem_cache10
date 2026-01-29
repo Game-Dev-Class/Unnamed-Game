@@ -1,9 +1,8 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1769700999
-change.svg::CompressedTexture2D/CompressedTexture2D::5338639821021729725::1769526794::1769527953::1::::<><><>0<>0<>e262bf5dcc435eef3fb4510cc42a3398<>res://.godot/imported/change.svg-628b5a6594c4ffb9c665de6ee47d7966.ctex::
-Hud.cs::CSharpScript::7385432121434173342::1769700384::0::1::::<><><>0<>0<><>::
-hud.gd::GDScript::2230989935531195739::1769699664::0::1::::<>CanvasLayer<><>0<>0<><>::
-hud.tscn::PackedScene::8227668092879337298::1769700417::0::1::::<><><>0<>0<><>::uid://ddhs8ue64fx8i::::res://Hud.cs
+::res://::1769703046
+change.svg::CompressedTexture2D/CompressedTexture2D::5338639821021729725::1769703008::1769703048::1::::<><><>0<>0<>e262bf5dcc435eef3fb4510cc42a3398<>res://.godot/imported/change.svg-628b5a6594c4ffb9c665de6ee47d7966.ctex::
+Hud.cs::CSharpScript::7385432121434173342::1769703008::0::1::::<><><>0<>0<><>::
+hud.tscn::PackedScene::8227668092879337298::1769703008::0::1::::<><><>0<>0<><>::uid://ddhs8ue64fx8i::::res://Hud.cs
 icon.svg::CompressedTexture2D/CompressedTexture2D::8349551825098459537::1769526794::1769527953::1::::<><><>0<>0<>43b1e8af9c7dcda7e66851ad1bb3f02d<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-test_scene.tscn::PackedScene::3008209464036267337::1769529925::0::1::::<><><>0<>0<><>::uid://dphsqycqbny8y::::res://hud.tscn
-::res://Sprites/::1769527599
+test_scene.tscn::PackedScene::3008209464036267337::1769703008::0::1::::<><><>0<>0<><>::uid://dphsqycqbny8y::::res://hud.tscn
+::res://Sprites/::1769702737
