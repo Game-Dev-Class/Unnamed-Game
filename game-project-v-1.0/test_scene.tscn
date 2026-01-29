@@ -1,9 +1,7 @@
 [gd_scene load_steps=2 format=3 uid="uid://bi4g1gssgptc8"]
 
-[sub_resource type="TileSet" id="TileSet_6adnx"]
+[ext_resource type="PackedScene" uid="uid://dphsqycqbny8y" path="res://hud.tscn" id="1_uhqqe"]
 
-[node name="Renamed test scene" type="Node2D"]
+[node name="Main" type="Node2D"]
 
-[node name="TileMap" type="TileMap" parent="."]
-tile_set = SubResource("TileSet_6adnx")
-format = 2
+[node name="HUD" parent="." instance=ExtResource("1_uhqqe")]
