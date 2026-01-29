@@ -11,10 +11,10 @@ public partial class Hud : CanvasLayer
 	private void _on_button_pressed()
 	{
 		// Logic to switch to the game scene
-		if (GameScene != null)
-		{
-			//GetTree().ChangeSceneToPacked(GameScene); // Change the current scene to the game scene
-	 	}
+		//if (GameScene != null)
+		//{
+			////GetTree().ChangeSceneToPacked(GameScene); // Change the current scene to the game scene
+	 	//}
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
