@@ -1,8 +1,8 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1770130303
+::res://::1770130663
 hud.tscn::PackedScene::8227668092879337298::1770130264::0::1::::<><><>0<>0<><>::uid://ddhs8ue64fx8i::::res://Hud.cs
 icon.svg::CompressedTexture2D/CompressedTexture2D::8349551825098459537::1769526184::1769531500::1::::<><><>0<>0<>43b1e8af9c7dcda7e66851ad1bb3f02d<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-main_scene.tscn::PackedScene::4901515150290933111::1769703968::0::1::::<><><>0<>0<><>::uid://bhk425mynbpdi::::res://Sprites/pixil-frame-0 (2).png<>uid://doap5hxidi0wr::::res://Sprites/pixil-frame-0 (3).png<>uid://dbtyq8f5q3yht::::res://Sprites/pixil-frame-0 (4).png
+main_scene.tscn::PackedScene::4901515150290933111::1770130466::0::1::::<><><>0<>0<><>::uid://bhk425mynbpdi::::res://Sprites/pixil-frame-0 (2).png<>uid://doap5hxidi0wr::::res://Sprites/pixil-frame-0 (3).png<>uid://dbtyq8f5q3yht::::res://Sprites/pixil-frame-0 (4).png
 test_scene.tscn::PackedScene::3008209464036267337::1770130264::0::1::::<><><>0<>0<><>::uid://dphsqycqbny8y::::res://hud.tscn
 ::res://Sprites/::1769703909
 pixil-frame-0 (2).png::CompressedTexture2D::2900196971271621762::1769703903::1769703909::1::::<><><>0<>0<>24f0d0f72086e86c87dfe344752680c9<>res://.godot/imported/pixil-frame-0 (2).png-9bb0bebbe4b8d7a5f1b384f88ab72233.ctex::
