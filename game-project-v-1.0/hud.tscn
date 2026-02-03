@@ -1,8 +1,8 @@
-[gd_scene format=3 uid="uid://dphsqycqbny8y"]
+[gd_scene format=3 uid="uid://cc7cfd3pp5li6"]
 
 [ext_resource type="Script" uid="uid://ddhs8ue64fx8i" path="res://Hud.cs" id="1_37p78"]
 
-[node name="HUD" type="CanvasLayer" unique_id=703993447]
+[node name="Hud" type="CanvasLayer" unique_id=703993447]
 script = ExtResource("1_37p78")
 
 [node name="Button" type="Button" parent="." unique_id=2081855961]
