@@ -1,8 +1,8 @@
-[gd_scene format=3 uid="uid://cb3lidujeyhjj"]
+[gd_scene load_steps=10 format=3 uid="uid://cb3lidujeyhjj"]
 
 [ext_resource type="Texture2D" uid="uid://bhk425mynbpdi" path="res://Sprites/pixil-frame-0 (2).png" id="1_2c62f"]
 [ext_resource type="Script" uid="uid://bnej5xkh27fj5" path="res://MainScene.cs" id="1_8mm7a"]
-[ext_resource type="PackedScene" uid="uid://cc7cfd3pp5li6" path="res://Hud.tscn" id="1_d5x1h"]
+[ext_resource type="PackedScene" uid="uid://cc7cfd3pp5li6" path="res://hud.tscn" id="1_d5x1h"]
 [ext_resource type="Texture2D" uid="uid://doap5hxidi0wr" path="res://Sprites/pixil-frame-0 (3).png" id="2_gyfs4"]
 [ext_resource type="Texture2D" uid="uid://dbtyq8f5q3yht" path="res://Sprites/pixil-frame-0 (4).png" id="3_gyfs4"]
 
@@ -38,9 +38,9 @@ texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
 1:0/0 = 0
-1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -7.965769, 16, -7.965769, 16, 4.1422005, -16, 4.779461)
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -7.96577, 16, -7.96577, 16, 4.1422, -16, 4.77946)
 2:0/0 = 0
-2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -7.965769, 16, -8.603029, 16, 4.1422005, -16, 4.4608307)
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -7.96577, 16, -8.60303, 16, 4.1422, -16, 4.46083)
 3:0/0 = 0
 3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
 12:0/0 = 0
@@ -95,12 +95,12 @@ sources/0 = SubResource("TileSetAtlasSource_d5x1h")
 sources/1 = SubResource("TileSetAtlasSource_8mm7a")
 sources/2 = SubResource("TileSetAtlasSource_hq1ik")
 
-[node name="Main Scene" type="Node2D" unique_id=157301859]
+[node name="Main Scene" type="Node2D"]
 script = ExtResource("1_8mm7a")
 
-[node name="HUD" parent="." unique_id=703993447 instance=ExtResource("1_d5x1h")]
+[node name="HUD" parent="." instance=ExtResource("1_d5x1h")]
 
-[node name="Stage" type="TileMap" parent="." unique_id=228241096]
+[node name="Stage" type="TileMap" parent="."]
 visible = false
 tile_set = SubResource("TileSet_hq1ik")
 format = 2

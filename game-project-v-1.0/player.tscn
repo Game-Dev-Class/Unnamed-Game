@@ -36,7 +36,7 @@ position = Vector2(86, 93)
 sprite_frames = SubResource("SpriteFrames_hqtel")
 autoplay = "default"
 frame = 1
-frame_progress = 0.8313066
+frame_progress = 0.831307
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(70, 94)
