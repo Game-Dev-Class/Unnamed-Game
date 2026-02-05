@@ -1,7 +1,9 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1770135735
+::res://::1770304319
+Hud.cs::CSharpScript::7385432121434173342::1770135019::0::1::::<><><>0<>0<><>::
 hud.tscn::PackedScene::4979409707274579739::1770135300::0::1::::<><><>0<>0<><>::uid://ddhs8ue64fx8i::::res://Hud.cs
 icon.svg::CompressedTexture2D/CompressedTexture2D::8349551825098459537::1769526184::1769531500::1::::<><><>0<>0<>43b1e8af9c7dcda7e66851ad1bb3f02d<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+MainScene.cs::CSharpScript::3307734412596296564::1770135019::0::1::::<><><>0<>0<><>::
 main_scene.tscn::PackedScene::4901515150290933111::1770135162::0::1::::<><><>0<>0<><>::uid://bhk425mynbpdi::::res://Sprites/pixil-frame-0 (2).png<>uid://bnej5xkh27fj5::::res://MainScene.cs<>uid://cc7cfd3pp5li6::::res://Hud.tscn<>uid://doap5hxidi0wr::::res://Sprites/pixil-frame-0 (3).png<>uid://dbtyq8f5q3yht::::res://Sprites/pixil-frame-0 (4).png
 platform.tscn::PackedScene::2951361466310411822::1770135028::0::1::::<><><>0<>0<><>::uid://dbtyq8f5q3yht::::res://Sprites/pixil-frame-0 (4).png
 player.gd::GDScript::5241930982271186240::1770135028::0::1::::<>CharacterBody2D<><>0<>0<><>::
