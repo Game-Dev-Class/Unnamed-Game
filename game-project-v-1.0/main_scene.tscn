@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://doap5hxidi0wr" path="res://Sprites/pixil-frame-0 (3).png" id="2_gyfs4"]
 [ext_resource type="Texture2D" uid="uid://dbtyq8f5q3yht" path="res://Sprites/pixil-frame-0 (4).png" id="3_gyfs4"]
 [ext_resource type="PackedScene" uid="uid://84a78r8nvygt" path="res://player.tscn" id="3_hq1ik"]
+[ext_resource type="PackedScene" uid="uid://bibwqy6q4pa2q" path="res://platform.tscn" id="7_nfk4m"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_d5x1h"]
 texture = ExtResource("1_2c62f")
@@ -98,6 +99,44 @@ sources/0 = SubResource("TileSetAtlasSource_d5x1h")
 sources/1 = SubResource("TileSetAtlasSource_8mm7a")
 sources/2 = SubResource("TileSetAtlasSource_hq1ik")
 
+[sub_resource type="Animation" id="Animation_nfk4m"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(242, 71)]
+}
+
+[sub_resource type="Animation" id="Animation_66tet"]
+resource_name = "move"
+length = 2.0333333
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.99),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(316, 68), Vector2(433, 62)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_7ycvg"]
+_data = {
+&"RESET": SubResource("Animation_nfk4m"),
+&"move": SubResource("Animation_66tet")
+}
+
 [node name="Main Scene" type="Node2D" unique_id=157301859]
 script = ExtResource("1_8mm7a")
 
@@ -110,3 +149,10 @@ position = Vector2(681, 134)
 use_parent_material = true
 tile_map_data = PackedByteArray("AAAFAAQAAgAAAAAAAAAGAAQAAgAAAAAAAAAHAAQAAgAAAAAAAAAIAAQAAgAAAAAAAAAJAAQAAgAAAAAAAAAKAAQAAgAAAAAAAAALAAQAAgAAAAAAAAAMAAQAAgAAAAAAAAANAAQAAgAAAAAAAAAOAAUAAgAAAAAAAAAPAAYAAgAAAAAAAAAQAAcAAgAAAAAAAAARAAgAAgAAAAAAAAAFAAUAAgADAAAAAAAGAAUAAgADAAAAAAAHAAUAAgADAAAAAAAIAAUAAgADAAAAAAAJAAUAAgADAAAAAAAKAAUAAgADAAAAAAALAAUAAgADAAAAAAAMAAUAAgADAAAAAAANAAUAAgADAAAAAAAOAAYAAgADAAAAAAAPAAcAAgADAAAAAAAQAAgAAgADAAAAAAAPAAgAAgADAAAAAAAOAAgAAgADAAAAAAANAAgAAgADAAAAAAAMAAgAAgADAAAAAAALAAgAAgADAAAAAAAKAAgAAgADAAAAAAAJAAgAAgADAAAAAAAIAAgAAgADAAAAAAAHAAgAAgADAAAAAAAGAAgAAgADAAAAAAAFAAgAAgADAAAAAAAFAAYAAgADAAAAAAAFAAcAAgADAAAAAAAGAAcAAgADAAAAAAAHAAcAAgADAAAAAAAIAAcAAgADAAAAAAAJAAcAAgADAAAAAAAKAAcAAgADAAAAAAALAAcAAgADAAAAAAAMAAcAAgADAAAAAAANAAcAAgADAAAAAAAOAAcAAgADAAAAAAANAAYAAgADAAAAAAAMAAYAAgADAAAAAAALAAYAAgADAAAAAAAKAAYAAgADAAAAAAAJAAYAAgADAAAAAAAIAAYAAgADAAAAAAAHAAYAAgADAAAAAAAGAAYAAgADAAAAAAAEAAQAAgAAAAAAAAADAAQAAgAAAAAAAAACAAQAAgAAAAAAAAABAAQAAgAAAAAAAAAAAAQAAgAAAAAAAAAAAAUAAgADAAAAAAABAAUAAgADAAAAAAABAAYAAgADAAAAAAACAAYAAgADAAAAAAADAAcAAgADAAAAAAAEAAcAAgADAAAAAAAEAAgAAgADAAAAAAAEAAYAAgADAAAAAAAEAAUAAgADAAAAAAADAAUAAgADAAAAAAACAAUAAgADAAAAAAADAAYAAgADAAAAAAAAAAYAAgADAAAAAAAAAAcAAgADAAAAAAABAAcAAgADAAAAAAACAAcAAgADAAAAAAADAAgAAgADAAAAAAACAAgAAgADAAAAAAABAAgAAgADAAAAAAAAAAgAAgADAAAAAAASAAgAAgABAAAAAAATAAgAAgABAAAAAAAUAAgAAgABAAAAAAAVAAgAAgABAAAAAAAWAAgAAgAAAAAAAAAXAAgAAgAAAAAAAAAYAAgAAgAAAAAAAAAZAAgAAgAAAAAAAAAaAAgAAgAAAAAAAAAbAAgAAgAAAAAAAAAcAAgAAgAAAAAAAAAWAAkAAgADAAAAAAAWAAoAAgADAAAAAAAXAAoAAgADAAAAAAAYAAoAAgADAAAAAAAZAAoAAgADAAAAAAAaAAoAAgADAAAAAAAbAAoAAgADAAAAAAAcAAoAAgADAAAAAAAcAAkAAgADAAAAAAAbAAkAAgADAAAAAAAaAAkAAgADAAAAAAAZAAkAAgADAAAAAAAYAAkAAgADAAAAAAAXAAkAAgADAAAAAAAaAAYAAgACAAAAAAAXAAQAAgACAAAAAAA=")
 tile_set = SubResource("TileSet_hq1ik")
+
+[node name="AnimatableBody2D" parent="." unique_id=105072403 instance=ExtResource("7_nfk4m")]
+position = Vector2(242, 71)
+
+[node name="AnimationPlayer2" type="AnimationPlayer" parent="AnimatableBody2D" unique_id=922402914]
+libraries/ = SubResource("AnimationLibrary_7ycvg")
+autoplay = &"move"
