@@ -68,3 +68,5 @@ frame_progress = 0.8313066
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=289898514]
 position = Vector2(70, 94)
 shape = SubResource("CapsuleShape2D_sweqy")
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]
