@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://cr5cnc0dgxdes"]
+
+[ext_resource type="Script" uid="uid://fim8iwjwqmdi" path="res://Bounce.cs" id="1_6f368"]
+[ext_resource type="Texture2D" uid="uid://di4q80t63tjut" path="res://Sprites/pixil-frame-0 (5).png" id="2_g83qr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v2uvn"]
+size = Vector2(26, 7)
+
+[node name="BouncePad" type="Area2D" unique_id=72625877]
+script = ExtResource("1_6f368")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1787634831]
+texture = ExtResource("2_g83qr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=489269873]
+position = Vector2(0, 5.5)
+shape = SubResource("RectangleShape2D_v2uvn")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1809253842]
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
