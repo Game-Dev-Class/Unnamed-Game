@@ -1,18 +1,18 @@
-[gd_scene load_steps=3 format=3 uid="uid://bibwqy6q4pa2q"]
+[gd_scene format=3 uid="uid://bibwqy6q4pa2q"]
 
 [ext_resource type="Texture2D" uid="uid://dbtyq8f5q3yht" path="res://Sprites/pixil-frame-0 (4).png" id="1_mi635"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_s8bxr"]
 size = Vector2(32, 12)
 
-[node name="AnimatableBody2D" type="AnimatableBody2D"]
+[node name="AnimatableBody2D" type="AnimatableBody2D" unique_id=105072403]
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=409370048]
 texture = ExtResource("1_mi635")
 region_enabled = true
 region_rect = Rect2(64.06148, 0.6835747, 32.17502, 29.917118)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=133417864]
 position = Vector2(0, -1)
 shape = SubResource("RectangleShape2D_s8bxr")
 one_way_collision = true
