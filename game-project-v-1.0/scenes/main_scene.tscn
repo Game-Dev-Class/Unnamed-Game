@@ -1,43 +1,16 @@
 [gd_scene format=4 uid="uid://cb3lidujeyhjj"]
 
-[ext_resource type="Texture2D" uid="uid://bhk425mynbpdi" path="res://Sprites/pixil-frame-0 (2).png" id="1_2c62f"]
-[ext_resource type="Script" uid="uid://bnej5xkh27fj5" path="res://MainScene.cs" id="1_8mm7a"]
-[ext_resource type="PackedScene" uid="uid://cc7cfd3pp5li6" path="res://hud.tscn" id="1_d5x1h"]
-[ext_resource type="Texture2D" uid="uid://doap5hxidi0wr" path="res://Sprites/pixil-frame-0 (3).png" id="2_gyfs4"]
-[ext_resource type="Texture2D" uid="uid://dbtyq8f5q3yht" path="res://Sprites/pixil-frame-0 (4).png" id="3_gyfs4"]
-[ext_resource type="PackedScene" uid="uid://84a78r8nvygt" path="res://player.tscn" id="3_hq1ik"]
-[ext_resource type="Script" uid="uid://b6f1g5luu6l0e" path="res://Player.cs" id="4_nfk4m"]
-[ext_resource type="PackedScene" uid="uid://bibwqy6q4pa2q" path="res://platform.tscn" id="8_66tet"]
-[ext_resource type="PackedScene" uid="uid://cr5cnc0dgxdes" path="res://bounce_pad.tscn" id="9_7ycvg"]
+[ext_resource type="Script" uid="uid://bnej5xkh27fj5" path="res://scripts/MainScene.cs" id="1_18nlu"]
+[ext_resource type="PackedScene" uid="uid://cc7cfd3pp5li6" path="res://scenes/hud.tscn" id="2_c1pb6"]
+[ext_resource type="PackedScene" uid="uid://84a78r8nvygt" path="res://scenes/player.tscn" id="3_6wevv"]
+[ext_resource type="Script" uid="uid://b6f1g5luu6l0e" path="res://scripts/Player.cs" id="4_e1cbu"]
+[ext_resource type="Texture2D" uid="uid://dbtyq8f5q3yht" path="res://Sprites/pixil-frame-0 (4).png" id="5_mngbo"]
+[ext_resource type="PackedScene" uid="uid://bibwqy6q4pa2q" path="res://scenes/platform.tscn" id="6_4w45t"]
+[ext_resource type="PackedScene" uid="uid://cr5cnc0dgxdes" path="res://scenes/bounce_pad.tscn" id="7_r6p65"]
+[ext_resource type="PackedScene" uid="uid://bt2namyhpp4nw" path="res://scenes/level_exit.tscn" id="8_si52b"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_d5x1h"]
-texture = ExtResource("1_2c62f")
-texture_region_size = Vector2i(23, 24)
-0:0/0 = 0
-0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-11.5, 12, -11.5, -12, 11.5, -12, 11.5, 12)
-1:0/0 = 0
-2:0/0 = 0
-3:0/0 = 0
-4:0/0 = 0
-5:0/0 = 0
-0:1/0 = 0
-1:1/0 = 0
-2:1/0 = 0
-3:1/0 = 0
-4:1/0 = 0
-5:1/0 = 0
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8mm7a"]
-texture = ExtResource("2_gyfs4")
-texture_region_size = Vector2i(8, 8)
-0:0/0 = 0
-1:0/0 = 0
-2:0/0 = 0
-3:0/0 = 0
-4:0/0 = 0
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hq1ik"]
-texture = ExtResource("3_gyfs4")
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_66tet"]
+texture = ExtResource("5_mngbo")
 texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
@@ -96,9 +69,7 @@ texture_region_size = Vector2i(32, 32)
 [sub_resource type="TileSet" id="TileSet_hq1ik"]
 tile_size = Vector2i(32, 32)
 physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_d5x1h")
-sources/1 = SubResource("TileSetAtlasSource_8mm7a")
-sources/2 = SubResource("TileSetAtlasSource_hq1ik")
+sources/2 = SubResource("TileSetAtlasSource_66tet")
 
 [sub_resource type="Animation" id="Animation_7ycvg"]
 length = 0.001
@@ -145,25 +116,28 @@ _data = {
 }
 
 [node name="Main Scene" type="Node2D" unique_id=157301859]
-script = ExtResource("1_8mm7a")
+script = ExtResource("1_18nlu")
 
-[node name="HUD" parent="." unique_id=703993447 instance=ExtResource("1_d5x1h")]
+[node name="HUD" parent="." unique_id=703993447 instance=ExtResource("2_c1pb6")]
 
-[node name="Player" parent="." unique_id=2054929316 instance=ExtResource("3_hq1ik")]
+[node name="Player" parent="." unique_id=2054929316 instance=ExtResource("3_6wevv")]
 position = Vector2(681, 134)
-script = ExtResource("4_nfk4m")
+script = ExtResource("4_e1cbu")
 
 [node name="Stage" type="TileMapLayer" parent="." unique_id=854476079]
 use_parent_material = true
 tile_map_data = PackedByteArray("AAAFAAQAAgAAAAAAAAAGAAQAAgAAAAAAAAAHAAQAAgAAAAAAAAAIAAQAAgAAAAAAAAAJAAQAAgAAAAAAAAAKAAQAAgAAAAAAAAALAAQAAgAAAAAAAAAMAAQAAgAAAAAAAAANAAQAAgAAAAAAAAAOAAUAAgAAAAAAAAAPAAYAAgAAAAAAAAAQAAcAAgAAAAAAAAARAAgAAgAAAAAAAAAFAAUAAgADAAAAAAAGAAUAAgADAAAAAAAHAAUAAgADAAAAAAAIAAUAAgADAAAAAAAJAAUAAgADAAAAAAAKAAUAAgADAAAAAAALAAUAAgADAAAAAAAMAAUAAgADAAAAAAANAAUAAgADAAAAAAAOAAYAAgADAAAAAAAPAAcAAgADAAAAAAAQAAgAAgADAAAAAAAPAAgAAgADAAAAAAAOAAgAAgADAAAAAAANAAgAAgADAAAAAAAMAAgAAgADAAAAAAALAAgAAgADAAAAAAAKAAgAAgADAAAAAAAJAAgAAgADAAAAAAAIAAgAAgADAAAAAAAHAAgAAgADAAAAAAAGAAgAAgADAAAAAAAFAAgAAgADAAAAAAAFAAYAAgADAAAAAAAFAAcAAgADAAAAAAAGAAcAAgADAAAAAAAHAAcAAgADAAAAAAAIAAcAAgADAAAAAAAJAAcAAgADAAAAAAAKAAcAAgADAAAAAAALAAcAAgADAAAAAAAMAAcAAgADAAAAAAANAAcAAgADAAAAAAAOAAcAAgADAAAAAAANAAYAAgADAAAAAAAMAAYAAgADAAAAAAALAAYAAgADAAAAAAAKAAYAAgADAAAAAAAJAAYAAgADAAAAAAAIAAYAAgADAAAAAAAHAAYAAgADAAAAAAAGAAYAAgADAAAAAAAEAAQAAgAAAAAAAAADAAQAAgAAAAAAAAACAAQAAgAAAAAAAAABAAQAAgAAAAAAAAAAAAQAAgAAAAAAAAAAAAUAAgADAAAAAAABAAUAAgADAAAAAAABAAYAAgADAAAAAAACAAYAAgADAAAAAAADAAcAAgADAAAAAAAEAAcAAgADAAAAAAAEAAgAAgADAAAAAAAEAAYAAgADAAAAAAAEAAUAAgADAAAAAAADAAUAAgADAAAAAAACAAUAAgADAAAAAAADAAYAAgADAAAAAAAAAAYAAgADAAAAAAAAAAcAAgADAAAAAAABAAcAAgADAAAAAAACAAcAAgADAAAAAAADAAgAAgADAAAAAAACAAgAAgADAAAAAAABAAgAAgADAAAAAAAAAAgAAgADAAAAAAASAAgAAgABAAAAAAATAAgAAgABAAAAAAAUAAgAAgABAAAAAAAVAAgAAgABAAAAAAAWAAgAAgAAAAAAAAAXAAgAAgAAAAAAAAAYAAgAAgAAAAAAAAAZAAgAAgAAAAAAAAAaAAgAAgAAAAAAAAAbAAgAAgAAAAAAAAAcAAgAAgAAAAAAAAAWAAkAAgADAAAAAAAWAAoAAgADAAAAAAAXAAoAAgADAAAAAAAYAAoAAgADAAAAAAAZAAoAAgADAAAAAAAaAAoAAgADAAAAAAAbAAoAAgADAAAAAAAcAAoAAgADAAAAAAAcAAkAAgADAAAAAAAbAAkAAgADAAAAAAAaAAkAAgADAAAAAAAZAAkAAgADAAAAAAAYAAkAAgADAAAAAAAXAAkAAgADAAAAAAAaAAYAAgACAAAAAAAXAAQAAgACAAAAAAA=")
 tile_set = SubResource("TileSet_hq1ik")
 
-[node name="AnimatableBody2D" parent="." unique_id=105072403 instance=ExtResource("8_66tet")]
+[node name="AnimatableBody2D" parent="." unique_id=105072403 instance=ExtResource("6_4w45t")]
 position = Vector2(208, 92)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="AnimatableBody2D" unique_id=244449920]
 libraries/ = SubResource("AnimationLibrary_qwutr")
 autoplay = &"move2"
 
-[node name="BouncePad" parent="." unique_id=72625877 instance=ExtResource("9_7ycvg")]
+[node name="BouncePad" parent="." unique_id=72625877 instance=ExtResource("7_r6p65")]
 position = Vector2(418, 109)
+
+[node name="LevelExit" parent="." unique_id=1768640012 instance=ExtResource("8_si52b")]
+position = Vector2(34, 99)

@@ -55,7 +55,7 @@ animations = [{
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_sweqy"]
 radius = 13.0
 
-[node name="player1" type="CharacterBody2D" unique_id=2054929316]
+[node name="player1" type="CharacterBody2D" unique_id=2054929316 groups=["player"]]
 script = SubResource("GDScript_4flbx")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=855521739]

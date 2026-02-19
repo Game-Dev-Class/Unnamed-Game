@@ -1,10 +1,11 @@
 using Godot;
+using System;
 
 public partial class Player : CharacterBody2D
 {
 	private const float SPEED = 300.0f;
 	private const float JUMP_VELOCITY = -350.0f;
-	private bool _canMove;
+	private bool _canMove = true; // Set to true so you can move by default
 	
 	public void EnableMovement()
 	{
@@ -19,16 +20,14 @@ public partial class Player : CharacterBody2D
 
 	public override void _PhysicsProcess(double delta)
 	{
-		// Ensures the character can't move on the start screen
 		if (!_canMove)
 		{
 			Velocity = Vector2.Zero;
 		}
-		
-		if (_canMove)
+		else
 		{
-				// Add the gravity.
-				if (!IsOnFloor())
+			// Add the gravity.
+			if (!IsOnFloor())
 			{
 				Velocity += GetGravity() * (float)delta;
 			}
@@ -39,8 +38,7 @@ public partial class Player : CharacterBody2D
 				Velocity = new Vector2(Velocity.X, JUMP_VELOCITY);
 			}
 	
-			// Get the input direction and handle the movement/deceleration.
-			// As good practice, you should replace UI actions with custom gameplay actions.
+			// Get input direction.
 			float direction = Input.GetAxis("ui_left", "ui_right");
 	
 			if (direction != 0)

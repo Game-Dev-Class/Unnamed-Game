@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cr5cnc0dgxdes"]
 
-[ext_resource type="Script" uid="uid://fim8iwjwqmdi" path="res://Bounce.cs" id="1_6f368"]
+[ext_resource type="Script" uid="uid://fim8iwjwqmdi" path="res://scripts/Bounce.cs" id="1_6f368"]
 [ext_resource type="Texture2D" uid="uid://di4q80t63tjut" path="res://Sprites/pixil-frame-0 (5).png" id="2_g83qr"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_v2uvn"]
