@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://bdglykxy43ai7"]
 
+[ext_resource type="Script" uid="uid://d2ffdiom3qb4r" path="res://Pbutton.cs" id="1_n4tde"]
 [ext_resource type="Texture2D" uid="uid://cmtywltbm8oan" path="res://Sprites/button_sprite_sheet.png" id="1_r04n3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_n4tde"]
@@ -27,7 +28,8 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="button" type="Area2D" unique_id=737130439]
+[node name="Pbutton" type="Area2D" unique_id=737130439]
+script = ExtResource("1_n4tde")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1655392813]
 position = Vector2(0, 8.151957)
@@ -36,3 +38,5 @@ shape = SubResource("RectangleShape2D_n4tde")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=180960945]
 sprite_frames = SubResource("SpriteFrames_4amfo")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

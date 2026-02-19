@@ -5,6 +5,7 @@ public partial class Player : CharacterBody2D
 	private const float SPEED = 300.0f;
 	private const float JUMP_VELOCITY = -350.0f;
 	private bool _canMove;
+	private bool _bounce;
 	
 	public void EnableMovement()
 	{
@@ -15,6 +16,11 @@ public partial class Player : CharacterBody2D
 	{
 		_canMove = false;
 		Velocity = Vector2.Zero;
+	}
+	
+	public void Bounce()
+	{
+		_bounce = true;
 	}
 
 	public override void _PhysicsProcess(double delta)
@@ -47,12 +53,18 @@ public partial class Player : CharacterBody2D
 			{
 				Velocity = new Vector2(direction * SPEED, Velocity.Y);
 			}
+			
 			else
 			{
 				Velocity = new Vector2(
 					Mathf.MoveToward(Velocity.X, 0, SPEED),
 					Velocity.Y
 				);
+			}
+			
+			if (_bounce)
+			{
+				Velocity = new Vector2(Velocity.X, JUMP_VELOCITY);
 			}
 		}
 

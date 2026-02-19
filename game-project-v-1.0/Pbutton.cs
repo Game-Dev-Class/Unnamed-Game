@@ -1,20 +1,18 @@
 using Godot;
 using System;
 
-public partial class Hud : CanvasLayer
+public partial class Pbutton : Area2D
 {
 	[Signal]
-	public delegate void StartGameEventHandler();
-	
+	public delegate void ButtonPressedEventHandler();
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
 	}
-
-	private void _on_button_pressed()
+	
+	public void _on_body_entered()
 	{
-		Visible = false;
-		EmitSignal(SignalName.StartGame);
+		EmitSignal(SignalName.ButtonPressed);
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
