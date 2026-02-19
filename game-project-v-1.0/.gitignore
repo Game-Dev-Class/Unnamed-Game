@@ -1,0 +1,17 @@
+# Godot 4+ generated files
+.godot/
+
+# Godot 3.x (safe to include even if unused)
+.import/
+
+# Export presets (optional — include only if you don't want to sync exports)
+export_presets.cfg
+
+# Mono / C# build folders (ignore if using C#)
+.mono/
+bin/
+obj/
+
+# OS / editor junk
+.DS_Store
+Thumbs.db

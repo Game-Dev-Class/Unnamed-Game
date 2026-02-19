@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://cj3gk2qggms1v"]
+
+[ext_resource type="Script" uid="uid://ipx5xq7c4kim" path="res://shield_power_up.gd" id="1_ycm6f"]
+[ext_resource type="Texture2D" uid="uid://bugycun3oyvwk" path="res://R.png" id="2_i1brc"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ycm6f"]
+radius = 14.0
+height = 40.0
+
+[node name="ShieldPowerUp" type="Area2D"]
+collision_mask = 2
+script = ExtResource("1_ycm6f")
+
+[node name="Shield" type="Sprite2D" parent="."]
+scale = Vector2(0.04, 0.055)
+texture = ExtResource("2_i1brc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_ycm6f")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
