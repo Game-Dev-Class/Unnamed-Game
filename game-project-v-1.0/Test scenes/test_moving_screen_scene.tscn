@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://b4i3576b24knt"]
+
+[ext_resource type="Script" uid="uid://c73ywtxst3vc6" path="res://Test scenes/Character.cs" id="1_vk4p1"]
+[ext_resource type="Texture2D" uid="uid://dq7t5s4rgysu8" path="res://icon.svg" id="2_4o1ap"]
+[ext_resource type="Script" uid="uid://btfj2key72nsb" path="res://Test scenes/Camera2d.cs" id="3_5c3qf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_es1xo"]
+size = Vector2(43, 68)
+
+[node name="Level" type="Node2D" unique_id=491028035]
+
+[node name="Character" type="CharacterBody2D" parent="." unique_id=589927392]
+script = ExtResource("1_vk4p1")
+
+[node name="Sprite2D" type="Sprite2D" parent="Character" unique_id=274667295]
+position = Vector2(-96, -96)
+scale = Vector2(1.46094, 1.46094)
+texture = ExtResource("2_4o1ap")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Character" unique_id=758153316]
+position = Vector2(-192, 181)
+shape = SubResource("RectangleShape2D_es1xo")
+
+[node name="Camera2d" type="Camera2D" parent="." unique_id=314453106]
+script = ExtResource("3_5c3qf")
+PlayerPath = NodePath("../Character/CollisionShape2D")
+
+[node name="Icon" type="Sprite2D" parent="." unique_id=1054548969]
+position = Vector2(97, -184)
+texture = ExtResource("2_4o1ap")
+
+[node name="Icon2" type="Sprite2D" parent="." unique_id=1065148385]
+position = Vector2(-373, 121)
+texture = ExtResource("2_4o1ap")
+
+[node name="Icon3" type="Sprite2D" parent="." unique_id=329227595]
+position = Vector2(240, 119)
+texture = ExtResource("2_4o1ap")
