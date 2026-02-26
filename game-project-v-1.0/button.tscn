@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://bdglykxy43ai7"]
 
+[ext_resource type="Script" uid="uid://4cguvfgl8dte" path="res://Pbutton.cs" id="1_n4tde"]
 [ext_resource type="Texture2D" uid="uid://cmtywltbm8oan" path="res://Sprites/button_sprite_sheet.png" id="1_r04n3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_n4tde"]
@@ -28,6 +29,7 @@ animations = [{
 }]
 
 [node name="button" type="Area2D" unique_id=737130439]
+script = ExtResource("1_n4tde")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1655392813]
 position = Vector2(0, 8.151957)
