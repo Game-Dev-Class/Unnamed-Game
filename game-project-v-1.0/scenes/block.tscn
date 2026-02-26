@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://byqp14kubwxah"]
+
+[ext_resource type="Texture2D" uid="uid://dbujlma2hopdx" path="res://Sprites/pixil-frame-0 (7).png" id="1_8r6n6"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_8r6n6"]
+friction = 4.0
+rough = true
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cgrg5"]
+size = Vector2(32, 32)
+
+[node name="Block" type="RigidBody2D" unique_id=77543997]
+physics_material_override = SubResource("PhysicsMaterial_8r6n6")
+lock_rotation = true
+linear_damp = 10.0
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=506948361]
+texture = ExtResource("1_8r6n6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=931998979]
+shape = SubResource("RectangleShape2D_cgrg5")

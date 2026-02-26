@@ -6,8 +6,6 @@
 [ext_resource type="Script" uid="uid://b6f1g5luu6l0e" path="res://scripts/Player.cs" id="4_e1cbu"]
 [ext_resource type="Texture2D" uid="uid://dbtyq8f5q3yht" path="res://Sprites/pixil-frame-0 (4).png" id="5_mngbo"]
 [ext_resource type="PackedScene" uid="uid://bibwqy6q4pa2q" path="res://scenes/platform.tscn" id="6_4w45t"]
-[ext_resource type="PackedScene" uid="uid://cr5cnc0dgxdes" path="res://scenes/bounce_pad.tscn" id="7_r6p65"]
-[ext_resource type="PackedScene" uid="uid://bt2namyhpp4nw" path="res://scenes/level_exit.tscn" id="8_si52b"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_66tet"]
 texture = ExtResource("5_mngbo")
@@ -123,6 +121,7 @@ script = ExtResource("1_18nlu")
 [node name="Player" parent="." unique_id=2054929316 instance=ExtResource("3_6wevv")]
 position = Vector2(681, 134)
 script = ExtResource("4_e1cbu")
+PushForce = 100.0
 
 [node name="Stage" type="TileMapLayer" parent="." unique_id=854476079]
 use_parent_material = true
@@ -135,9 +134,3 @@ position = Vector2(208, 92)
 [node name="AnimationPlayer" type="AnimationPlayer" parent="AnimatableBody2D" unique_id=244449920]
 libraries/ = SubResource("AnimationLibrary_qwutr")
 autoplay = &"move2"
-
-[node name="BouncePad" parent="." unique_id=72625877 instance=ExtResource("7_r6p65")]
-position = Vector2(418, 109)
-
-[node name="LevelExit" parent="." unique_id=1768640012 instance=ExtResource("8_si52b")]
-position = Vector2(34, 99)
