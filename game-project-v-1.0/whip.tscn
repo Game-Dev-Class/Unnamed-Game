@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://bs6cmnu8w1lsj"]
+
+[ext_resource type="Script" uid="uid://bhv2xi8xk8wum" path="res://Whip.cs" id="1_fag8t"]
+[ext_resource type="Texture2D" uid="uid://dbi31nbw8anwm" path="res://Sprites/Whip/whip.png" id="2_sdm5w"]
+
+[node name="Whip" type="Node2D" unique_id=1308535355]
+script = ExtResource("1_fag8t")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1798031844]
+position = Vector2(1, 0)
+texture = ExtResource("2_sdm5w")
+
+[node name="Area2D" type="Area2D" parent="Sprite2D" unique_id=1120732423]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D" unique_id=1837989646]

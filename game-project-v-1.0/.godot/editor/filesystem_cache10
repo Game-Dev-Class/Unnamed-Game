@@ -1,17 +1,26 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1770911267
-button.tscn::PackedScene::2610084789000013216::1770909857::0::1::::<><><>0<>0<><>::uid://cmtywltbm8oan::::res://Sprites/button_sprite_sheet.png
-Hud.cs::CSharpScript::7385432121434173342::1770135019::0::1::::<>CanvasLayer<><>0<>0<><>::
-hud.tscn::PackedScene::4979409707274579739::1770135300::0::1::::<><><>0<>0<><>::uid://ddhs8ue64fx8i::::res://Hud.cs
-icon.svg::CompressedTexture2D/CompressedTexture2D::8349551825098459537::1769526184::1770520499::1::::<><><>0<>0<>43b1e8af9c7dcda7e66851ad1bb3f02d<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-MainScene.cs::CSharpScript::3307734412596296564::1770908973::0::1::::<>Node2D<><>0<>0<><>::
-main_scene.tscn::PackedScene::4901515150290933111::1770911092::0::1::::<><><>0<>0<><>::uid://bhk425mynbpdi::::res://Sprites/pixil-frame-0 (2).png<>uid://bnej5xkh27fj5::::res://MainScene.cs<>uid://cc7cfd3pp5li6::::res://hud.tscn<>uid://doap5hxidi0wr::::res://Sprites/pixil-frame-0 (3).png<>uid://dbtyq8f5q3yht::::res://Sprites/pixil-frame-0 (4).png<>uid://84a78r8nvygt::::res://player.tscn<>uid://b6f1g5luu6l0e::::res://Player.cs<>uid://bibwqy6q4pa2q::::res://platform.tscn
-platform.tscn::PackedScene::2951361466310411822::1770909857::0::1::::<><><>0<>0<><>::uid://dbtyq8f5q3yht::::res://Sprites/pixil-frame-0 (4).png
-Player.cs::CSharpScript::4574187675447781370::1770908973::0::1::::<>CharacterBody2D<><>0<>0<><>::
-player.tscn::PackedScene::2376157701377583383::1770909883::0::1::::<><><>0<>0<><>::uid://buhrr3ntyulgu::::res://Sprites/pixilart-sprite.png
-::res://Sprites/::1770910454
-button_sprite_sheet.png::CompressedTexture2D::5655827770832949485::1770909857::1770910454::1::::<><><>0<>0<>921e7a6651ae2865b9be07965f2f85ab<>res://.godot/imported/button_sprite_sheet.png-5291dc7e670d69190c3758c51b19fefd.ctex::
-pixil-frame-0 (2).png::CompressedTexture2D::2900196971271621762::1769703903::1770520499::1::::<><><>0<>0<>24f0d0f72086e86c87dfe344752680c9<>res://.godot/imported/pixil-frame-0 (2).png-9bb0bebbe4b8d7a5f1b384f88ab72233.ctex::
-pixil-frame-0 (3).png::CompressedTexture2D::8142870594282189457::1769703903::1770520499::1::::<><><>0<>0<>d0a55933eb52a77fd0d5832001dae2b1<>res://.godot/imported/pixil-frame-0 (3).png-7b2a4ee334076f9c9a1b0dd9dfa9279b.ctex::
-pixil-frame-0 (4).png::CompressedTexture2D::7270161594953494209::1769703903::1770520499::1::::<><><>0<>0<>8d868175d89d647153e3730e1a6ee4f1<>res://.godot/imported/pixil-frame-0 (4).png-5351e88255edb029ecd184861e71df00.ctex::
-pixilart-sprite.png::CompressedTexture2D::3805712239737985868::1770135028::1770520499::1::::<><><>0<>0<>696cec9623912be061acc6c279e6d511<>res://.godot/imported/pixilart-sprite.png-e5727e90d5464e3f954806d2e8eb3b2c.ctex::
+::res://::1772090633
+button.tscn::PackedScene::2610084789000013216::1772090239::0::1::::<><><>0<>0<><>::uid://cmtywltbm8oan::::res://Sprites/button_sprite_sheet.png
+Hud.cs::CSharpScript::7385432121434173342::1772090239::0::1::::<>CanvasLayer<><>0<>0<><>::
+hud.tscn::PackedScene::4979409707274579739::1772090239::0::1::::<><><>0<>0<><>::uid://ddhs8ue64fx8i::::res://Hud.cs
+icon.svg::CompressedTexture2D/CompressedTexture2D::8349551825098459537::1772090239::1772090294::1::::<><><>0<>0<>43b1e8af9c7dcda7e66851ad1bb3f02d<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+MainScene.cs::CSharpScript::3307734412596296564::1772090239::0::1::::<>Node2D<><>0<>0<><>::
+main_scene.tscn::PackedScene::4901515150290933111::1772090616::0::1::::<><><>0<>0<><>::uid://bhk425mynbpdi::::res://Sprites/pixil-frame-0 (2).png<>uid://bnej5xkh27fj5::::res://MainScene.cs<>uid://cc7cfd3pp5li6::::res://hud.tscn<>uid://doap5hxidi0wr::::res://Sprites/pixil-frame-0 (3).png<>uid://dbtyq8f5q3yht::::res://Sprites/pixil-frame-0 (4).png<>uid://84a78r8nvygt::::res://player.tscn<>uid://b6f1g5luu6l0e::::res://Player.cs<>uid://bibwqy6q4pa2q::::res://platform.tscn
+platform.tscn::PackedScene::2951361466310411822::1772090239::0::1::::<><><>0<>0<><>::uid://dbtyq8f5q3yht::::res://Sprites/pixil-frame-0 (4).png
+Player.cs::CSharpScript::4574187675447781370::1772090239::0::1::::<>CharacterBody2D<><>0<>0<><>::
+player.tscn::PackedScene::2376157701377583383::1772090239::0::1::::<><><>0<>0<><>::uid://buhrr3ntyulgu::::res://Sprites/pixilart-sprite.png
+::res://Sprites/::1772090712
+button_sprite_sheet.png::CompressedTexture2D::5655827770832949485::1772090239::1772090294::1::::<><><>0<>0<>921e7a6651ae2865b9be07965f2f85ab<>res://.godot/imported/button_sprite_sheet.png-5291dc7e670d69190c3758c51b19fefd.ctex::
+pixil-frame-0 (2).png::CompressedTexture2D::2900196971271621762::1772090239::1772090294::1::::<><><>0<>0<>24f0d0f72086e86c87dfe344752680c9<>res://.godot/imported/pixil-frame-0 (2).png-9bb0bebbe4b8d7a5f1b384f88ab72233.ctex::
+pixil-frame-0 (3).png::CompressedTexture2D::8142870594282189457::1772090239::1772090294::1::::<><><>0<>0<>d0a55933eb52a77fd0d5832001dae2b1<>res://.godot/imported/pixil-frame-0 (3).png-7b2a4ee334076f9c9a1b0dd9dfa9279b.ctex::
+pixil-frame-0 (4).png::CompressedTexture2D::7270161594953494209::1772090239::1772090294::1::::<><><>0<>0<>8d868175d89d647153e3730e1a6ee4f1<>res://.godot/imported/pixil-frame-0 (4).png-5351e88255edb029ecd184861e71df00.ctex::
+pixilart-sprite.png::CompressedTexture2D::3805712239737985868::1772090239::1772090294::1::::<><><>0<>0<>696cec9623912be061acc6c279e6d511<>res://.godot/imported/pixilart-sprite.png-e5727e90d5464e3f954806d2e8eb3b2c.ctex::
+::res://Sprites/Whip/::1772090712
+barbedWhip.png::CompressedTexture2D::6855192116879262247::1772090522::1772090726::1::::<><><>0<>0<>594e25cf80525afce5b0b67f83c171e4<>res://.godot/imported/barbedWhip.png-4233212351b83451b1b77016a5930ef4.ctex::
+bone whip.png::CompressedTexture2D::696791112508619105::1772090522::1772090726::1::::<><><>0<>0<>95e6027f2c10705345d88ba0d9cb10cb<>res://.godot/imported/bone whip.png-acda450aec0ec54f960e2634da2ddae6.ctex::
+chain whip.png::CompressedTexture2D::589764566943812290::1772090522::1772090726::1::::<><><>0<>0<>c8c7242f730dbb029dc8bf52ab48bcfb<>res://.godot/imported/chain whip.png-8d3d6966d41f3d7637085df2d124b54a.ctex::
+fireWhip.png::CompressedTexture2D::1567635307882319149::1772090522::1772090726::1::::<><><>0<>0<>5f012d764d793d7a3795e70d5ab9b9ba<>res://.godot/imported/fireWhip.png-62dc511268549da3ae47009b78a9fbe2.ctex::
+harpyWhip.png::CompressedTexture2D::6726989490589246152::1772090522::1772090726::1::::<><><>0<>0<>ea3e325b588cf7bf48dcff8b131fc05b<>res://.godot/imported/harpyWhip.png-e7daf69e2bd400454bcd7157ba665d01.ctex::
+lightning whip.png::CompressedTexture2D::78761276045888926::1772090522::1772090726::1::::<><><>0<>0<>5056589ed3cc7eed6610596f4ec44d65<>res://.godot/imported/lightning whip.png-2203e7619312671022c458699a2be01c.ctex::
+waterWhip.png::CompressedTexture2D::3051843563935643325::1772090522::1772090726::1::::<><><>0<>0<>09a190c252800f78c1cecaec3ac043cb<>res://.godot/imported/waterWhip.png-2f3518119acd95c246dd286cef3fb312.ctex::
+whip.png::CompressedTexture2D::7247713108580852540::1772090522::1772090726::1::::<><><>0<>0<>ec00eb7d964257e2f101a670393fc62e<>res://.godot/imported/whip.png-0e389ff91e3be590b9766965b46a7e7b.ctex::
