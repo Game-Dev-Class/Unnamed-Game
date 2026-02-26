@@ -1,15 +1,15 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1772118225
-Hud.cs::CSharpScript::7385432121434173342::1771948283::0::1::::<>CanvasLayer<><>0<>0<><>::
+::res://::1772122117
+Hud.cs::CSharpScript::7385432121434173342::1772122091::0::1::::<>CanvasLayer<><>0<>0<><>::
 hud.tscn::PackedScene::4979409707274579739::1771948267::0::1::::<><><>0<>0<><>::uid://ddhs8ue64fx8i::::res://Hud.cs
 icon.svg::CompressedTexture2D/CompressedTexture2D::8349551825098459537::1771948267::1771949941::1::::<><><>0<>0<>43b1e8af9c7dcda7e66851ad1bb3f02d<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-MainScene.cs::CSharpScript::3307734412596296564::1771950112::0::1::::<>Node2D<><>0<>0<><>::
-main_scene.tscn::PackedScene::4901515150290933111::1771950112::0::1::::<><><>0<>0<><>::uid://bhk425mynbpdi::::res://Sprites/pixil-frame-0 (2).png<>uid://bnej5xkh27fj5::::res://MainScene.cs<>uid://cc7cfd3pp5li6::::res://hud.tscn<>uid://doap5hxidi0wr::::res://Sprites/pixil-frame-0 (3).png<>uid://dbtyq8f5q3yht::::res://Sprites/pixil-frame-0 (4).png<>uid://84a78r8nvygt::::res://player.tscn<>uid://b6f1g5luu6l0e::::res://Player.cs<>uid://bdglykxy43ai7::::res://Pbutton.tscn
-Pbutton.cs::CSharpScript::9064992102819359919::1771950522::0::1::::<>Area2D<><>0<>0<><>::
-Pbutton.tscn::PackedScene::2610084789000013216::1771948283::0::1::::<><><>0<>0<><>::uid://d2ffdiom3qb4r::::res://Pbutton.cs<>uid://cmtywltbm8oan::::res://Sprites/button_sprite_sheet.png
+MainScene.cs::CSharpScript::3307734412596296564::1772122091::0::1::::<>Node2D<><>0<>0<><>::
+main_scene.tscn::PackedScene::4901515150290933111::1772122091::0::1::::<><><>0<>0<><>::uid://bhk425mynbpdi::::res://Sprites/pixil-frame-0 (2).png<>uid://bnej5xkh27fj5::::res://MainScene.cs<>uid://cc7cfd3pp5li6::::res://hud.tscn<>uid://doap5hxidi0wr::::res://Sprites/pixil-frame-0 (3).png<>uid://dbtyq8f5q3yht::::res://Sprites/pixil-frame-0 (4).png<>uid://84a78r8nvygt::::res://player.tscn<>uid://b6f1g5luu6l0e::::res://Player.cs<>uid://bdglykxy43ai7::::res://Pbutton.tscn
+Pbutton.cs::CSharpScript::9064992102819359919::1772122091::0::1::::<>Area2D<><>0<>0<><>::
+Pbutton.tscn::PackedScene::2610084789000013216::1772122091::0::1::::<><><>0<>0<><>::uid://d2ffdiom3qb4r::::res://Pbutton.cs<>uid://cmtywltbm8oan::::res://Sprites/button_sprite_sheet.png
 platform.tscn::PackedScene::2951361466310411822::1771948267::0::1::::<><><>0<>0<><>::uid://dbtyq8f5q3yht::::res://Sprites/pixil-frame-0 (4).png
-Player.cs::CSharpScript::4574187675447781370::1771950112::0::1::::<>CharacterBody2D<><>0<>0<><>::
-player.tscn::PackedScene::2376157701377583383::1771948267::0::1::::<><><>0<>0<><>::uid://buhrr3ntyulgu::::res://Sprites/pixilart-sprite.png
+Player.cs::CSharpScript::4574187675447781370::1772122091::0::1::::<>CharacterBody2D<><>0<>0<><>::
+player.tscn::PackedScene::2376157701377583383::1772122091::0::1::::<><><>0<>0<><>::uid://buhrr3ntyulgu::::res://Sprites/pixilart-sprite.png
 ::res://Sprites/::1771949941
 button_sprite_sheet.png::CompressedTexture2D::5655827770832949485::1771948267::1771949941::1::::<><><>0<>0<>921e7a6651ae2865b9be07965f2f85ab<>res://.godot/imported/button_sprite_sheet.png-5291dc7e670d69190c3758c51b19fefd.ctex::
 pixil-frame-0 (2).png::CompressedTexture2D::2900196971271621762::1771948267::1771949941::1::::<><><>0<>0<>24f0d0f72086e86c87dfe344752680c9<>res://.godot/imported/pixil-frame-0 (2).png-9bb0bebbe4b8d7a5f1b384f88ab72233.ctex::

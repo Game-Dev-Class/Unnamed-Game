@@ -17,7 +17,7 @@ public partial class MainScene : Node2D
 		_button = GetNode<Pbutton>("button");
 		
 		_hud.StartGame += StartStage;
-		_player.DisableMovement();
+		_player.DisableMovement(); 
 	}
 	
 	private void StartStage()
