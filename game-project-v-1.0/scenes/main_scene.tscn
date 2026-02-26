@@ -6,6 +6,8 @@
 [ext_resource type="Script" uid="uid://b6f1g5luu6l0e" path="res://scripts/Player.cs" id="4_e1cbu"]
 [ext_resource type="Texture2D" uid="uid://dbtyq8f5q3yht" path="res://Sprites/pixil-frame-0 (4).png" id="5_mngbo"]
 [ext_resource type="PackedScene" uid="uid://bibwqy6q4pa2q" path="res://scenes/platform.tscn" id="6_4w45t"]
+[ext_resource type="PackedScene" uid="uid://cr5cnc0dgxdes" path="res://scenes/bounce_pad.tscn" id="7_r6p65"]
+[ext_resource type="PackedScene" uid="uid://byqp14kubwxah" path="res://scenes/block.tscn" id="9_c1pb6"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_66tet"]
 texture = ExtResource("5_mngbo")
@@ -134,3 +136,9 @@ position = Vector2(208, 92)
 [node name="AnimationPlayer" type="AnimationPlayer" parent="AnimatableBody2D" unique_id=244449920]
 libraries/ = SubResource("AnimationLibrary_qwutr")
 autoplay = &"move2"
+
+[node name="Block" parent="." unique_id=77543997 instance=ExtResource("9_c1pb6")]
+position = Vector2(375, 99)
+
+[node name="BouncePad" parent="." unique_id=72625877 instance=ExtResource("7_r6p65")]
+position = Vector2(806, 239)

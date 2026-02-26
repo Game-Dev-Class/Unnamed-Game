@@ -69,4 +69,15 @@ public partial class Player : CharacterBody2D
 			}
 		}
 	}
+	// Inside Player.cs
+
+	public void Bounce(float force)
+	{
+		// Set the Y velocity to the bounce force
+		// We use a new Vector2 to preserve horizontal momentum
+		Velocity = new Vector2(Velocity.X, force);
+	
+		// Optional: Play a sound or animation here!
+		GD.Print("Bounced!");
+	}
 }
