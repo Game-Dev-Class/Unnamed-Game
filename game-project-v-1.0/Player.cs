@@ -17,11 +17,6 @@ public partial class Player : CharacterBody2D
 		_canMove = false;
 		Velocity = Vector2.Zero;
 	}
-	
-	public void Bounce()
-	{
-		_bounce = true;
-	}
 
 	public override void _PhysicsProcess(double delta)
 	{
@@ -60,11 +55,6 @@ public partial class Player : CharacterBody2D
 					Mathf.MoveToward(Velocity.X, 0, SPEED),
 					Velocity.Y
 				);
-			}
-			
-			if (_bounce)
-			{
-				Velocity = new Vector2(Velocity.X, JUMP_VELOCITY);
 			}
 		}
 

@@ -18,7 +18,6 @@ public partial class MainScene : Node2D
 		
 		_hud.StartGame += StartStage;
 		_player.DisableMovement();
-		_button.ButtonPressed += OnButtonPress;
 	}
 	
 	private void StartStage()
@@ -27,14 +26,7 @@ public partial class MainScene : Node2D
 		_player.Visible = true;
 		_player.EnableMovement();
 	}
-	
-	private void OnButtonPress()
-	{
-		_player.Bounce();
-		Console.Write("You pressed the button.");
-	}
-	
-	
+		
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta)
 	{
