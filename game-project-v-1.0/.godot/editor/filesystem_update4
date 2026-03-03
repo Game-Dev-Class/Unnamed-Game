@@ -1,6 +1,7 @@
 res://button.tscn
+res://MainScene.cs
 res://main_scene.tscn
+res://Pbutton.tscn
 res://Pbutton.cs
 res://Player.cs
 res://Hud.cs
-res://MainScene.cs
