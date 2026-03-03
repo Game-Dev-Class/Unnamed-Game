@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://bs6cmnu8w1lsj" path="res://whip.tscn" id="5_7ycvg"]
 [ext_resource type="PackedScene" uid="uid://bibwqy6q4pa2q" path="res://platform.tscn" id="8_66tet"]
 [ext_resource type="PackedScene" uid="uid://cesul71vygkeu" path="res://enemy.tscn" id="10_wr18j"]
+[ext_resource type="PackedScene" uid="uid://dhxn4a045ytlf" path="res://invisable_block.tscn" id="11_qwutr"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_d5x1h"]
 texture = ExtResource("1_2c62f")
@@ -168,5 +169,11 @@ position = Vector2(208, 92)
 libraries/ = SubResource("AnimationLibrary_qwutr")
 autoplay = &"move2"
 
-[node name="CharacterBody2D" parent="." unique_id=564250950 instance=ExtResource("10_wr18j")]
-position = Vector2(630, 110)
+[node name="Enemy" parent="." unique_id=564250950 instance=ExtResource("10_wr18j")]
+position = Vector2(680, 142)
+
+[node name="Invisible Block" parent="." unique_id=1096889786 instance=ExtResource("11_qwutr")]
+position = Vector2(681, 178)
+
+[node name="Invisible Block2" parent="." unique_id=749176219 instance=ExtResource("11_qwutr")]
+position = Vector2(-2, 119)
