@@ -10,12 +10,11 @@ public partial class Player : CharacterBody2D
 
 	[Export] public PackedScene WhipScene;
 	[Export] public float DefaultWhipDistance = 48.0f;
-	[Export] public Range WhipDistanceSlider;
+	[Export] public Godot.Range WhipDistanceSlider;
 	[Export] public AnimatedSprite2D PlayerSprite;
 
 	public override void _Ready()
 	{
-		// auto-find sprite if not assigned
 		if (PlayerSprite == null)
 			PlayerSprite = GetNodeOrNull<AnimatedSprite2D>("AnimatedSprite2D");
 	}
@@ -40,12 +39,15 @@ public partial class Player : CharacterBody2D
 			return;
 		}
 
+		// Gravity
 		if (!IsOnFloor())
 			Velocity += GetGravity() * (float)delta;
 
+		// Jump
 		if (Input.IsActionJustPressed("ui_accept") && IsOnFloor())
 			Velocity = new Vector2(Velocity.X, JUMP_VELOCITY);
 
+		// Movement input
 		float direction = Input.GetAxis("ui_left", "ui_right");
 
 		if (direction > 0)
@@ -61,10 +63,26 @@ public partial class Player : CharacterBody2D
 		if (Input.IsActionJustPressed("whip"))
 			SpawnWhip();
 
+		// Move
 		MoveAndSlide();
+
+		//  Stomp Detection (NEW)
+		for (int i = 0; i < GetSlideCollisionCount(); i++)
+		{
+			var collision = GetSlideCollision(i);
+
+			if (collision.GetCollider() is Enemy enemy)
+			{
+				// If collision normal points up, we landed on it
+				if (collision.GetNormal().Y < -0.7f)
+				{
+					enemy.QueueFree();
+				}
+			}
+		}
 	}
 
-	// IMPORTANT: flip AFTER animation updates
+	// Flip sprite AFTER movement
 	public override void _Process(double delta)
 	{
 		if (PlayerSprite != null)
