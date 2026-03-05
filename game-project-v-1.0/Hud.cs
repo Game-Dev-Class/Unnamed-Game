@@ -3,20 +3,26 @@ using System;
 
 public partial class Hud : CanvasLayer
 {
+	private Label _title;
+	
 	[Signal]
 	public delegate void StartGameEventHandler();
-	
-	
 	
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
+		_title = GetNode<Label>("MainTitle");
 	}
 
-	private void _on_button_pressed()
+	private void OnStartPressed()
 	{
 		Visible = false;
 		EmitSignal(SignalName.StartGame);
+	}
+	
+	private void OnOptionsPressed()
+	{
+		_title.Visible = false;
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
