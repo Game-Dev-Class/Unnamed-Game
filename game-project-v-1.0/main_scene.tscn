@@ -170,10 +170,19 @@ libraries/ = SubResource("AnimationLibrary_qwutr")
 autoplay = &"move2"
 
 [node name="Enemy" parent="." unique_id=564250950 instance=ExtResource("10_wr18j")]
-position = Vector2(680, 142)
+position = Vector2(295, 109)
 
 [node name="Invisible Block" parent="." unique_id=1096889786 instance=ExtResource("11_qwutr")]
-position = Vector2(681, 178)
+position = Vector2(458, 119)
 
 [node name="Invisible Block2" parent="." unique_id=749176219 instance=ExtResource("11_qwutr")]
 position = Vector2(-2, 119)
+
+[node name="enemy" parent="." unique_id=1277462492 instance=ExtResource("10_wr18j")]
+position = Vector2(630, 239)
+
+[node name="Invisible Block3" parent="." unique_id=931024081 instance=ExtResource("11_qwutr")]
+position = Vector2(712, 246)
+
+[node name="Invisible Block4" parent="." unique_id=169229186 instance=ExtResource("11_qwutr")]
+position = Vector2(567, 246)
