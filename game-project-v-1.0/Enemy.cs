@@ -32,10 +32,17 @@ public partial class Enemy : CharacterBody2D
 
         MoveAndSlide();
 
-        // Check collisions to turn around
+        // Check collisions
         for (int i = 0; i < GetSlideCollisionCount(); i++)
         {
             var collision = GetSlideCollision(i);
+
+            // -------- PLAYER HIT DETECTION (NEW) --------
+            if (collision.GetCollider() is Player player)
+            {
+                player.TakeEnemyHit(GlobalPosition);
+            }
+            // --------------------------------------------
 
             if (collision.GetCollider() is PhysicsBody2D collider)
             {
