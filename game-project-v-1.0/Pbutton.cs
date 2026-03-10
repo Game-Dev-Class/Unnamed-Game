@@ -3,6 +3,9 @@ using System;
 
 public partial class Pbutton : Area2D
 {
+	[Signal]
+	public delegate void ButtonTriggerEventHandler();
+
 	private Area2D _area2D;
 	public override void _Ready()
 	{
@@ -16,6 +19,7 @@ public partial class Pbutton : Area2D
 		if(body is CharacterBody2D character)
 		{
 			GD.Print("Player has pressed the button");
+			ButtonTrigger.Emit();
 		}
 	}
 
