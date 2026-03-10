@@ -9,9 +9,9 @@
 [ext_resource type="Script" uid="uid://b6f1g5luu6l0e" path="res://Player.cs" id="4_nfk4m"]
 [ext_resource type="PackedScene" uid="uid://bs6cmnu8w1lsj" path="res://whip.tscn" id="5_7ycvg"]
 [ext_resource type="PackedScene" uid="uid://bibwqy6q4pa2q" path="res://platform.tscn" id="8_66tet"]
-[ext_resource type="PackedScene" uid="uid://dgfrac2p56h2n" path="res://button.tscn" id="9_7ycvg"]
 [ext_resource type="PackedScene" uid="uid://cesul71vygkeu" path="res://enemy.tscn" id="10_wr18j"]
 [ext_resource type="PackedScene" uid="uid://dhxn4a045ytlf" path="res://invisable_block.tscn" id="11_qwutr"]
+[ext_resource type="PackedScene" uid="uid://bdglykxy43ai7" path="res://Pbutton.tscn" id="12_671wp"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_d5x1h"]
 texture = ExtResource("1_2c62f")
@@ -188,5 +188,5 @@ position = Vector2(712, 246)
 [node name="Invisible Block4" parent="." unique_id=169229186 instance=ExtResource("11_qwutr")]
 position = Vector2(567, 246)
 
-[node name="button" parent="." unique_id=737130439 instance=ExtResource("9_7ycvg")]
-position = Vector2(498, 176)
+[node name="Pbutton" parent="." unique_id=737130439 instance=ExtResource("12_671wp")]
+position = Vector2(498, 175)
