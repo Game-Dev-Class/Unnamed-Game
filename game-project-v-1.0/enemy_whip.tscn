@@ -1,27 +1,27 @@
-[gd_scene format=3 uid="uid://cesul71vygkeu"]
+[gd_scene format=3 uid="uid://bg3j8t2o2rg8f"]
 
-[ext_resource type="Script" uid="uid://duhkfw8jgj5f7" path="res://Enemy.cs" id="1_4gyqm"]
-[ext_resource type="Texture2D" uid="uid://5da7vnxmfbb4" path="res://Sprites/Evil Man animation sprite sheet.png" id="1_7k104"]
+[ext_resource type="Texture2D" uid="uid://duq3w17kib6f" path="res://Sprites/Evil Man whip only animation sprite sheet.png" id="1_802m3"]
+[ext_resource type="Script" uid="uid://lsu7fijjeatv" path="res://EnemyWhip.cs" id="1_prvy5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7k104"]
 size = Vector2(28, 29)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_qi2p4"]
-atlas = ExtResource("1_7k104")
+[sub_resource type="AtlasTexture" id="AtlasTexture_7v7ob"]
+atlas = ExtResource("1_802m3")
 region = Rect2(0, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_iifgy"]
-atlas = ExtResource("1_7k104")
+[sub_resource type="AtlasTexture" id="AtlasTexture_bidur"]
+atlas = ExtResource("1_802m3")
 region = Rect2(32, 0, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_epg4t"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_qi2p4")
+"texture": SubResource("AtlasTexture_7v7ob")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_iifgy")
+"texture": SubResource("AtlasTexture_bidur")
 }],
 "loop": true,
 "name": &"default",
@@ -31,10 +31,10 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4gyqm"]
 size = Vector2(28, 33)
 
-[node name="enemy2" type="CharacterBody2D" unique_id=564250950]
-collision_layer = 2
-collision_mask = 15
-script = ExtResource("1_4gyqm")
+[node name="enemy_whip" type="CharacterBody2D" unique_id=564250950]
+collision_layer = 8
+collision_mask = 14
+script = ExtResource("1_prvy5")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=580514302]
 position = Vector2(0, 1.5)
@@ -43,6 +43,7 @@ shape = SubResource("RectangleShape2D_7k104")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2092370204]
 sprite_frames = SubResource("SpriteFrames_epg4t")
 autoplay = "default"
+frame_progress = 0.45790204
 
 [node name="DetectionArea" type="Area2D" parent="." unique_id=23755259]
 
