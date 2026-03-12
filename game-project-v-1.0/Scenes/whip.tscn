@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bs6cmnu8w1lsj"]
 
-[ext_resource type="Script" uid="uid://bhv2xi8xk8wum" path="res://Whip.cs" id="1_fag8t"]
+[ext_resource type="Script" uid="uid://bhv2xi8xk8wum" path="res://Scripts/Whip.cs" id="1_fag8t"]
 [ext_resource type="Texture2D" uid="uid://dbi31nbw8anwm" path="res://Sprites/Whip/whip.png" id="2_sdm5w"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fag8t"]

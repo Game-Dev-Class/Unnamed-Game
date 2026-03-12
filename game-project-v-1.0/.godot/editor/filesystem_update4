@@ -1,7 +1,4 @@
 res://main_scene.tscn
-res://Pbutton.cs
-res://Player.cs
-res://Hud.cs
-res://MainScene.cs
-res://Enemy.cs
-res://Whip.cs
+res://Scenes/main_scene.tscn
+res://Scenes/enemy.tscn
+res://Scenes/whip.tscn

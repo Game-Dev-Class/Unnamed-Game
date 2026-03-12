@@ -1,20 +1,20 @@
 [gd_scene format=4 uid="uid://cb3lidujeyhjj"]
 
-[ext_resource type="Texture2D" uid="uid://bhk425mynbpdi" path="res://Sprites/pixil-frame-0 (2).png" id="1_2c62f"]
-[ext_resource type="Script" uid="uid://bnej5xkh27fj5" path="res://MainScene.cs" id="1_8mm7a"]
-[ext_resource type="PackedScene" uid="uid://cc7cfd3pp5li6" path="res://hud.tscn" id="1_d5x1h"]
-[ext_resource type="Texture2D" uid="uid://doap5hxidi0wr" path="res://Sprites/pixil-frame-0 (3).png" id="2_gyfs4"]
-[ext_resource type="Texture2D" uid="uid://dbtyq8f5q3yht" path="res://Sprites/pixil-frame-0 (4).png" id="3_gyfs4"]
-[ext_resource type="PackedScene" uid="uid://84a78r8nvygt" path="res://player.tscn" id="3_hq1ik"]
-[ext_resource type="Script" uid="uid://b6f1g5luu6l0e" path="res://Player.cs" id="4_nfk4m"]
-[ext_resource type="PackedScene" uid="uid://bs6cmnu8w1lsj" path="res://whip.tscn" id="5_7ycvg"]
-[ext_resource type="PackedScene" uid="uid://bibwqy6q4pa2q" path="res://platform.tscn" id="8_66tet"]
-[ext_resource type="PackedScene" uid="uid://cesul71vygkeu" path="res://enemy.tscn" id="10_wr18j"]
-[ext_resource type="PackedScene" uid="uid://dhxn4a045ytlf" path="res://invisable_block.tscn" id="11_qwutr"]
-[ext_resource type="PackedScene" uid="uid://bdglykxy43ai7" path="res://Pbutton.tscn" id="12_671wp"]
+[ext_resource type="Script" uid="uid://bnej5xkh27fj5" path="res://Scripts/MainScene.cs" id="1_drdnd"]
+[ext_resource type="PackedScene" uid="uid://cc7cfd3pp5li6" path="res://Scenes/hud.tscn" id="2_ioaeq"]
+[ext_resource type="PackedScene" uid="uid://84a78r8nvygt" path="res://Scenes/player.tscn" id="3_7ewk0"]
+[ext_resource type="Script" uid="uid://b6f1g5luu6l0e" path="res://Scripts/Player.cs" id="4_lhp3t"]
+[ext_resource type="PackedScene" uid="uid://bs6cmnu8w1lsj" path="res://Scenes/whip.tscn" id="5_gnsmo"]
+[ext_resource type="Texture2D" uid="uid://bhk425mynbpdi" path="res://Sprites/pixil-frame-0 (2).png" id="6_psl12"]
+[ext_resource type="Texture2D" uid="uid://doap5hxidi0wr" path="res://Sprites/pixil-frame-0 (3).png" id="7_2ebs2"]
+[ext_resource type="Texture2D" uid="uid://dbtyq8f5q3yht" path="res://Sprites/pixil-frame-0 (4).png" id="8_oyb3p"]
+[ext_resource type="PackedScene" uid="uid://bibwqy6q4pa2q" path="res://Scenes/platform.tscn" id="9_jvnna"]
+[ext_resource type="PackedScene" uid="uid://cesul71vygkeu" path="res://Scenes/enemy.tscn" id="10_b48ew"]
+[ext_resource type="PackedScene" uid="uid://dhxn4a045ytlf" path="res://Scenes/invisable_block.tscn" id="11_8edxt"]
+[ext_resource type="PackedScene" uid="uid://bdglykxy43ai7" path="res://Scenes/Pbutton.tscn" id="12_5oxhp"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_d5x1h"]
-texture = ExtResource("1_2c62f")
+texture = ExtResource("6_psl12")
 texture_region_size = Vector2i(23, 24)
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-11.5, 12, -11.5, -12, 11.5, -12, 11.5, 12)
@@ -31,7 +31,7 @@ texture_region_size = Vector2i(23, 24)
 5:1/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8mm7a"]
-texture = ExtResource("2_gyfs4")
+texture = ExtResource("7_2ebs2")
 texture_region_size = Vector2i(8, 8)
 0:0/0 = 0
 1:0/0 = 0
@@ -40,7 +40,7 @@ texture_region_size = Vector2i(8, 8)
 4:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hq1ik"]
-texture = ExtResource("3_gyfs4")
+texture = ExtResource("8_oyb3p")
 texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
@@ -148,14 +148,14 @@ _data = {
 }
 
 [node name="Main Scene" type="Node2D" unique_id=157301859]
-script = ExtResource("1_8mm7a")
+script = ExtResource("1_drdnd")
 
-[node name="HUD" parent="." unique_id=703993447 instance=ExtResource("1_d5x1h")]
+[node name="HUD" parent="." unique_id=703993447 instance=ExtResource("2_ioaeq")]
 
-[node name="Player" parent="." unique_id=2054929316 instance=ExtResource("3_hq1ik")]
+[node name="Player" parent="." unique_id=2054929316 instance=ExtResource("3_7ewk0")]
 position = Vector2(752, 110)
-script = ExtResource("4_nfk4m")
-WhipScene = ExtResource("5_7ycvg")
+script = ExtResource("4_lhp3t")
+WhipScene = ExtResource("5_gnsmo")
 DefaultWhipDistance = 48.0
 
 [node name="Stage" type="TileMapLayer" parent="." unique_id=854476079]
@@ -163,30 +163,30 @@ use_parent_material = true
 tile_map_data = PackedByteArray("AAAFAAQAAgAAAAAAAAAGAAQAAgAAAAAAAAAHAAQAAgAAAAAAAAAIAAQAAgAAAAAAAAAJAAQAAgAAAAAAAAAKAAQAAgAAAAAAAAALAAQAAgAAAAAAAAAMAAQAAgAAAAAAAAANAAQAAgAAAAAAAAAOAAUAAgAAAAAAAAAPAAYAAgAAAAAAAAAQAAcAAgAAAAAAAAARAAgAAgAAAAAAAAAFAAUAAgADAAAAAAAGAAUAAgADAAAAAAAHAAUAAgADAAAAAAAIAAUAAgADAAAAAAAJAAUAAgADAAAAAAAKAAUAAgADAAAAAAALAAUAAgADAAAAAAAMAAUAAgADAAAAAAANAAUAAgADAAAAAAAOAAYAAgADAAAAAAAPAAcAAgADAAAAAAAQAAgAAgADAAAAAAAPAAgAAgADAAAAAAAOAAgAAgADAAAAAAANAAgAAgADAAAAAAAMAAgAAgADAAAAAAALAAgAAgADAAAAAAAKAAgAAgADAAAAAAAJAAgAAgADAAAAAAAIAAgAAgADAAAAAAAHAAgAAgADAAAAAAAGAAgAAgADAAAAAAAFAAgAAgADAAAAAAAFAAYAAgADAAAAAAAFAAcAAgADAAAAAAAGAAcAAgADAAAAAAAHAAcAAgADAAAAAAAIAAcAAgADAAAAAAAJAAcAAgADAAAAAAAKAAcAAgADAAAAAAALAAcAAgADAAAAAAAMAAcAAgADAAAAAAANAAcAAgADAAAAAAAOAAcAAgADAAAAAAANAAYAAgADAAAAAAAMAAYAAgADAAAAAAALAAYAAgADAAAAAAAKAAYAAgADAAAAAAAJAAYAAgADAAAAAAAIAAYAAgADAAAAAAAHAAYAAgADAAAAAAAGAAYAAgADAAAAAAAEAAQAAgAAAAAAAAADAAQAAgAAAAAAAAACAAQAAgAAAAAAAAABAAQAAgAAAAAAAAAAAAQAAgAAAAAAAAAAAAUAAgADAAAAAAABAAUAAgADAAAAAAABAAYAAgADAAAAAAACAAYAAgADAAAAAAADAAcAAgADAAAAAAAEAAcAAgADAAAAAAAEAAgAAgADAAAAAAAEAAYAAgADAAAAAAAEAAUAAgADAAAAAAADAAUAAgADAAAAAAACAAUAAgADAAAAAAADAAYAAgADAAAAAAAAAAYAAgADAAAAAAAAAAcAAgADAAAAAAABAAcAAgADAAAAAAACAAcAAgADAAAAAAADAAgAAgADAAAAAAACAAgAAgADAAAAAAABAAgAAgADAAAAAAAAAAgAAgADAAAAAAASAAgAAgABAAAAAAATAAgAAgABAAAAAAAUAAgAAgABAAAAAAAVAAgAAgABAAAAAAAWAAgAAgAAAAAAAAAXAAgAAgAAAAAAAAAYAAgAAgAAAAAAAAAZAAgAAgAAAAAAAAAaAAgAAgAAAAAAAAAbAAgAAgAAAAAAAAAcAAgAAgAAAAAAAAAWAAkAAgADAAAAAAAWAAoAAgADAAAAAAAXAAoAAgADAAAAAAAYAAoAAgADAAAAAAAZAAoAAgADAAAAAAAaAAoAAgADAAAAAAAbAAoAAgADAAAAAAAcAAoAAgADAAAAAAAcAAkAAgADAAAAAAAbAAkAAgADAAAAAAAaAAkAAgADAAAAAAAZAAkAAgADAAAAAAAYAAkAAgADAAAAAAAXAAkAAgADAAAAAAAaAAYAAgACAAAAAAAXAAQAAgACAAAAAAA=")
 tile_set = SubResource("TileSet_hq1ik")
 
-[node name="AnimatableBody2D" parent="." unique_id=105072403 instance=ExtResource("8_66tet")]
+[node name="AnimatableBody2D" parent="." unique_id=105072403 instance=ExtResource("9_jvnna")]
 position = Vector2(208, 92)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="AnimatableBody2D" unique_id=244449920]
 libraries/ = SubResource("AnimationLibrary_qwutr")
 autoplay = &"move2"
 
-[node name="Enemy" parent="." unique_id=564250950 instance=ExtResource("10_wr18j")]
+[node name="Enemy" parent="." unique_id=564250950 instance=ExtResource("10_b48ew")]
 position = Vector2(295, 109)
 
-[node name="Invisible Block" parent="." unique_id=1096889786 instance=ExtResource("11_qwutr")]
+[node name="Invisible Block" parent="." unique_id=1096889786 instance=ExtResource("11_8edxt")]
 position = Vector2(458, 119)
 
-[node name="Invisible Block2" parent="." unique_id=749176219 instance=ExtResource("11_qwutr")]
+[node name="Invisible Block2" parent="." unique_id=749176219 instance=ExtResource("11_8edxt")]
 position = Vector2(-2, 119)
 
-[node name="enemy" parent="." unique_id=1277462492 instance=ExtResource("10_wr18j")]
+[node name="enemy" parent="." unique_id=1277462492 instance=ExtResource("10_b48ew")]
 position = Vector2(630, 239)
 
-[node name="Invisible Block3" parent="." unique_id=931024081 instance=ExtResource("11_qwutr")]
+[node name="Invisible Block3" parent="." unique_id=931024081 instance=ExtResource("11_8edxt")]
 position = Vector2(712, 246)
 
-[node name="Invisible Block4" parent="." unique_id=169229186 instance=ExtResource("11_qwutr")]
+[node name="Invisible Block4" parent="." unique_id=169229186 instance=ExtResource("11_8edxt")]
 position = Vector2(567, 246)
 
-[node name="Pbutton" parent="." unique_id=737130439 instance=ExtResource("12_671wp")]
+[node name="Pbutton" parent="." unique_id=737130439 instance=ExtResource("12_5oxhp")]
 position = Vector2(498, 175)
