@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://byqp14kubwxah"]
 
-[ext_resource type="Texture2D" uid="uid://dbujlma2hopdx" path="res://Sprites/pixil-frame-0 (7).png" id="1_8r6n6"]
+[ext_resource type="Texture2D" uid="uid://dbujlma2hopdx" path="res://visuals4_files/pixil-frame-0 (7).png" id="1_8r6n6"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_8r6n6"]
 friction = 4.0
@@ -10,6 +10,7 @@ rough = true
 size = Vector2(32, 32)
 
 [node name="Block" type="RigidBody2D" unique_id=77543997]
+collision_mask = 3
 physics_material_override = SubResource("PhysicsMaterial_8r6n6")
 lock_rotation = true
 linear_damp = 10.0

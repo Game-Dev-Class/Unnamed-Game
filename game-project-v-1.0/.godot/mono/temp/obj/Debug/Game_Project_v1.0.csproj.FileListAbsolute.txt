@@ -43,3 +43,12 @@ C:\Users\colte\OneDrive\Documents\GitHub\Unnamed-Game\game-project-v-1.0\.godot\
 C:\Users\colte\OneDrive\Documents\GitHub\Unnamed-Game\game-project-v-1.0\.godot\mono\temp\obj\Debug\Game_Project_v1.0.dll
 C:\Users\colte\OneDrive\Documents\GitHub\Unnamed-Game\game-project-v-1.0\.godot\mono\temp\obj\Debug\refint\Game_Project_v1.0.dll
 C:\Users\colte\OneDrive\Documents\GitHub\Unnamed-Game\game-project-v-1.0\.godot\mono\temp\obj\Debug\Game_Project_v1.0.pdb
+C:\Users\colte\OneDrive\Documents\GitHub\Unnamed-Game\game-project-v-1.0\.godot\mono\temp\bin\Debug\Game_Project_v1.0.deps.json
+C:\Users\colte\OneDrive\Documents\GitHub\Unnamed-Game\game-project-v-1.0\.godot\mono\temp\bin\Debug\Game_Project_v1.0.runtimeconfig.json
+C:\Users\colte\OneDrive\Documents\GitHub\Unnamed-Game\game-project-v-1.0\.godot\mono\temp\bin\Debug\Game_Project_v1.0.dll
+C:\Users\colte\OneDrive\Documents\GitHub\Unnamed-Game\game-project-v-1.0\.godot\mono\temp\bin\Debug\Game_Project_v1.0.pdb
+C:\Users\colte\OneDrive\Documents\GitHub\Unnamed-Game\game-project-v-1.0\.godot\mono\temp\bin\Debug\GodotSharp.dll
+C:\Users\colte\OneDrive\Documents\GitHub\Unnamed-Game\game-project-v-1.0\.godot\mono\temp\bin\Debug\GodotSharpEditor.dll
+C:\Users\colte\OneDrive\Documents\GitHub\Unnamed-Game\game-project-v-1.0\.godot\mono\temp\obj\Debug\Game_Pro.F3B4C21C.Up2Date
+C:\Users\colte\OneDrive\Documents\GitHub\Unnamed-Game\game-project-v-1.0\.godot\mono\temp\obj\Debug\Game_Project_v1.0.genruntimeconfig.cache
+C:\Users\colte\OneDrive\Documents\GitHub\Unnamed-Game\game-project-v-1.0\.godot\mono\temp\obj\Debug\ref\Game_Project_v1.0.dll

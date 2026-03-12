@@ -1,4 +1,5 @@
 using Godot;
+using System;
 
 public partial class Player : CharacterBody2D
 {
@@ -8,10 +9,14 @@ public partial class Player : CharacterBody2D
 	private bool _canMove = true;
 	private bool _facingRight = true;
 
+	// From Script 1
 	[Export] public PackedScene WhipScene;
 	[Export] public float DefaultWhipDistance = 48.0f;
 	[Export] public Godot.Range WhipDistanceSlider;
 	[Export] public AnimatedSprite2D PlayerSprite;
+
+	// From Script 2
+	[Export] public float PushForce = 15.0f; 
 
 	public override void _Ready()
 	{
@@ -19,11 +24,8 @@ public partial class Player : CharacterBody2D
 			PlayerSprite = GetNodeOrNull<AnimatedSprite2D>("AnimatedSprite2D");
 	}
 
-	public void EnableMovement()
-	{
-		_canMove = true;
-	}
-
+	public void EnableMovement() => _canMove = true;
+	
 	public void DisableMovement()
 	{
 		_canMove = false;
@@ -63,23 +65,37 @@ public partial class Player : CharacterBody2D
 		if (Input.IsActionJustPressed("whip"))
 			SpawnWhip();
 
-		// Move
+		// 1. Run the movement
 		MoveAndSlide();
-		
-		
 
-		//  Stomp Detection (NEW)
+		// 2. Stomp Detection (From Script 1)
 		for (int i = 0; i < GetSlideCollisionCount(); i++)
 		{
 			var collision = GetSlideCollision(i);
 
 			if (collision.GetCollider() is Enemy enemy)
 			{
-				// If collision normal points up, we landed on it
 				if (collision.GetNormal().Y < -0.7f)
 				{
 					enemy.QueueFree();
 				}
+			}
+		}
+
+		// 3. Handle Pushing (From Script 2)
+		HandlePushing();
+	}
+
+	private void HandlePushing()
+	{
+		for (int i = 0; i < GetSlideCollisionCount(); i++)
+		{
+			KinematicCollision2D collision = GetSlideCollision(i);
+			
+			if (collision.GetCollider() is RigidBody2D block)
+			{
+				Vector2 pushDirection = new Vector2(-collision.GetNormal().X, 0);
+				block.ApplyCentralImpulse(pushDirection * PushForce);
 			}
 		}
 	}
@@ -107,5 +123,15 @@ public partial class Player : CharacterBody2D
 		whipNode.GlobalPosition = GlobalPosition + new Vector2(distance * dir, 0);
 
 		whipNode.Scale = new Vector2(_facingRight ? -1f : 1f, 1f);
+	}
+
+	public void Bounce(float baseForce, float momentumMultiplier = 0.5f)
+	{
+		float fallingSpeed = Mathf.Max(0, Velocity.Y);
+		float finalVelocityY = baseForce - (fallingSpeed * momentumMultiplier);
+		
+		Velocity = new Vector2(Velocity.X, finalVelocityY);
+		
+		GD.Print($"Trampoline Bounce! Final Force: {finalVelocityY}");
 	}
 }
