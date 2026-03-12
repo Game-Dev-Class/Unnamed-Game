@@ -159,7 +159,7 @@ position = Vector2(752, 110)
 script = ExtResource("4_lhp3t")
 WhipScene = ExtResource("5_gnsmo")
 DefaultWhipDistance = 48.0
-PushForce = 15.0
+PushSpeed = 150.0
 
 [node name="Stage" type="TileMapLayer" parent="." unique_id=854476079]
 use_parent_material = true
