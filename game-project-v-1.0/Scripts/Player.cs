@@ -65,6 +65,8 @@ public partial class Player : CharacterBody2D
 
 		// Move
 		MoveAndSlide();
+		
+		
 
 		//  Stomp Detection (NEW)
 		for (int i = 0; i < GetSlideCollisionCount(); i++)

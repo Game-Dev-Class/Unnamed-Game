@@ -34,3 +34,12 @@ C:\Dev\CSE290-game\Unnamed-Game\Unnamed-Game\game-project-v-1.0\.godot\mono\temp
 C:\Dev\CSE290-game\Unnamed-Game\Unnamed-Game\game-project-v-1.0\.godot\mono\temp\obj\Debug\Game_Project_v1.0.pdb
 C:\Dev\CSE290-game\Unnamed-Game\Unnamed-Game\game-project-v-1.0\.godot\mono\temp\obj\Debug\Game_Project_v1.0.genruntimeconfig.cache
 C:\Dev\CSE290-game\Unnamed-Game\Unnamed-Game\game-project-v-1.0\.godot\mono\temp\obj\Debug\ref\Game_Project_v1.0.dll
+C:\Users\colte\OneDrive\Documents\GitHub\Unnamed-Game\game-project-v-1.0\.godot\mono\temp\obj\Debug\Game_Project_v1.0.csproj.AssemblyReference.cache
+C:\Users\colte\OneDrive\Documents\GitHub\Unnamed-Game\game-project-v-1.0\.godot\mono\temp\obj\Debug\Game_Project_v1.0.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\colte\OneDrive\Documents\GitHub\Unnamed-Game\game-project-v-1.0\.godot\mono\temp\obj\Debug\Game_Project_v1.0.AssemblyInfoInputs.cache
+C:\Users\colte\OneDrive\Documents\GitHub\Unnamed-Game\game-project-v-1.0\.godot\mono\temp\obj\Debug\Game_Project_v1.0.AssemblyInfo.cs
+C:\Users\colte\OneDrive\Documents\GitHub\Unnamed-Game\game-project-v-1.0\.godot\mono\temp\obj\Debug\Game_Project_v1.0.csproj.CoreCompileInputs.cache
+C:\Users\colte\OneDrive\Documents\GitHub\Unnamed-Game\game-project-v-1.0\.godot\mono\temp\obj\Debug\Game_Project_v1.0.sourcelink.json
+C:\Users\colte\OneDrive\Documents\GitHub\Unnamed-Game\game-project-v-1.0\.godot\mono\temp\obj\Debug\Game_Project_v1.0.dll
+C:\Users\colte\OneDrive\Documents\GitHub\Unnamed-Game\game-project-v-1.0\.godot\mono\temp\obj\Debug\refint\Game_Project_v1.0.dll
+C:\Users\colte\OneDrive\Documents\GitHub\Unnamed-Game\game-project-v-1.0\.godot\mono\temp\obj\Debug\Game_Project_v1.0.pdb
