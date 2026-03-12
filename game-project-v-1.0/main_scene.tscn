@@ -190,7 +190,7 @@ position = Vector2(712, 246)
 position = Vector2(567, 246)
 
 [node name="Pbutton" parent="." unique_id=737130439 instance=ExtResource("12_671wp")]
-position = Vector2(498, 175)
+position = Vector2(849, 182)
 
-[node name="DoorButton" parent="." unique_id=2030207970 instance=ExtResource("13_mo76n")]
-position = Vector2(221, 14)
+[node name="PDoor" parent="." unique_id=2030207970 instance=ExtResource("13_mo76n")]
+position = Vector2(134, 74)

@@ -19,7 +19,7 @@ public partial class Pbutton : Area2D
 		if(body is CharacterBody2D character)
 		{
 			GD.Print("Player has pressed the button");
-			ButtonTrigger.Emit();
+			EmitSignal(SignalName.ButtonTrigger);
 		}
 	}
 

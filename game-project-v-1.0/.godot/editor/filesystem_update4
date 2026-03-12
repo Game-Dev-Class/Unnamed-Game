@@ -1,5 +1,9 @@
-res://DoorButton.tscn
-res://main_scene.tscn
-res://PDoor.tscn
 res://Pbutton.cs
 res://PDoor.cs
+res://PDoor.tscn
+res://Player.cs
+res://Hud.cs
+res://MainScene.cs
+res://Enemy.cs
+res://Whip.cs
+res://main_scene.tscn
