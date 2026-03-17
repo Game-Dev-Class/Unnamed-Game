@@ -7,6 +7,16 @@ public partial class Enemy : CharacterBody2D
 
     private bool _movingRight = true;
 
+    private bool _canMove;
+
+    public void EnableMovement() => _canMove = true;
+
+    public void DisableMovement()
+	{
+		_canMove = false;
+		Velocity = Vector2.Zero;
+	}
+
     public override void _Ready()
     {
         if (EnemySprite == null)
@@ -18,6 +28,14 @@ public partial class Enemy : CharacterBody2D
         // Apply gravity (same as player)
         if (!IsOnFloor())
             Velocity += GetGravity() * (float)delta;
+
+        if (!_canMove)
+		{
+			// Stop horizontal movement
+			Velocity = Vector2.Zero;
+			MoveAndSlide();
+			return;
+        }
 
         // Move only while on floor
         if (IsOnFloor())

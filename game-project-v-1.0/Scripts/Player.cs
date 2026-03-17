@@ -32,6 +32,11 @@ public partial class Player : CharacterBody2D
 		Velocity = Vector2.Zero;
 	}
 
+	public bool GetCanMove()
+	{
+		return _canMove;
+	}
+
 	public override void _PhysicsProcess(double delta)
 	{
 		// Even if movement is disabled, we still want gravity to apply
