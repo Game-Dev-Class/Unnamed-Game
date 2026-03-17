@@ -15,11 +15,10 @@ public partial class Enemy : CharacterBody2D
 
     public override void _PhysicsProcess(double delta)
     {
-        // Apply gravity (same as player)
+
         if (!IsOnFloor())
             Velocity += GetGravity() * (float)delta;
 
-        // Move only while on floor
         if (IsOnFloor())
         {
             float direction = _movingRight ? 1f : -1f;
@@ -32,24 +31,18 @@ public partial class Enemy : CharacterBody2D
 
         MoveAndSlide();
 
-        // Check collisions
         for (int i = 0; i < GetSlideCollisionCount(); i++)
         {
             var collision = GetSlideCollision(i);
-
-            // -------- PLAYER HIT DETECTION (NEW) --------
             if (collision.GetCollider() is Player player)
             {
                 player.TakeEnemyHit(GlobalPosition);
             }
-            // --------------------------------------------
 
             if (collision.GetCollider() is PhysicsBody2D collider)
             {
-                // Check if collider is on Layer 3
                 if ((collider.CollisionLayer & (1 << 2)) != 0)
                 {
-                    // Make sure it was a side collision
                     if (Mathf.Abs(collision.GetNormal().X) > 0.7f)
                     {
                         _movingRight = !_movingRight;
@@ -60,7 +53,6 @@ public partial class Enemy : CharacterBody2D
         }
     }
 
-    // Flip sprite AFTER physics (same system as Player)
     public override void _Process(double delta)
     {
         if (EnemySprite != null)

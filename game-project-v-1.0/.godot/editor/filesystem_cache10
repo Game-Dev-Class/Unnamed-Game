@@ -1,9 +1,11 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1773155153
+::res://::1773729928
 button.tscn::PackedScene::7591749338034094647::1772727737::0::1::::<><><>0<>0<><>::uid://cmtywltbm8oan::::res://Sprites/button_sprite_sheet.png
 Enemy.cs::CSharpScript::8578106873925132746::1773112849::0::1::::<>CharacterBody2D<><>0<>0<><>::
 enemy.tscn::PackedScene::5091991246998273684::1773155109::0::1::::<><><>0<>0<><>::uid://duhkfw8jgj5f7::::res://Enemy.cs<>uid://5da7vnxmfbb4::::res://Sprites/Evil Man animation sprite sheet.png
-enemy_whip.tscn::PackedScene::2865962747094954039::1773155123::0::1::::<><><>0<>0<><>::uid://duq3w17kib6f::::res://Sprites/Evil Man whip only animation sprite sheet.png<>uid://lsu7fijjeatv::::res://EnemyWhip.cs
+EnemyWhip.cs::CSharpScript::810507840248007915::1773730045::0::1::::<><><>0<>0<><>::
+enemy_whip.tscn::PackedScene::2865962747094954039::1773730056::0::1::::<><><>0<>0<><>::uid://duq3w17kib6f::::res://Sprites/Evil Man whip only animation sprite sheet.png<>uid://lsu7fijjeatv::::res://EnemyWhip.cs
+hearts.tscn::PackedScene::4360597602208743593::1773156619::0::1::::<><><>0<>0<><>::
 Hud.cs::CSharpScript::7385432121434173342::1772727722::0::1::::<>CanvasLayer<><>0<>0<><>::
 hud.tscn::PackedScene::4979409707274579739::1772727722::0::1::::<><><>0<>0<><>::uid://ddhs8ue64fx8i::::res://Hud.cs
 icon.svg::CompressedTexture2D/CompressedTexture2D::8349551825098459537::1772090239::1772090294::1::::<><><>0<>0<>43b1e8af9c7dcda7e66851ad1bb3f02d<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
@@ -15,11 +17,11 @@ Pbutton.tscn::PackedScene::2610084789000013216::1772726233::0::1::::<><><>0<>0<>
 platform.tscn::PackedScene::2951361466310411822::1772090239::0::1::::<><><>0<>0<><>::uid://dbtyq8f5q3yht::::res://Sprites/pixil-frame-0 (4).png
 Player.cs::CSharpScript::4574187675447781370::1773112732::0::1::::<>CharacterBody2D<><>0<>0<><>::
 player.tscn::PackedScene::2376157701377583383::1773112953::0::1::::<><><>0<>0<><>::uid://buhrr3ntyulgu::::res://Sprites/pixilart-sprite.png
-EnemyWhip.cs::CSharpScript::810507840248007915::1773154719::0::1::::<><><>0<>0<><>::
-Whip.cs::CSharpScript::2922775426284138324::1772727722::0::1::::<>Node2D<><>0<>0<><>::
+Test_scene.tscn::PackedScene::8373406367670454426::1773729928::0::1::::<><><>0<>0<><>::uid://bnej5xkh27fj5::::res://MainScene.cs<>uid://cc7cfd3pp5li6::::res://hud.tscn<>uid://84a78r8nvygt::::res://player.tscn<>uid://b6f1g5luu6l0e::::res://Player.cs<>uid://bs6cmnu8w1lsj::::res://whip.tscn<>uid://bhk425mynbpdi::::res://Sprites/pixil-frame-0 (2).png<>uid://doap5hxidi0wr::::res://Sprites/pixil-frame-0 (3).png<>uid://dbtyq8f5q3yht::::res://Sprites/pixil-frame-0 (4).png<>uid://bibwqy6q4pa2q::::res://platform.tscn<>uid://cesul71vygkeu::::res://enemy.tscn<>uid://dhxn4a045ytlf::::res://invisable_block.tscn<>uid://dgfrac2p56h2n::::res://button.tscn<>uid://bg3j8t2o2rg8f::::res://enemy_whip.tscn
+Whip.cs::CSharpScript::2922775426284138324::1773729127::0::1::::<>Node2D<><>0<>0<><>::
 whip.gd::GDScript::7796045558083886187::1772727722::0::1::::<>Node2D<><>0<>0<><>::
 whip.tscn::PackedScene::3713959158295372521::1773155153::0::1::::<><><>0<>0<><>::uid://bhv2xi8xk8wum::::res://Whip.cs<>uid://dbi31nbw8anwm::::res://Sprites/Whip/whip.png
-::res://Sprites/::1773156473
+::res://Sprites/::1773156480
 button_sprite_sheet.png::CompressedTexture2D::5655827770832949485::1772090239::1772726073::1::::<><><>0<>0<>921e7a6651ae2865b9be07965f2f85ab<>res://.godot/imported/button_sprite_sheet.png-5291dc7e670d69190c3758c51b19fefd.ctex::
 Evil Man animation sprite sheet.png::CompressedTexture2D::2111916711942166475::1772727722::1773111347::1::::<><><>0<>0<>fcb70c26fb50a35a5778094ba3758181<>res://.godot/imported/Evil Man animation sprite sheet.png-0b9493c52a0105b32b605ada8833bf8c.ctex::
 Evil Man whip only animation sprite sheet.png::CompressedTexture2D::252876757255124743::1773153973::1773154578::1::::<><><>0<>0<>f403fde4e9b72c6688dc7c79ae82c80e<>res://.godot/imported/Evil Man whip only animation sprite sheet.png-42ed1624525f4900242384d8b28d8da2.ctex::

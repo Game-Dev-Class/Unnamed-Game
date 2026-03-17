@@ -19,10 +19,19 @@ public partial class Player : CharacterBody2D
 	[Export] public float KnockbackVertical = 260f;
 	[Export] public float KnockbackDuration = 0.45f;
 
+	// Feet area to reliably detect stomps on stationary enemies
+	[Export] public Area2D FeetArea;
+
 	public override void _Ready()
 	{
 		if (PlayerSprite == null)
 			PlayerSprite = GetNodeOrNull<AnimatedSprite2D>("AnimatedSprite2D");
+
+		if (FeetArea == null)
+			FeetArea = GetNodeOrNull<Area2D>("FeetArea");
+
+		if (FeetArea != null)
+			FeetArea.BodyEntered += OnFeetBodyEntered;
 	}
 
 	public void EnableMovement()
@@ -49,13 +58,12 @@ public partial class Player : CharacterBody2D
 		if (!IsOnFloor())
 			Velocity += GetGravity() * (float)delta;
 
-		// Jump
+		// Jump (disabled while knocked)
 		if (!_isKnocked && Input.IsActionJustPressed("ui_accept") && IsOnFloor())
 			Velocity = new Vector2(Velocity.X, JUMP_VELOCITY);
 
-		// Movement input
+		// Movement input (disabled while knocked)
 		float direction = 0f;
-
 		if (!_isKnocked)
 			direction = Input.GetAxis("ui_left", "ui_right");
 
@@ -72,36 +80,46 @@ public partial class Player : CharacterBody2D
 				Velocity = new Vector2(Mathf.MoveToward(Velocity.X, 0, SPEED), Velocity.Y);
 		}
 
+		// Whip input
 		if (Input.IsActionJustPressed("whip"))
 			SpawnWhip();
 
+		// Move and collect collisions
 		MoveAndSlide();
 
-		// Collision checks
+		// Slide collisions handle side-hits (and top-hits if they appear here)
 		for (int i = 0; i < GetSlideCollisionCount(); i++)
 		{
 			var collision = GetSlideCollision(i);
+			var collider = collision.GetCollider();
+			Vector2 normal = collision.GetNormal();
 
-			if (collision.GetCollider() is Enemy enemy)
+			// Normal enemy logic: top -> kill, side -> knockback
+			if (collider is Enemy normalEnemy)
 			{
-				Vector2 normal = collision.GetNormal();
-
-				// Stomp enemy
 				if (normal.Y < -0.7f)
 				{
-					enemy.QueueFree();
+					// stomp kill
+					normalEnemy.QueueFree();
 					continue;
 				}
 
-				// Side collision (player ran into enemy)
 				if (Mathf.Abs(normal.X) > 0.7f)
 				{
-					TakeEnemyHit(enemy.GlobalPosition);
+					TakeEnemyHit(normalEnemy.GlobalPosition);
 				}
+			}
+			// WhipEnemy logic: any collision -> knockback (top or side)
+			else if (collider is WhipEnemy whipEnemy)
+			{
+				// If already knocked, skip
+				if (!_isKnocked)
+					TakeEnemyHit(whipEnemy.GlobalPosition);
 			}
 		}
 	}
 
+	// Keep sprite flipping in Process (after physics/animation)
 	public override void _Process(double delta)
 	{
 		if (PlayerSprite != null)
@@ -114,7 +132,6 @@ public partial class Player : CharacterBody2D
 			return;
 
 		float distance = DefaultWhipDistance;
-
 		if (WhipDistanceSlider != null)
 			distance = (float)WhipDistanceSlider.Value;
 
@@ -122,13 +139,11 @@ public partial class Player : CharacterBody2D
 		GetParent().AddChild(whipNode);
 
 		float dir = _facingRight ? 1f : -1f;
-
 		whipNode.GlobalPosition = GlobalPosition + new Vector2(distance * dir, 0);
-
 		whipNode.Scale = new Vector2(_facingRight ? -1f : 1f, 1f);
 	}
 
-	// Called when enemy hits the player
+	// External call (enemy hits player) or internal use (side/top collisions)
 	public void TakeEnemyHit(Vector2 enemyPosition)
 	{
 		if (_isKnocked)
@@ -143,5 +158,25 @@ public partial class Player : CharacterBody2D
 
 		var timer = GetTree().CreateTimer(KnockbackDuration);
 		timer.Timeout += () => { _isKnocked = false; };
+	}
+
+	// Feet area callback: stomps on stationary enemies
+	private void OnFeetBodyEntered(Node body)
+	{
+		// If player stomps a normal enemy -> kill
+		if (body is Enemy normalEnemy)
+		{
+			normalEnemy.QueueFree();
+			return;
+		}
+
+		// If player stomps a whip-only enemy -> knockback (player gets knocked)
+		if (body is WhipEnemy whipEnemy)
+		{
+			TakeEnemyHit(whipEnemy.GlobalPosition);
+			return;
+		}
+
+		// other bodies ignored here
 	}
 }
