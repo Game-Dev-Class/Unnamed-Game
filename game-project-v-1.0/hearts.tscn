@@ -1,3 +1,47 @@
 [gd_scene format=3 uid="uid://b3ekn1wrpu4s8"]
 
+[ext_resource type="Script" uid="uid://j26a5fdrute0" path="res://Hearts.cs" id="1_3ffj4"]
+[ext_resource type="Texture2D" uid="uid://cnhoinwhh11eb" path="res://Sprites/Hearts animation sprite sheet.png" id="1_qbydv"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3ffj4"]
+atlas = ExtResource("1_qbydv")
+region = Rect2(153, 0, 51, 13)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bhvj2"]
+atlas = ExtResource("1_qbydv")
+region = Rect2(102, 0, 51, 13)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_67sc3"]
+atlas = ExtResource("1_qbydv")
+region = Rect2(51, 0, 51, 13)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f3gic"]
+atlas = ExtResource("1_qbydv")
+region = Rect2(0, 0, 51, 13)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xbpan"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3ffj4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bhvj2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_67sc3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f3gic")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
 [node name="Hearts" type="Node2D" unique_id=1152025864]
+script = ExtResource("1_3ffj4")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1015562100]
+scale = Vector2(1.4999999, 1.5)
+sprite_frames = SubResource("SpriteFrames_xbpan")

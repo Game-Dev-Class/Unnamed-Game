@@ -4,10 +4,11 @@ public partial class Player : CharacterBody2D
 {
 	private const float SPEED = 300.0f;
 	private const float JUMP_VELOCITY = -350.0f;
-
+	private int Health = 3;
 	private bool _canMove = true;
 	private bool _facingRight = true;
 	private bool _isKnocked = false;
+	private bool _isIFrames = false;
 
 	[Export] public PackedScene WhipScene;
 	[Export] public float DefaultWhipDistance = 48.0f;
@@ -18,6 +19,7 @@ public partial class Player : CharacterBody2D
 	[Export] public float KnockbackHorizontal = 320f;
 	[Export] public float KnockbackVertical = 260f;
 	[Export] public float KnockbackDuration = 0.45f;
+	[Export] public float IFramesDuration = 1f;
 
 	// Feet area to reliably detect stomps on stationary enemies
 	[Export] public Area2D FeetArea;
@@ -146,18 +148,31 @@ public partial class Player : CharacterBody2D
 	// External call (enemy hits player) or internal use (side/top collisions)
 	public void TakeEnemyHit(Vector2 enemyPosition)
 	{
-		if (_isKnocked)
-			return;
 
-		float dir = Mathf.Sign(GlobalPosition.X - enemyPosition.X);
+		if (Health >= 0 && _isIFrames == false)
+		{
+			GD.Print("damage taken");
+			Health -= 1;
+			if (_isKnocked)
+				return;
 
-		Velocity = new Vector2(dir * KnockbackHorizontal, -KnockbackVertical);
+			float dir = Mathf.Sign(GlobalPosition.X - enemyPosition.X);
 
-		_facingRight = dir > 0;
-		_isKnocked = true;
+			Velocity = new Vector2(dir * KnockbackHorizontal, -KnockbackVertical);
 
-		var timer = GetTree().CreateTimer(KnockbackDuration);
-		timer.Timeout += () => { _isKnocked = false; };
+			_facingRight = dir > 0;
+			_isKnocked = true;
+			_isIFrames = true; //Add a setcollisionlayervalue line here to make the player phase through enemies
+
+			var timer = GetTree().CreateTimer(KnockbackDuration);
+			var iTimer = GetTree().CreateTimer(IFramesDuration);
+			timer.Timeout += () => { _isKnocked = false; };
+			iTimer.Timeout += () => { _isIFrames = false; };
+		}
+		else if (Health <= 0)
+		{
+			PlayerDies();
+		}
 	}
 
 	// Feet area callback: stomps on stationary enemies
@@ -178,5 +193,9 @@ public partial class Player : CharacterBody2D
 		}
 
 		// other bodies ignored here
+	}
+	private void PlayerDies()
+	{
+		QueueFree();
 	}
 }
