@@ -55,7 +55,7 @@ animations = [{
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_sweqy"]
 radius = 13.0
 
-[node name="player1" type="CharacterBody2D" unique_id=2054929316]
+[node name="player1" type="CharacterBody2D" unique_id=2054929316 groups=["player"]]
 collision_mask = 3
 script = SubResource("GDScript_4flbx")
 
