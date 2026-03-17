@@ -1,12 +1,12 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1773756429
+::res://::1773757061
 icon.svg::CompressedTexture2D/CompressedTexture2D::8349551825098459537::1772555905::1772556501::1::::<><><>0<>0<>43b1e8af9c7dcda7e66851ad1bb3f02d<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-::res://Scenes/::1773756308
+::res://Scenes/::1773756497
 enemy.tscn::PackedScene::5091991246998273684::1773756308::0::1::::<><><>0<>0<><>::uid://duhkfw8jgj5f7::::res://Scripts/Enemy.cs<>uid://5da7vnxmfbb4::::res://Sprites/Evil Man animation sprite sheet.png
 hud.tscn::PackedScene::4979409707274579739::1773756308::0::1::::<><><>0<>0<><>::uid://ddhs8ue64fx8i::::res://Scripts/Hud.cs
 invisable_block.tscn::PackedScene::7698905793796904135::1773756308::0::1::::<><><>0<>0<><>::
 level_2.tscn::PackedScene::3547145503157409340::1773756308::0::1::::<><><>0<>0<><>::uid://dbtyq8f5q3yht::::res://Sprites/pixil-frame-0 (4).png<>uid://84a78r8nvygt::::res://scenes/player.tscn
-main_scene.tscn::PackedScene::4901515150290933111::1773756308::0::1::::<><><>0<>0<><>::uid://cjlavr3bruxcw::::res://Scripts/MainScene.cs<>uid://cc7cfd3pp5li6::::res://Scenes/hud.tscn<>uid://84a78r8nvygt::::res://Scenes/player.tscn<>uid://6a2jh0mobu6o::::res://Scripts/Player.cs<>uid://bs6cmnu8w1lsj::::res://Scenes/whip.tscn<>uid://bhk425mynbpdi::::res://Sprites/pixil-frame-0 (2).png<>uid://doap5hxidi0wr::::res://Sprites/pixil-frame-0 (3).png<>uid://dbtyq8f5q3yht::::res://Sprites/pixil-frame-0 (4).png<>uid://bibwqy6q4pa2q::::res://Scenes/platform.tscn<>uid://cesul71vygkeu::::res://Scenes/enemy.tscn<>uid://dhxn4a045ytlf::::res://Scenes/invisable_block.tscn<>uid://bdglykxy43ai7::::res://Scenes/Pbutton.tscn<>uid://byqp14kubwxah::::res://visuals4_files/block.tscn<>uid://bt2namyhpp4nw::::res://visuals4_files/level_exit.tscn
+main_scene.tscn::PackedScene::4901515150290933111::1773756497::0::1::::<><><>0<>0<><>::uid://cjlavr3bruxcw::::res://Scripts/MainScene.cs<>uid://cc7cfd3pp5li6::::res://Scenes/hud.tscn<>uid://84a78r8nvygt::::res://Scenes/player.tscn<>uid://6a2jh0mobu6o::::res://Scripts/Player.cs<>uid://bs6cmnu8w1lsj::::res://Scenes/whip.tscn<>uid://bhk425mynbpdi::::res://Sprites/pixil-frame-0 (2).png<>uid://doap5hxidi0wr::::res://Sprites/pixil-frame-0 (3).png<>uid://dbtyq8f5q3yht::::res://Sprites/pixil-frame-0 (4).png<>uid://bibwqy6q4pa2q::::res://Scenes/platform.tscn<>uid://cesul71vygkeu::::res://Scenes/enemy.tscn<>uid://dhxn4a045ytlf::::res://Scenes/invisable_block.tscn<>uid://bdglykxy43ai7::::res://Scenes/Pbutton.tscn<>uid://byqp14kubwxah::::res://visuals4_files/block.tscn<>uid://bt2namyhpp4nw::::res://visuals4_files/level_exit.tscn
 Pbutton.tscn::PackedScene::2610084789000013216::1773756308::0::1::::<><><>0<>0<><>::uid://4cguvfgl8dte::::res://Scripts/Pbutton.cs<>uid://cmtywltbm8oan::::res://Sprites/button_sprite_sheet.png
 platform.tscn::PackedScene::2951361466310411822::1773756308::0::1::::<><><>0<>0<><>::uid://dbtyq8f5q3yht::::res://Sprites/pixil-frame-0 (4).png
 player.tscn::PackedScene::2376157701377583383::1773756308::0::1::::<><><>0<>0<><>::uid://buhrr3ntyulgu::::res://Sprites/pixilart-sprite.png
@@ -35,7 +35,7 @@ harpyWhip.png::CompressedTexture2D::6726989490589246152::1773329055::1773329077:
 lightning whip.png::CompressedTexture2D::78761276045888926::1773329055::1773329077::1::::<><><>0<>0<>5056589ed3cc7eed6610596f4ec44d65<>res://.godot/imported/lightning whip.png-2203e7619312671022c458699a2be01c.ctex::
 waterWhip.png::CompressedTexture2D::3051843563935643325::1773329055::1773329077::1::::<><><>0<>0<>09a190c252800f78c1cecaec3ac043cb<>res://.godot/imported/waterWhip.png-2f3518119acd95c246dd286cef3fb312.ctex::
 whip.png::CompressedTexture2D::7247713108580852540::1773329055::1773329077::1::::<><><>0<>0<>ec00eb7d964257e2f101a670393fc62e<>res://.godot/imported/whip.png-0e389ff91e3be590b9766965b46a7e7b.ctex::
-::res://visuals4_files/::1773756308
+::res://visuals4_files/::1773756431
 block.tscn::PackedScene::4104941700139993379::1773756308::0::1::::<><><>0<>0<><>::uid://dbujlma2hopdx::::res://visuals4_files/pixil-frame-0 (7).png
 Bounce.cs::CSharpScript::368247229946158622::1773756308::0::1::::<><><>0<>0<><>::
 bounce_pad.tscn::PackedScene::6028127834972885086::1773756308::0::1::::<><><>0<>0<><>::uid://fim8iwjwqmdi::::res://scripts/Bounce.cs<>uid://di4q80t63tjut::::res://Sprites/pixil-frame-0 (5).png
