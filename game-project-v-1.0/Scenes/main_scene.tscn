@@ -12,6 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://cesul71vygkeu" path="res://Scenes/enemy.tscn" id="10_b48ew"]
 [ext_resource type="PackedScene" uid="uid://dhxn4a045ytlf" path="res://Scenes/invisable_block.tscn" id="11_8edxt"]
 [ext_resource type="PackedScene" uid="uid://bdglykxy43ai7" path="res://Scenes/Pbutton.tscn" id="12_5oxhp"]
+[ext_resource type="PackedScene" uid="uid://b53s88qk6ncg3" path="res://PDoor.tscn" id="13_ioaeq"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_d5x1h"]
 texture = ExtResource("6_psl12")
@@ -191,3 +192,6 @@ position = Vector2(567, 246)
 
 [node name="Pbutton" parent="." unique_id=737130439 instance=ExtResource("12_5oxhp")]
 position = Vector2(498, 175)
+
+[node name="DoorBody" parent="." unique_id=205209727 instance=ExtResource("13_ioaeq")]
+position = Vector2(890, 201)
