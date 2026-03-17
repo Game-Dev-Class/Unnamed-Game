@@ -7,6 +7,7 @@ public partial class MainScene : Node2D
 	private Hud _hud;
 	private Player _player;
 	private Pbutton _button;
+	private PDoor _door;
 	
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
@@ -15,6 +16,7 @@ public partial class MainScene : Node2D
 		_hud = GetNode<Hud>("HUD");
 		_player = GetNode<Player>("Player");
 		_button = GetNode<Pbutton>("Pbutton");
+		_door = GetNode<PDoor>("PDoor");
 		
 		_hud.StartGame += StartStage;
 		_player.DisableMovement(); 
