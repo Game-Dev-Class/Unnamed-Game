@@ -1,4 +1,5 @@
 AnimatedSprite2D
+AnimatableBody2D
 CharacterBody2D
 StaticBody2D
 CollisionShape2D

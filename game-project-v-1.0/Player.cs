@@ -4,7 +4,7 @@ public partial class Player : CharacterBody2D
 {
 	private const float SPEED = 300.0f;
 	private const float JUMP_VELOCITY = -350.0f;
-	private int Health = 3;
+	public int Health = 3;
 	private bool _canMove = true;
 	private bool _facingRight = true;
 	private bool _isKnocked = false;
@@ -23,7 +23,7 @@ public partial class Player : CharacterBody2D
 
 	// Feet area to reliably detect stomps on stationary enemies
 	[Export] public Area2D FeetArea;
-
+	[Signal] public delegate void HealthChangedEventHandler(int health);
 	public override void _Ready()
 	{
 		if (PlayerSprite == null)
@@ -107,9 +107,7 @@ public partial class Player : CharacterBody2D
 				}
 
 				if (Mathf.Abs(normal.X) > 0.7f)
-				{
 					TakeEnemyHit(normalEnemy.GlobalPosition);
-				}
 			}
 			// WhipEnemy logic: any collision -> knockback (top or side)
 			else if (collider is WhipEnemy whipEnemy)
@@ -148,31 +146,34 @@ public partial class Player : CharacterBody2D
 	// External call (enemy hits player) or internal use (side/top collisions)
 	public void TakeEnemyHit(Vector2 enemyPosition)
 	{
+		if (_isIFrames)
+			return;
 
-		if (Health >= 0 && _isIFrames == false)
-		{
-			GD.Print("damage taken");
-			Health -= 1;
-			if (_isKnocked)
-				return;
+		GD.Print("damage taken");
+		Health -= 1;
+		EmitSignal(SignalName.HealthChanged, Health);
 
-			float dir = Mathf.Sign(GlobalPosition.X - enemyPosition.X);
-
-			Velocity = new Vector2(dir * KnockbackHorizontal, -KnockbackVertical);
-
-			_facingRight = dir > 0;
-			_isKnocked = true;
-			_isIFrames = true; //Add a setcollisionlayervalue line here to make the player phase through enemies
-
-			var timer = GetTree().CreateTimer(KnockbackDuration);
-			var iTimer = GetTree().CreateTimer(IFramesDuration);
-			timer.Timeout += () => { _isKnocked = false; };
-			iTimer.Timeout += () => { _isIFrames = false; };
-		}
-		else if (Health <= 0)
+		if (Health <= 0)
 		{
 			PlayerDies();
+			return;
 		}
+
+		if (_isKnocked)
+			return;
+
+		float dir = Mathf.Sign(GlobalPosition.X - enemyPosition.X);
+
+		Velocity = new Vector2(dir * KnockbackHorizontal, -KnockbackVertical);
+
+		_facingRight = dir > 0;
+		_isKnocked = true;
+		_isIFrames = true;
+
+		var timer = GetTree().CreateTimer(KnockbackDuration);
+		var iTimer = GetTree().CreateTimer(IFramesDuration);
+		timer.Timeout += () => { _isKnocked = false; };
+		iTimer.Timeout += () => { _isIFrames = false; };
 	}
 
 	// Feet area callback: stomps on stationary enemies

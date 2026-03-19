@@ -39,9 +39,8 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Hearts" type="Node2D" unique_id=1152025864]
-script = ExtResource("1_3ffj4")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1015562100]
-scale = Vector2(1.4999999, 1.5)
+[node name="Hearts" type="AnimatedSprite2D" unique_id=242589138]
+position = Vector2(0, 2.3841858e-07)
+scale = Vector2(1.4230769, 1.4230769)
 sprite_frames = SubResource("SpriteFrames_xbpan")
+script = ExtResource("1_3ffj4")

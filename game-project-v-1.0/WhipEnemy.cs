@@ -15,34 +15,42 @@ public partial class WhipEnemy : CharacterBody2D
 
     public override void _PhysicsProcess(double delta)
     {
-        if (!IsOnFloor())
-            Velocity += GetGravity() * (float)delta;
+        float dt = (float)delta;
 
+        // ✅ ALWAYS apply gravity
+        if (!IsOnFloor())
+            Velocity += GetGravity() * dt;
+        else
+            Velocity = new Vector2(Velocity.X, 0); // lock to floor
+
+        // ✅ Horizontal movement ONLY when grounded
         if (IsOnFloor())
         {
             float direction = _movingRight ? 1f : -1f;
             Velocity = new Vector2(direction * MoveSpeed, Velocity.Y);
         }
-        else
-        {
-            Velocity = new Vector2(0, Velocity.Y);
-        }
 
         MoveAndSlide();
 
+        // ✅ Handle collisions AFTER movement
         for (int i = 0; i < GetSlideCollisionCount(); i++)
         {
             var collision = GetSlideCollision(i);
-            if (collision.GetCollider() is Player player)
+            var collider = collision.GetCollider();
+            Vector2 normal = collision.GetNormal();
+
+            // 🔹 Player hit → knockback ONLY (no physics reaction)
+            if (collider is Player player)
             {
                 player.TakeEnemyHit(GlobalPosition);
             }
 
-            if (collision.GetCollider() is PhysicsBody2D collider)
+            // 🔹 Flip ONLY on invisible wall (layer 3)
+            if (collider is PhysicsBody2D body)
             {
-                if ((collider.CollisionLayer & (1 << 2)) != 0)
+                if ((body.CollisionLayer & (1 << 2)) != 0)
                 {
-                    if (Mathf.Abs(collision.GetNormal().X) > 0.7f)
+                    if (Mathf.Abs(normal.X) > 0.7f)
                     {
                         _movingRight = !_movingRight;
                         break;

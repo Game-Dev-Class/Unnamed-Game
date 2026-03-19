@@ -162,6 +162,10 @@ DefaultWhipDistance = 48.0
 KnockbackHorizontal = 320.0
 KnockbackVertical = 260.0
 KnockbackDuration = 0.45
+IFramesDuration = 1.0
+
+[node name="Hearts" parent="." unique_id=1152025864 instance=ExtResource("14_n28ty")]
+position = Vector2(51, 36)
 
 [node name="Stage" type="TileMapLayer" parent="." unique_id=854476079]
 use_parent_material = true
@@ -195,6 +199,3 @@ position = Vector2(498, 176)
 
 [node name="WhipEnemy" parent="." unique_id=513238738 instance=ExtResource("13_0l5ug")]
 position = Vector2(132, 102)
-
-[node name="Hearts" parent="." unique_id=1152025864 instance=ExtResource("14_n28ty")]
-position = Vector2(51, 36)

@@ -56,7 +56,7 @@ animations = [{
 size = Vector2(26, 29)
 
 [node name="player1" type="CharacterBody2D" unique_id=2054929316]
-collision_mask = 3
+collision_mask = 11
 script = SubResource("GDScript_4flbx")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=855521739]
@@ -67,5 +67,3 @@ frame_progress = 0.8313066
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=289898514]
 position = Vector2(0, -0.5)
 shape = SubResource("RectangleShape2D_4flbx")
-
-[connection signal="input_event" from="." to="." method="_on_input_event"]

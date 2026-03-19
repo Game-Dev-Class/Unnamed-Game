@@ -1,9 +1,11 @@
 res://WhipEnemy.cs
+res://Hearts.cs
 res://Enemy.cs
 res://Player.cs
 res://Hud.cs
 res://MainScene.cs
 res://Whip.cs
+res://enemy_whip.tscn
+res://player.tscn
 res://hearts.tscn
 res://Test_scene.tscn
-res://Hearts.cs
