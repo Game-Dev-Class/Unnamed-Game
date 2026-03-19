@@ -1,37 +1,38 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1773900538
-button.tscn::PackedScene::7591749338034094647::1772727737::0::1::::<><><>0<>0<><>::uid://cmtywltbm8oan::::res://Sprites/button_sprite_sheet.png
-Enemy.cs::CSharpScript::8578106873925132746::1773734037::0::1::::<>CharacterBody2D<><>0<>0<><>::
-enemy.tscn::PackedScene::5091991246998273684::1773155109::0::1::::<><><>0<>0<><>::uid://duhkfw8jgj5f7::::res://Enemy.cs<>uid://5da7vnxmfbb4::::res://Sprites/Evil Man animation sprite sheet.png
-enemy_whip.tscn::PackedScene::2865962747094954039::1773731889::0::1::::<><><>0<>0<><>::uid://duq3w17kib6f::::res://Sprites/Evil Man whip only animation sprite sheet.png<>uid://lsu7fijjeatv::::res://WhipEnemy.cs
-Hearts.cs::CSharpScript::689321602462024381::1773758822::0::1::::<>Node2D<><>0<>0<><>::
-hearts.tscn::PackedScene::4360597602208743593::1773759353::0::1::::<><><>0<>0<><>::uid://j26a5fdrute0::::res://Hearts.cs<>uid://cnhoinwhh11eb::::res://Sprites/Hearts animation sprite sheet.png
-Hud.cs::CSharpScript::7385432121434173342::1772727722::0::1::::<>CanvasLayer<><>0<>0<><>::
-hud.tscn::PackedScene::4979409707274579739::1772727722::0::1::::<><><>0<>0<><>::uid://ddhs8ue64fx8i::::res://Hud.cs
+::res://::1773933264
+button.tscn::PackedScene::7591749338034094647::1773929810::0::1::::<><><>0<>0<><>::uid://cmtywltbm8oan::::res://Sprites/button_sprite_sheet.png
+enemy.tscn::PackedScene::5091991246998273684::1773929810::0::1::::<><><>0<>0<><>::uid://duhkfw8jgj5f7::::res://Enemy.cs<>uid://5da7vnxmfbb4::::res://Sprites/Evil Man animation sprite sheet.png
+enemy_whip.tscn::PackedScene::2865962747094954039::1773929810::0::1::::<><><>0<>0<><>::uid://duq3w17kib6f::::res://Sprites/Evil Man whip only animation sprite sheet.png<>uid://lsu7fijjeatv::::res://WhipEnemy.cs
+Hearts.cs::CSharpScript::689321602462024381::1773929810::0::1::::<>AnimatedSprite2D<><>0<>0<><>::
+hearts.tscn::PackedScene::4360597602208743593::1773929810::0::1::::<><><>0<>0<><>::uid://j26a5fdrute0::::res://Hearts.cs<>uid://cnhoinwhh11eb::::res://Sprites/Hearts animation sprite sheet.png
+hud.tscn::PackedScene::4979409707274579739::1773929810::0::1::::<><><>0<>0<><>::uid://ddhs8ue64fx8i::::res://Hud.cs
 icon.svg::CompressedTexture2D/CompressedTexture2D::8349551825098459537::1772090239::1772090294::1::::<><><>0<>0<>43b1e8af9c7dcda7e66851ad1bb3f02d<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-invisable_block.tscn::PackedScene::7698905793796904135::1772727737::0::1::::<><><>0<>0<><>::
-MainScene.cs::CSharpScript::3307734412596296564::1772726202::0::1::::<>Node2D<><>0<>0<><>::
-main_scene.tscn::PackedScene::4901515150290933111::1772728183::0::1::::<><><>0<>0<><>::uid://bhk425mynbpdi::::res://Sprites/pixil-frame-0 (2).png<>uid://bnej5xkh27fj5::::res://MainScene.cs<>uid://cc7cfd3pp5li6::::res://hud.tscn<>uid://doap5hxidi0wr::::res://Sprites/pixil-frame-0 (3).png<>uid://dbtyq8f5q3yht::::res://Sprites/pixil-frame-0 (4).png<>uid://84a78r8nvygt::::res://player.tscn<>uid://b6f1g5luu6l0e::::res://Player.cs<>uid://bs6cmnu8w1lsj::::res://whip.tscn<>uid://bibwqy6q4pa2q::::res://platform.tscn<>uid://dgfrac2p56h2n::::res://button.tscn<>uid://cesul71vygkeu::::res://enemy.tscn<>uid://dhxn4a045ytlf::::res://invisable_block.tscn
-Pbutton.cs::CSharpScript::-1::1772726202::0::1::::<>Area2D<><>0<>0<><>::
-Pbutton.tscn::PackedScene::2610084789000013216::1772726233::0::1::::<><><>0<>0<><>::uid://4cguvfgl8dte::::res://Pbutton.cs<>uid://cmtywltbm8oan::::res://Sprites/button_sprite_sheet.png
-platform.tscn::PackedScene::2951361466310411822::1772090239::0::1::::<><><>0<>0<><>::uid://dbtyq8f5q3yht::::res://Sprites/pixil-frame-0 (4).png
-Player.cs::CSharpScript::4574187675447781370::1773761405::0::1::::<>CharacterBody2D<><>0<>0<><>::
-player.tscn::PackedScene::2376157701377583383::1773112953::0::1::::<><><>0<>0<><>::uid://buhrr3ntyulgu::::res://Sprites/pixilart-sprite.png
-Test_scene.tscn::PackedScene::8373406367670454426::1773758684::0::1::::<><><>0<>0<><>::uid://bnej5xkh27fj5::::res://MainScene.cs<>uid://cc7cfd3pp5li6::::res://hud.tscn<>uid://84a78r8nvygt::::res://player.tscn<>uid://b6f1g5luu6l0e::::res://Player.cs<>uid://bs6cmnu8w1lsj::::res://whip.tscn<>uid://bhk425mynbpdi::::res://Sprites/pixil-frame-0 (2).png<>uid://doap5hxidi0wr::::res://Sprites/pixil-frame-0 (3).png<>uid://dbtyq8f5q3yht::::res://Sprites/pixil-frame-0 (4).png<>uid://bibwqy6q4pa2q::::res://platform.tscn<>uid://cesul71vygkeu::::res://enemy.tscn<>uid://dhxn4a045ytlf::::res://invisable_block.tscn<>uid://dgfrac2p56h2n::::res://button.tscn<>uid://bg3j8t2o2rg8f::::res://enemy_whip.tscn<>uid://b3ekn1wrpu4s8::::res://hearts.tscn
-Whip.cs::CSharpScript::2922775426284138324::1773731103::0::1::::<>Node2D<><>0<>0<><>::
-whip.gd::GDScript::7796045558083886187::1772727722::0::1::::<>Node2D<><>0<>0<><>::
-whip.tscn::PackedScene::3713959158295372521::1773730822::0::1::::<><><>0<>0<><>::uid://bhv2xi8xk8wum::::res://Whip.cs<>uid://dbi31nbw8anwm::::res://Sprites/Whip/whip.png
-WhipEnemy.cs::CSharpScript::810507840248007915::1773734055::0::1::::<>CharacterBody2D<><>0<>0<><>::
-::res://Sprites/::1773758446
+invisable_block.tscn::PackedScene::7698905793796904135::1773929810::0::1::::<><><>0<>0<><>::
+main_scene.tscn::PackedScene::4901515150290933111::1773929810::0::1::::<><><>0<>0<><>::uid://bhk425mynbpdi::::res://Sprites/pixil-frame-0 (2).png<>uid://bnej5xkh27fj5::::res://MainScene.cs<>uid://cc7cfd3pp5li6::::res://hud.tscn<>uid://doap5hxidi0wr::::res://Sprites/pixil-frame-0 (3).png<>uid://dbtyq8f5q3yht::::res://Sprites/pixil-frame-0 (4).png<>uid://84a78r8nvygt::::res://player.tscn<>uid://b6f1g5luu6l0e::::res://Player.cs<>uid://bs6cmnu8w1lsj::::res://whip.tscn<>uid://bibwqy6q4pa2q::::res://platform.tscn<>uid://dgfrac2p56h2n::::res://button.tscn<>uid://cesul71vygkeu::::res://enemy.tscn<>uid://dhxn4a045ytlf::::res://invisable_block.tscn
+Pbutton.cs::CSharpScript::-1::1773929810::0::1::::<>Area2D<><>0<>0<><>::
+Pbutton.tscn::PackedScene::2610084789000013216::1773929810::0::1::::<><><>0<>0<><>::uid://4cguvfgl8dte::::res://Pbutton.cs<>uid://cmtywltbm8oan::::res://Sprites/button_sprite_sheet.png
+platform.tscn::PackedScene::2951361466310411822::1773929810::0::1::::<><><>0<>0<><>::uid://dbtyq8f5q3yht::::res://Sprites/pixil-frame-0 (4).png
+player.tscn::PackedScene::2376157701377583383::1773929810::0::1::::<><><>0<>0<><>::uid://buhrr3ntyulgu::::res://Sprites/pixilart-sprite.png
+Enemy.cs::CSharpScript::8578106873925132746::1773929810::0::1::::<>CharacterBody2D<><>0<>0<><>::
+Player.cs::CSharpScript::4574187675447781370::1773933364::0::1::::<>CharacterBody2D<><>0<>0<><>::
+Hud.cs::CSharpScript::7385432121434173342::1773929810::0::1::::<>CanvasLayer<><>0<>0<><>::
+MainScene.cs::CSharpScript::3307734412596296564::1773929810::0::1::::<>Node2D<><>0<>0<><>::
+Whip.cs::CSharpScript::2922775426284138324::1773929810::0::1::::<>Node2D<><>0<>0<><>::
+Test_scene.tscn::PackedScene::8373406367670454426::1773933264::0::1::::<><><>0<>0<><>::uid://bnej5xkh27fj5::::res://MainScene.cs<>uid://cc7cfd3pp5li6::::res://hud.tscn<>uid://84a78r8nvygt::::res://player.tscn<>uid://b6f1g5luu6l0e::::res://Player.cs<>uid://bs6cmnu8w1lsj::::res://whip.tscn<>uid://bhk425mynbpdi::::res://Sprites/pixil-frame-0 (2).png<>uid://doap5hxidi0wr::::res://Sprites/pixil-frame-0 (3).png<>uid://dbtyq8f5q3yht::::res://Sprites/pixil-frame-0 (4).png<>uid://bibwqy6q4pa2q::::res://platform.tscn<>uid://cesul71vygkeu::::res://enemy.tscn<>uid://dhxn4a045ytlf::::res://invisable_block.tscn<>uid://dgfrac2p56h2n::::res://button.tscn<>uid://bg3j8t2o2rg8f::::res://enemy_whip.tscn<>uid://b3ekn1wrpu4s8::::res://hearts.tscn
+whip.gd::GDScript::7796045558083886187::1773929810::0::1::::<>Node2D<><>0<>0<><>::
+whip.tscn::PackedScene::3713959158295372521::1773929810::0::1::::<><><>0<>0<><>::uid://bhv2xi8xk8wum::::res://Whip.cs<>uid://dbi31nbw8anwm::::res://Sprites/Whip/whip.png
+WhipEnemy.cs::CSharpScript::810507840248007915::1773929810::0::1::::<>CharacterBody2D<><>0<>0<><>::
+::res://Sprites/::1773933940
 button_sprite_sheet.png::CompressedTexture2D::5655827770832949485::1772090239::1772726073::1::::<><><>0<>0<>921e7a6651ae2865b9be07965f2f85ab<>res://.godot/imported/button_sprite_sheet.png-5291dc7e670d69190c3758c51b19fefd.ctex::
 Evil Man animation sprite sheet.png::CompressedTexture2D::2111916711942166475::1772727722::1773111347::1::::<><><>0<>0<>fcb70c26fb50a35a5778094ba3758181<>res://.godot/imported/Evil Man animation sprite sheet.png-0b9493c52a0105b32b605ada8833bf8c.ctex::
-Evil Man whip only animation sprite sheet.png::CompressedTexture2D::252876757255124743::1773153973::1773154578::1::::<><><>0<>0<>f403fde4e9b72c6688dc7c79ae82c80e<>res://.godot/imported/Evil Man whip only animation sprite sheet.png-42ed1624525f4900242384d8b28d8da2.ctex::
-Hearts animation sprite sheet.png::CompressedTexture2D::5700612020326714641::1773758446::1773758341::1::::<><><>0<>0<>4d2cc8bf78d57d7e8469c0e7dbfacef7<>res://.godot/imported/Hearts animation sprite sheet.png-0dac69a866c51718579e5dac8e45cf02.ctex::
-Hearts sprite sheet.png::CompressedTexture2D::1799416305779190535::1773156473::1773758023::1::::<><><>0<>0<>0e160d225b6c093137cae087eab51f1e<>res://.godot/imported/Hearts sprite sheet.png-3c3e31a1026d8d7563a484a5a7ac8d0b.ctex::
+Evil Man whip only animation sprite sheet.png::CompressedTexture2D::252876757255124743::1773929810::1773929852::1::::<><><>0<>0<>f403fde4e9b72c6688dc7c79ae82c80e<>res://.godot/imported/Evil Man whip only animation sprite sheet.png-42ed1624525f4900242384d8b28d8da2.ctex::
+Hearts animation sprite sheet.png::CompressedTexture2D::5700612020326714641::1773929810::1773929852::1::::<><><>0<>0<>4d2cc8bf78d57d7e8469c0e7dbfacef7<>res://.godot/imported/Hearts animation sprite sheet.png-0dac69a866c51718579e5dac8e45cf02.ctex::
+Hearts sprite sheet.png::CompressedTexture2D::1799416305779190535::1773929810::1773929852::1::::<><><>0<>0<>0e160d225b6c093137cae087eab51f1e<>res://.godot/imported/Hearts sprite sheet.png-3c3e31a1026d8d7563a484a5a7ac8d0b.ctex::
 pixil-frame-0 (2).png::CompressedTexture2D::2900196971271621762::1772090239::1772726073::1::::<><><>0<>0<>24f0d0f72086e86c87dfe344752680c9<>res://.godot/imported/pixil-frame-0 (2).png-9bb0bebbe4b8d7a5f1b384f88ab72233.ctex::
 pixil-frame-0 (3).png::CompressedTexture2D::8142870594282189457::1772090239::1772726073::1::::<><><>0<>0<>d0a55933eb52a77fd0d5832001dae2b1<>res://.godot/imported/pixil-frame-0 (3).png-7b2a4ee334076f9c9a1b0dd9dfa9279b.ctex::
 pixil-frame-0 (4).png::CompressedTexture2D::7270161594953494209::1772090239::1772726073::1::::<><><>0<>0<>8d868175d89d647153e3730e1a6ee4f1<>res://.godot/imported/pixil-frame-0 (4).png-5351e88255edb029ecd184861e71df00.ctex::
 pixilart-sprite.png::CompressedTexture2D::3805712239737985868::1772517118::1772726073::1::::<><><>0<>0<>696cec9623912be061acc6c279e6d511<>res://.godot/imported/pixilart-sprite.png-e5727e90d5464e3f954806d2e8eb3b2c.ctex::
+Sign sprite.png::CompressedTexture2D::3017872912383048646::1773933940::1773933944::1::::<><><>0<>0<>139b9cb72116ee89c35bfc5306506849<>res://.godot/imported/Sign sprite.png-dec563b576f137daba9aee72dd65f827.ctex::
 ::res://Sprites/Whip/::1773111347
 barbedWhip.png::CompressedTexture2D::6855192116879262247::1772727722::1773111347::1::::<><><>0<>0<>594e25cf80525afce5b0b67f83c171e4<>res://.godot/imported/barbedWhip.png-4233212351b83451b1b77016a5930ef4.ctex::
 bone whip.png::CompressedTexture2D::696791112508619105::1772727722::1773111347::1::::<><><>0<>0<>95e6027f2c10705345d88ba0d9cb10cb<>res://.godot/imported/bone whip.png-acda450aec0ec54f960e2634da2ddae6.ctex::
