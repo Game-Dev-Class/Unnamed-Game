@@ -22,6 +22,7 @@ public partial class MainScene : Node2D
 		_enemy1 = GetNode<Enemy>("Enemy");
 		_enemy2 = GetNode<Enemy>("enemy");
 		
+		_button.ButtonTrigger += _door.OnButtonTrigger;
 		_hud.StartGame += StartStage;
 		_player.DisableMovement(); 
 		_enemy1.DisableMovement();
@@ -30,6 +31,7 @@ public partial class MainScene : Node2D
 	
 	private void StartStage()
 	{
+		_door.OnButtonTrigger();
 		_tileMap.Visible = true;
 		_player.Visible = true;
 		_player.EnableMovement();
@@ -57,6 +59,7 @@ public partial class MainScene : Node2D
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta)
 	{
+
 		if (Input.IsActionJustPressed("pause"))
 		{
 			PauseGame();
