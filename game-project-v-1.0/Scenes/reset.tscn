@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://cr3srfaok2jhj"]
+
+[ext_resource type="Script" uid="uid://bc0fgaqxehq7b" path="res://Scripts/reset.cs" id="1_d05gq"]
+
+[node name="reset" type="Node" unique_id=1775733007]
+script = ExtResource("1_d05gq")
