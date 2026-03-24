@@ -68,4 +68,11 @@ frame_progress = 0.8313066
 position = Vector2(0, -1)
 shape = SubResource("CapsuleShape2D_sweqy")
 
+[node name="Camera2D" type="Camera2D" parent="." unique_id=2079738196]
+zoom = Vector2(1.5, 1.5)
+limit_left = 0
+limit_top = 0
+limit_right = 1500
+position_smoothing_enabled = true
+
 [connection signal="input_event" from="." to="." method="_on_input_event"]
