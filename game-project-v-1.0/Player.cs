@@ -23,7 +23,9 @@ public partial class Player : CharacterBody2D
 
 	// Feet area to reliably detect stomps on stationary enemies
 	[Export] public Area2D FeetArea;
+
 	[Signal] public delegate void HealthChangedEventHandler(int health);
+
 	public override void _Ready()
 	{
 		if (PlayerSprite == null)
@@ -143,6 +145,13 @@ public partial class Player : CharacterBody2D
 		whipNode.Scale = new Vector2(_facingRight ? -1f : 1f, 1f);
 	}
 
+	private void SetInvulnerableCollision(bool enabled)
+	{
+		SetCollisionLayerValue(1, enabled); // enemies won't detect the player
+		SetCollisionMaskValue(2, enabled);  // player won't collide with enemy layer 2
+		SetCollisionMaskValue(4, enabled);  // player won't collide with enemy layer 4
+	}
+
 	// External call (enemy hits player) or internal use (side/top collisions)
 	public void TakeEnemyHit(Vector2 enemyPosition)
 	{
@@ -170,10 +179,17 @@ public partial class Player : CharacterBody2D
 		_isKnocked = true;
 		_isIFrames = true;
 
+		SetInvulnerableCollision(false);
+
 		var timer = GetTree().CreateTimer(KnockbackDuration);
 		var iTimer = GetTree().CreateTimer(IFramesDuration);
+
 		timer.Timeout += () => { _isKnocked = false; };
-		iTimer.Timeout += () => { _isIFrames = false; };
+		iTimer.Timeout += () =>
+		{
+			_isIFrames = false;
+			SetInvulnerableCollision(true);
+		};
 	}
 
 	// Feet area callback: stomps on stationary enemies
@@ -195,6 +211,7 @@ public partial class Player : CharacterBody2D
 
 		// other bodies ignored here
 	}
+
 	private void PlayerDies()
 	{
 		QueueFree();

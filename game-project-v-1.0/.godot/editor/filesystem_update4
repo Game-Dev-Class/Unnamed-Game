@@ -1,9 +1,12 @@
+res://Sign.cs
+res://sign.tscn
+res://Test_scene.tscn
 res://Hearts.cs
 res://WhipEnemy.cs
-res://whip.tscn
-res://Test_scene.tscn
 res://Enemy.cs
 res://Player.cs
 res://Hud.cs
 res://MainScene.cs
 res://Whip.cs
+res://player.tscn
+res://enemy.tscn

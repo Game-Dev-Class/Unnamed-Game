@@ -14,6 +14,7 @@
 [ext_resource type="PackedScene" uid="uid://dgfrac2p56h2n" path="res://button.tscn" id="12_e0mcv"]
 [ext_resource type="PackedScene" uid="uid://bg3j8t2o2rg8f" path="res://enemy_whip.tscn" id="13_0l5ug"]
 [ext_resource type="PackedScene" uid="uid://b3ekn1wrpu4s8" path="res://hearts.tscn" id="14_n28ty"]
+[ext_resource type="PackedScene" uid="uid://1e1pdlxib7aw" path="res://sign.tscn" id="15_e6yip"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_d5x1h"]
 texture = ExtResource("6_pp5wr")
@@ -199,3 +200,8 @@ KnockbackHorizontal = 320.0
 KnockbackVertical = 260.0
 KnockbackDuration = 0.45
 IFramesDuration = 1.0
+
+[node name="Sign" parent="." unique_id=1780301741 instance=ExtResource("15_e6yip")]
+position = Vector2(607, 238)
+scale = Vector2(1.5, 1.5)
+SignText = "Lorem Ipsum"
