@@ -15,7 +15,7 @@
 [ext_resource type="PackedScene" uid="uid://bt2namyhpp4nw" path="res://visuals4_files/level_exit.tscn" id="14_7ewk0"]
 [ext_resource type="PackedScene" uid="uid://cr3srfaok2jhj" path="res://Scenes/reset.tscn" id="14_lhp3t"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hq1ik"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7ewk0"]
 texture = ExtResource("8_oyb3p")
 texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
@@ -72,7 +72,7 @@ texture_region_size = Vector2i(32, 32)
 14:3/0 = 0
 15:3/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7ewk0"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lhp3t"]
 texture = ExtResource("7_ioaeq")
 texture_region_size = Vector2i(32, 32)
 1:0/0 = 0
@@ -111,10 +111,10 @@ texture_region_size = Vector2i(32, 32)
 [sub_resource type="TileSet" id="TileSet_hq1ik"]
 tile_size = Vector2i(32, 32)
 physics_layer_0/collision_layer = 1
-sources/2 = SubResource("TileSetAtlasSource_hq1ik")
-sources/3 = SubResource("TileSetAtlasSource_7ewk0")
+sources/2 = SubResource("TileSetAtlasSource_7ewk0")
+sources/3 = SubResource("TileSetAtlasSource_lhp3t")
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ioaeq"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gnsmo"]
 texture = ExtResource("7_ioaeq")
 texture_region_size = Vector2i(32, 32)
 3:0/0 = 0
@@ -184,7 +184,7 @@ texture_region_size = Vector2i(32, 32)
 
 [sub_resource type="TileSet" id="TileSet_7ewk0"]
 tile_size = Vector2i(32, 32)
-sources/0 = SubResource("TileSetAtlasSource_ioaeq")
+sources/0 = SubResource("TileSetAtlasSource_gnsmo")
 
 [sub_resource type="Animation" id="Animation_7ycvg"]
 length = 0.001
@@ -285,7 +285,7 @@ position = Vector2(498, 175)
 position = Vector2(767, 227)
 
 [node name="LevelExit" parent="." unique_id=1768640012 instance=ExtResource("14_7ewk0")]
-position = Vector2(22, 63)
+position = Vector2(43, 87)
 collision_mask = 3
 
 [node name="reset" parent="." unique_id=1775733007 instance=ExtResource("14_lhp3t")]

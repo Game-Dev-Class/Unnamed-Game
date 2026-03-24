@@ -10,3 +10,5 @@ res://Scenes/player.tscn
 res://Scripts/reset.cs
 res://Scenes/level_2.tscn
 res://boundary.tscn
+res://visuals4_files/level_exit.tscn
+res://Scenes/main_scene.tscn
