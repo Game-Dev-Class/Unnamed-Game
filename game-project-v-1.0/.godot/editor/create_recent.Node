@@ -1,9 +1,7 @@
-Label
+StaticBody2D
 CollisionShape2D
 Sprite2D
 Area2D
 AnimatedSprite2D
-AnimatableBody2D
 CharacterBody2D
-StaticBody2D
 HSlider
