@@ -1,7 +1,7 @@
 is_global = true
 build_property.GodotDisabledSourceGenerators = 
-build_property.GodotProjectDir = C:\Users\colte\OneDrive\Documents\GitHub\Unnamed-Game\game-project-v-1.0\
-build_property.GodotProjectDirBase64 = QzpcVXNlcnNcY29sdGVcT25lRHJpdmVcRG9jdW1lbnRzXEdpdEh1YlxVbm5hbWVkLUdhbWVcZ2FtZS1wcm9qZWN0LXYtMS4wXA==
+build_property.GodotProjectDir = C:\Dev\CSE290-game\Unnamed-Game\Unnamed-Game\game-project-v-1.0\
+build_property.GodotProjectDirBase64 = QzpcRGV2XENTRTI5MC1nYW1lXFVubmFtZWQtR2FtZVxVbm5hbWVkLUdhbWVcZ2FtZS1wcm9qZWN0LXYtMS4wXA==
 build_property.GodotSourceGenerators = 
 build_property.IsGodotToolsProject = 
 build_property.TargetFramework = net8.0
@@ -15,7 +15,7 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Game_Project_v1.Empty
-build_property.ProjectDir = C:\Users\colte\OneDrive\Documents\GitHub\Unnamed-Game\game-project-v-1.0\
+build_property.ProjectDir = C:\Dev\CSE290-game\Unnamed-Game\Unnamed-Game\game-project-v-1.0\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
