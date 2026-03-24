@@ -7,8 +7,12 @@ public partial class MainScene : Node2D
 	private Hud _hud;
 	private Player _player;
 	private Pbutton _button;
+<<<<<<< HEAD:game-project-v-1.0/Scripts/MainScene.cs
 	private PDoor _door;
 	
+=======
+
+>>>>>>> Combat:game-project-v-1.0/MainScene.cs
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
@@ -16,20 +20,29 @@ public partial class MainScene : Node2D
 		_hud = GetNode<Hud>("HUD");
 		_player = GetNode<Player>("Player");
 		_button = GetNode<Pbutton>("Pbutton");
+<<<<<<< HEAD:game-project-v-1.0/Scripts/MainScene.cs
 		_door = GetNode<PDoor>("PDoor");
 		
+=======
+
+>>>>>>> Combat:game-project-v-1.0/MainScene.cs
 		_hud.StartGame += StartStage;
-		_player.DisableMovement(); 
+		_player.DisableMovement();
+		var player = GetNode<Player>("Player");
+		var hearts = GetNode<Hearts>("Hearts");
+		player.HealthChanged += hearts.OnHealthChanged;
+		hearts.OnHealthChanged(player.Health);
 	}
-	
-	private void StartStage(){
+
+	private void StartStage()
+	{
 		_tileMap.Visible = true;
 		_player.Visible = true;
 		_player.EnableMovement();
 	}
-	
-	
-	
+
+
+
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta)
 	{
