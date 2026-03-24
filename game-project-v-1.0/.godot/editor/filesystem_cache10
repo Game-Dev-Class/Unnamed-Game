@@ -1,8 +1,8 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1774313037
+::res://::1774361604
 button.tscn::PackedScene::7591749338034094647::1773929810::0::1::::<><><>0<>0<><>::uid://cmtywltbm8oan::::res://Sprites/button_sprite_sheet.png
 Enemy.cs::CSharpScript::8578106873925132746::1773929810::0::1::::<>CharacterBody2D<><>0<>0<><>::
-enemy.tscn::PackedScene::5091991246998273684::1773929810::0::1::::<><><>0<>0<><>::uid://duhkfw8jgj5f7::::res://Enemy.cs<>uid://5da7vnxmfbb4::::res://Sprites/Evil Man animation sprite sheet.png
+enemy.tscn::PackedScene::5091991246998273684::1774333242::0::1::::<><><>0<>0<><>::uid://duhkfw8jgj5f7::::res://Enemy.cs<>uid://5da7vnxmfbb4::::res://Sprites/Evil Man animation sprite sheet.png
 enemy_whip.tscn::PackedScene::2865962747094954039::1773929810::0::1::::<><><>0<>0<><>::uid://duq3w17kib6f::::res://Sprites/Evil Man whip only animation sprite sheet.png<>uid://lsu7fijjeatv::::res://WhipEnemy.cs
 Hearts.cs::CSharpScript::689321602462024381::1773929810::0::1::::<>AnimatedSprite2D<><>0<>0<><>::
 hearts.tscn::PackedScene::4360597602208743593::1773929810::0::1::::<><><>0<>0<><>::uid://j26a5fdrute0::::res://Hearts.cs<>uid://cnhoinwhh11eb::::res://Sprites/Hearts animation sprite sheet.png
@@ -15,10 +15,11 @@ main_scene.tscn::PackedScene::4901515150290933111::1773929810::0::1::::<><><>0<>
 Pbutton.cs::CSharpScript::-1::1773929810::0::1::::<>Area2D<><>0<>0<><>::
 Pbutton.tscn::PackedScene::2610084789000013216::1773929810::0::1::::<><><>0<>0<><>::uid://4cguvfgl8dte::::res://Pbutton.cs<>uid://cmtywltbm8oan::::res://Sprites/button_sprite_sheet.png
 platform.tscn::PackedScene::2951361466310411822::1773929810::0::1::::<><><>0<>0<><>::uid://dbtyq8f5q3yht::::res://Sprites/pixil-frame-0 (4).png
-Player.cs::CSharpScript::4574187675447781370::1773933364::0::1::::<>CharacterBody2D<><>0<>0<><>::
-player.tscn::PackedScene::2376157701377583383::1773929810::0::1::::<><><>0<>0<><>::uid://buhrr3ntyulgu::::res://Sprites/pixilart-sprite.png
-sign.tscn::PackedScene::1834773049944263358::1773934317::0::1::::<><><>0<>0<><>::uid://bi846qnst4h5w::::res://Sprites/Sign sprite.png
-Test_scene.tscn::PackedScene::8373406367670454426::1773934025::0::1::::<><><>0<>0<><>::uid://bnej5xkh27fj5::::res://MainScene.cs<>uid://cc7cfd3pp5li6::::res://hud.tscn<>uid://84a78r8nvygt::::res://player.tscn<>uid://b6f1g5luu6l0e::::res://Player.cs<>uid://bs6cmnu8w1lsj::::res://whip.tscn<>uid://bhk425mynbpdi::::res://Sprites/pixil-frame-0 (2).png<>uid://doap5hxidi0wr::::res://Sprites/pixil-frame-0 (3).png<>uid://dbtyq8f5q3yht::::res://Sprites/pixil-frame-0 (4).png<>uid://bibwqy6q4pa2q::::res://platform.tscn<>uid://cesul71vygkeu::::res://enemy.tscn<>uid://dhxn4a045ytlf::::res://invisable_block.tscn<>uid://dgfrac2p56h2n::::res://button.tscn<>uid://bg3j8t2o2rg8f::::res://enemy_whip.tscn<>uid://b3ekn1wrpu4s8::::res://hearts.tscn
+Player.cs::CSharpScript::4574187675447781370::1774333891::0::1::::<>CharacterBody2D<><>0<>0<><>::
+player.tscn::PackedScene::2376157701377583383::1774333032::0::1::::<><><>0<>0<><>::uid://buhrr3ntyulgu::::res://Sprites/pixilart-sprite.png
+Sign.cs::CSharpScript::4780259639745133395::1774313650::0::1::::<>Sprite2D<><>0<>0<><>::
+sign.tscn::PackedScene::1834773049944263358::1774333556::0::1::::<><><>0<>0<><>::uid://bi846qnst4h5w::::res://Sprites/Sign sprite.png<>uid://cadugbuxkeq40::::res://Sign.cs
+Test_scene.tscn::PackedScene::8373406367670454426::1774333378::0::1::::<><><>0<>0<><>::uid://bnej5xkh27fj5::::res://MainScene.cs<>uid://cc7cfd3pp5li6::::res://hud.tscn<>uid://84a78r8nvygt::::res://player.tscn<>uid://b6f1g5luu6l0e::::res://Player.cs<>uid://bs6cmnu8w1lsj::::res://whip.tscn<>uid://bhk425mynbpdi::::res://Sprites/pixil-frame-0 (2).png<>uid://doap5hxidi0wr::::res://Sprites/pixil-frame-0 (3).png<>uid://dbtyq8f5q3yht::::res://Sprites/pixil-frame-0 (4).png<>uid://bibwqy6q4pa2q::::res://platform.tscn<>uid://cesul71vygkeu::::res://enemy.tscn<>uid://dhxn4a045ytlf::::res://invisable_block.tscn<>uid://dgfrac2p56h2n::::res://button.tscn<>uid://bg3j8t2o2rg8f::::res://enemy_whip.tscn<>uid://b3ekn1wrpu4s8::::res://hearts.tscn<>uid://1e1pdlxib7aw::::res://sign.tscn
 Whip.cs::CSharpScript::2922775426284138324::1773929810::0::1::::<>Node2D<><>0<>0<><>::
 whip.gd::GDScript::7796045558083886187::1773929810::0::1::::<>Node2D<><>0<>0<><>::
 whip.tscn::PackedScene::3713959158295372521::1773929810::0::1::::<><><>0<>0<><>::uid://bhv2xi8xk8wum::::res://Whip.cs<>uid://dbi31nbw8anwm::::res://Sprites/Whip/whip.png

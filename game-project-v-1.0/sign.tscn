@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://cadugbuxkeq40" path="res://Sign.cs" id="2_w2mlg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_w2mlg"]
-size = Vector2(28, 22)
+size = Vector2(28, 16)
 
 [node name="Sign" type="Sprite2D" unique_id=1780301741]
 z_index = -1
@@ -16,7 +16,7 @@ TextLabelPath = NodePath("Label")
 collision_layer = 16
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=935736063]
-position = Vector2(0, 5)
+position = Vector2(0, 2)
 shape = SubResource("RectangleShape2D_w2mlg")
 
 [node name="Label" type="Label" parent="." unique_id=1030558150]
@@ -24,5 +24,4 @@ offset_left = -80.0
 offset_top = -48.0
 offset_right = 82.0
 offset_bottom = -25.0
-text = "lots of Words"
 horizontal_alignment = 1
