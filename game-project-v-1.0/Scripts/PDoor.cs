@@ -22,7 +22,7 @@ public partial class PDoor : StaticBody2D
 		_isOpen = false;
 	}
 
-	private void OnButtonTrigger()
+	public void OnButtonTrigger()
 	{
 		GD.Print("Door Recognises trigger");
 		

@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://bu2c0d3wajxa8"]
+
+[ext_resource type="PackedScene" uid="uid://b3ekn1wrpu4s8" path="res://Scenes/hearts.tscn" id="1_e6e23"]
+
+[node name="Camera2D" type="Camera2D" unique_id=363473939]
+zoom = Vector2(1.5, 1.5)
+limit_left = 0
+limit_top = 0
+limit_right = 1500
+
+[node name="Hearts" parent="." unique_id=242589138 instance=ExtResource("1_e6e23")]
+position = Vector2(55, 33)

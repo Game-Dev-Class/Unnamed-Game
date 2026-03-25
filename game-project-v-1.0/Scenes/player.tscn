@@ -2,6 +2,9 @@
 
 [ext_resource type="Texture2D" uid="uid://buhrr3ntyulgu" path="res://Sprites/pixilart-sprite.png" id="1_4flbx"]
 [ext_resource type="AudioStream" uid="uid://bfi31e8cot3y" path="res://sound/freesound_community-cartoon-jump-6462.mp3" id="2_cvnsp"]
+[ext_resource type="AudioStream" uid="uid://b1eycyxwaigu7" path="res://sound/edr-video-game-hit-noise-001-135821.mp3" id="3_6t5aa"]
+[ext_resource type="AudioStream" uid="uid://2mavdnbc2r5u" path="res://sound/freesound_community-jump-climb-or-damage-sound-f-95942.mp3" id="4_vgqql"]
+[ext_resource type="AudioStream" uid="uid://bvrulqtp4lv02" path="res://sound/universfield-whip-02-242215.mp3" id="5_fkybt"]
 
 [sub_resource type="GDScript" id="GDScript_4flbx"]
 script/source = "extends CharacterBody2D
@@ -79,6 +82,12 @@ position_smoothing_enabled = true
 stream = ExtResource("2_cvnsp")
 
 [node name="EnemyDeathSoundPlayer" type="AudioStreamPlayer2D" parent="." unique_id=1703489217]
-stream = ExtResource("2_cvnsp")
+stream = ExtResource("3_6t5aa")
+
+[node name="HurtSoundPlayer" type="AudioStreamPlayer2D" parent="." unique_id=52911978]
+stream = ExtResource("4_vgqql")
+
+[node name="WhipSoundPlayer" type="AudioStreamPlayer2D" parent="." unique_id=1986963934]
+stream = ExtResource("5_fkybt")
 
 [connection signal="input_event" from="." to="." method="_on_input_event"]

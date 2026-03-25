@@ -8,7 +8,8 @@ public partial class MainScene : Node2D
 	private Player _player;
 	private Pbutton _button;
 	private PDoor _door;
-
+	private Pbutton _button2;
+	private PDoor _door2;
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
@@ -17,7 +18,11 @@ public partial class MainScene : Node2D
 		_player = GetNode<Player>("Player");
 		_button = GetNode<Pbutton>("Pbutton");
 		_door = GetNode<PDoor>("PDoor");
+		_button2 = GetNode<Pbutton>("Pbutton2");
+		_door2 = GetNode<PDoor>("PDoor2");
 
+		_button.ButtonTrigger += _door.OnButtonTrigger;
+		_button2.ButtonTrigger += _door2.OnButtonTrigger;
 		var player = GetNode<Player>("Player");
 		var hearts = GetNode<Hearts>("Hearts");
 		player.HealthChanged += hearts.OnHealthChanged;
