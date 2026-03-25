@@ -1,20 +1,22 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1774364466
+::res://::1774469750
 icon.svg::CompressedTexture2D/CompressedTexture2D::8349551825098459537::1772555905::1772556501::1::::<><><>0<>0<>43b1e8af9c7dcda7e66851ad1bb3f02d<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-::res://Scenes/::1774364841
+::res://Scenes/::1774469258
 enemy.tscn::PackedScene::5091991246998273684::1773756308::0::1::::<><><>0<>0<><>::uid://duhkfw8jgj5f7::::res://Scripts/Enemy.cs<>uid://5da7vnxmfbb4::::res://Sprites/Evil Man animation sprite sheet.png
 hud.tscn::PackedScene::4979409707274579739::1773756308::0::1::::<><><>0<>0<><>::uid://ddhs8ue64fx8i::::res://Scripts/Hud.cs
 invisable_block.tscn::PackedScene::7698905793796904135::1773756308::0::1::::<><><>0<>0<><>::
-level_2.tscn::PackedScene::3547145503157409340::1774364841::0::1::::<><><>0<>0<><>::uid://dbtyq8f5q3yht::::res://Sprites/pixil-frame-0 (4).png<>uid://84a78r8nvygt::::res://Scenes/player.tscn<>uid://cr3srfaok2jhj::::res://Scenes/reset.tscn<>uid://dwanf8dte1qiv::::res://Sprites/pixil-frame-0 (8).png<>uid://byqp14kubwxah::::res://visuals4_files/block.tscn<>uid://bdglykxy43ai7::::res://Scenes/Pbutton.tscn<>uid://dhxn4a045ytlf::::res://Scenes/invisable_block.tscn<>uid://cesul71vygkeu::::res://Scenes/enemy.tscn<>uid://bibwqy6q4pa2q::::res://Scenes/platform.tscn
-main_scene.tscn::PackedScene::4901515150290933111::1773934552::0::1::::<><><>0<>0<><>::uid://cjlavr3bruxcw::::res://Scripts/MainScene.cs<>uid://cc7cfd3pp5li6::::res://Scenes/hud.tscn<>uid://84a78r8nvygt::::res://Scenes/player.tscn<>uid://6a2jh0mobu6o::::res://Scripts/Player.cs<>uid://bs6cmnu8w1lsj::::res://Scenes/whip.tscn<>uid://dwanf8dte1qiv::::res://Sprites/pixil-frame-0 (8).png<>uid://dbtyq8f5q3yht::::res://Sprites/pixil-frame-0 (4).png<>uid://bibwqy6q4pa2q::::res://Scenes/platform.tscn<>uid://cesul71vygkeu::::res://Scenes/enemy.tscn<>uid://dhxn4a045ytlf::::res://Scenes/invisable_block.tscn<>uid://bdglykxy43ai7::::res://Scenes/Pbutton.tscn<>uid://byqp14kubwxah::::res://visuals4_files/block.tscn<>uid://bt2namyhpp4nw::::res://visuals4_files/level_exit.tscn<>uid://cr3srfaok2jhj::::res://Scenes/reset.tscn
+level_2.tscn::PackedScene::3547145503157409340::1774469258::0::1::::<><><>0<>0<><>::uid://b1iodvsgipiag::::res://Scenes/Level2.cs<>uid://dbtyq8f5q3yht::::res://Sprites/pixil-frame-0 (4).png<>uid://84a78r8nvygt::::res://Scenes/player.tscn<>uid://cr3srfaok2jhj::::res://Scenes/reset.tscn<>uid://dwanf8dte1qiv::::res://Sprites/pixil-frame-0 (8).png<>uid://byqp14kubwxah::::res://visuals4_files/block.tscn<>uid://bdglykxy43ai7::::res://Scenes/Pbutton.tscn<>uid://dhxn4a045ytlf::::res://Scenes/invisable_block.tscn<>uid://cesul71vygkeu::::res://Scenes/enemy.tscn<>uid://bibwqy6q4pa2q::::res://Scenes/platform.tscn
+main_scene.tscn::PackedScene::4901515150290933111::1774366141::0::1::::<><><>0<>0<><>::uid://cjlavr3bruxcw::::res://Scripts/MainScene.cs<>uid://cc7cfd3pp5li6::::res://Scenes/hud.tscn<>uid://84a78r8nvygt::::res://Scenes/player.tscn<>uid://6a2jh0mobu6o::::res://Scripts/Player.cs<>uid://bs6cmnu8w1lsj::::res://Scenes/whip.tscn<>uid://dwanf8dte1qiv::::res://Sprites/pixil-frame-0 (8).png<>uid://dbtyq8f5q3yht::::res://Sprites/pixil-frame-0 (4).png<>uid://bibwqy6q4pa2q::::res://Scenes/platform.tscn<>uid://cesul71vygkeu::::res://Scenes/enemy.tscn<>uid://dhxn4a045ytlf::::res://Scenes/invisable_block.tscn<>uid://bdglykxy43ai7::::res://Scenes/Pbutton.tscn<>uid://byqp14kubwxah::::res://visuals4_files/block.tscn<>uid://bt2namyhpp4nw::::res://visuals4_files/level_exit.tscn<>uid://cr3srfaok2jhj::::res://Scenes/reset.tscn
 Pbutton.tscn::PackedScene::2610084789000013216::1773756308::0::1::::<><><>0<>0<><>::uid://4cguvfgl8dte::::res://Scripts/Pbutton.cs<>uid://cmtywltbm8oan::::res://Sprites/button_sprite_sheet.png
 platform.tscn::PackedScene::2951361466310411822::1773930853::0::1::::<><><>0<>0<><>::uid://dwanf8dte1qiv::::res://Sprites/pixil-frame-0 (8).png
 player.tscn::PackedScene::2376157701377583383::1774364739::0::1::::<><><>0<>0<><>::uid://buhrr3ntyulgu::::res://Sprites/pixilart-sprite.png
+Level2.cs::CSharpScript::4228702166675600990::1774469258::0::1::::<>Node2D<><>0<>0<><>::
+level_2.5.tscn::PackedScene::3403121030594851431::1774469750::0::1::::<><><>0<>0<><>::uid://cjlavr3bruxcw::::res://Scripts/MainScene.cs<>uid://84a78r8nvygt::::res://Scenes/player.tscn<>uid://6a2jh0mobu6o::::res://Scripts/Player.cs<>uid://bs6cmnu8w1lsj::::res://Scenes/whip.tscn<>uid://bdglykxy43ai7::::res://Scenes/Pbutton.tscn<>uid://byqp14kubwxah::::res://visuals4_files/block.tscn<>uid://bt2namyhpp4nw::::res://visuals4_files/level_exit.tscn<>uid://cr3srfaok2jhj::::res://Scenes/reset.tscn<>uid://dbtyq8f5q3yht::::res://Sprites/pixil-frame-0 (4).png<>uid://dwanf8dte1qiv::::res://Sprites/pixil-frame-0 (8).png<>uid://dhxn4a045ytlf::::res://Scenes/invisable_block.tscn<>uid://cesul71vygkeu::::res://Scenes/enemy.tscn<>uid://bibwqy6q4pa2q::::res://Scenes/platform.tscn
 reset.tscn::PackedScene::6024977813979887827::1774360787::0::1::::<><><>0<>0<><>::uid://bc0fgaqxehq7b::::res://Scripts/reset.cs
 small_platform.tscn::PackedScene::1545587234573222053::1773931058::0::1::::<><><>0<>0<><>::uid://dwanf8dte1qiv::::res://Sprites/pixil-frame-0 (8).png
 whip.tscn::PackedScene::3713959158295372521::1773756308::0::1::::<><><>0<>0<><>::uid://bhv2xi8xk8wum::::res://Scripts/Whip.cs<>uid://dbi31nbw8anwm::::res://Sprites/Whip/whip.png
-::res://Scripts/::1774361045
-Enemy.cs::CSharpScript::8578106873925132746::1773756308::0::1::::<>CharacterBody2D<><>0<>0<><>::
+::res://Scripts/::1774469750
+Enemy.cs::CSharpScript::8578106873925132746::1774469750::0::1::::<>CharacterBody2D<><>0<>0<><>::
 Hud.cs::CSharpScript::2961054281184115382::1773756308::0::1::::<>CanvasLayer<><>0<>0<><>::
 MainScene.cs::CSharpScript::5427287553315595910::1773756308::0::1::::<>Node2D<><>0<>0<><>::
 Pbutton.cs::CSharpScript::2040006349848743886::1773756308::0::1::::<>Area2D<><>0<>0<><>::
@@ -40,11 +42,11 @@ harpyWhip.png::CompressedTexture2D::6726989490589246152::1773329055::1773329077:
 lightning whip.png::CompressedTexture2D::78761276045888926::1773329055::1773329077::1::::<><><>0<>0<>5056589ed3cc7eed6610596f4ec44d65<>res://.godot/imported/lightning whip.png-2203e7619312671022c458699a2be01c.ctex::
 waterWhip.png::CompressedTexture2D::3051843563935643325::1773329055::1773329077::1::::<><><>0<>0<>09a190c252800f78c1cecaec3ac043cb<>res://.godot/imported/waterWhip.png-2f3518119acd95c246dd286cef3fb312.ctex::
 whip.png::CompressedTexture2D::7247713108580852540::1773329055::1773329077::1::::<><><>0<>0<>ec00eb7d964257e2f101a670393fc62e<>res://.godot/imported/whip.png-0e389ff91e3be590b9766965b46a7e7b.ctex::
-::res://visuals4_files/::1773756431
+::res://visuals4_files/::1774469768
 block.tscn::PackedScene::4104941700139993379::1773756308::0::1::::<><><>0<>0<><>::uid://dbujlma2hopdx::::res://visuals4_files/pixil-frame-0 (7).png
 Bounce.cs::CSharpScript::368247229946158622::1773756308::0::1::::<><><>0<>0<><>::
 bounce_pad.tscn::PackedScene::6028127834972885086::1773756308::0::1::::<><><>0<>0<><>::uid://fim8iwjwqmdi::::res://scripts/Bounce.cs<>uid://di4q80t63tjut::::res://Sprites/pixil-frame-0 (5).png
-LevelExit.cs::CSharpScript::6179711871694850138::1773756308::0::1::::<>Area2D<><>0<>0<><>::
-level_exit.tscn::PackedScene::3776536900775518604::1773756308::0::1::::<><><>0<>0<><>::uid://cubq7mea85t11::::res://visuals4_files/LevelExit.cs
+LevelExit.cs::CSharpScript::6179711871694850138::1774469768::0::1::::<>Area2D<><>0<>0<><>::
+level_exit.tscn::PackedScene::3776536900775518604::1774469768::0::1::::<><><>0<>0<><>::uid://cubq7mea85t11::::res://visuals4_files/LevelExit.cs<>uid://61rbadx2pw3q::::res://Sprites/pixilart-sprite (2).png
 pixil-frame-0 (5).png::CompressedTexture2D::7781671502016131671::1773756308::1773756431::1::::<><><>0<>0<>5a99fabac194840bb5665ca8bb5a6874<>res://.godot/imported/pixil-frame-0 (5).png-e591dbbd6fb6e60dcdef318943d9be82.ctex::
 pixil-frame-0 (7).png::CompressedTexture2D::7271305177983263353::1773756308::1773756431::1::::<><><>0<>0<>d389f8105c889bcab2cd4cb526f3cdb0<>res://.godot/imported/pixil-frame-0 (7).png-1958a60b2808fbc296363ce9c376c55f.ctex::
