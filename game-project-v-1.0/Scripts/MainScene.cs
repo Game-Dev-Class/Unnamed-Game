@@ -26,12 +26,12 @@ public partial class MainScene : Node2D
 		_hud.StartGame += StartStage;
 		_player.DisableMovement(); 
 		_enemy1.DisableMovement();
-		_enemy2.DisableMovement();
+        _enemy2.DisableMovement();
 	}
 	
-	private void StartStage()
+	public void StartStage()
 	{
-		_door.OnButtonTrigger();
+		GD.Print("The stage started.");
 		_tileMap.Visible = true;
 		_player.Visible = true;
 		_player.EnableMovement();

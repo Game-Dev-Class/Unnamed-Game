@@ -173,7 +173,7 @@ libraries/ = SubResource("AnimationLibrary_qwutr")
 autoplay = &"move2"
 
 [node name="Enemy" parent="." unique_id=564250950 instance=ExtResource("10_b48ew")]
-position = Vector2(295, 109)
+position = Vector2(295, 106)
 
 [node name="Invisible Block" parent="." unique_id=1096889786 instance=ExtResource("11_8edxt")]
 position = Vector2(458, 119)
@@ -182,7 +182,7 @@ position = Vector2(458, 119)
 position = Vector2(-2, 119)
 
 [node name="enemy" parent="." unique_id=1277462492 instance=ExtResource("10_b48ew")]
-position = Vector2(630, 239)
+position = Vector2(635, 227)
 
 [node name="Invisible Block3" parent="." unique_id=931024081 instance=ExtResource("11_8edxt")]
 position = Vector2(712, 246)
@@ -193,7 +193,5 @@ position = Vector2(567, 246)
 [node name="Pbutton" parent="." unique_id=737130439 instance=ExtResource("12_5oxhp")]
 position = Vector2(498, 175)
 
-[node name="DoorBody" parent="." unique_id=205209727 instance=ExtResource("13_ioaeq")]
-position = Vector2(800, 203)
-
-[connection signal="ButtonTrigger" from="Pbutton" to="DoorBody" method="OnButtonTrigger"]
+[node name="PDoor" parent="." unique_id=205209727 instance=ExtResource("13_ioaeq")]
+position = Vector2(803, 201)

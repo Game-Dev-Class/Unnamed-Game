@@ -9,12 +9,14 @@ public partial class Enemy : CharacterBody2D
 
     private bool _canMove;
 
-    public void EnableMovement() => _canMove = true;
+    public void EnableMovement()
+    {
+        _canMove = true;
+    }
 
     public void DisableMovement()
 	{
 		_canMove = false;
-		Velocity = Vector2.Zero;
 	}
 
     public override void _Ready()
@@ -29,13 +31,18 @@ public partial class Enemy : CharacterBody2D
         if (!IsOnFloor())
             Velocity += GetGravity() * (float)delta;
 
-        if (!_canMove)
+        if (_canMove == false)
 		{
 			// Stop horizontal movement
 			Velocity = Vector2.Zero;
 			MoveAndSlide();
 			return;
         }
+
+        // else if (_canMove == true)
+        // {
+            
+        // }
 
         // Move only while on floor
         if (IsOnFloor())

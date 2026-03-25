@@ -6,3 +6,4 @@ res://Scripts/Whip.cs
 res://Scripts/Player.cs
 res://Scripts/Hud.cs
 res://Scripts/MainScene.cs
+res://Scenes/main_scene.tscn
