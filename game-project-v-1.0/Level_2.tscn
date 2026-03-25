@@ -12,6 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://dhxn4a045ytlf" path="res://Scenes/invisable_block.tscn" id="11_qw01e"]
 [ext_resource type="PackedScene" uid="uid://bdglykxy43ai7" path="res://Scenes/Pbutton.tscn" id="12_7v052"]
 [ext_resource type="PackedScene" uid="uid://b53s88qk6ncg3" path="res://Scenes/PDoor.tscn" id="13_6j65p"]
+[ext_resource type="PackedScene" uid="uid://bfmkj356p71ku" path="res://Scenes/boss.tscn" id="13_p4ecc"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hq1ik"]
 texture = ExtResource("8_t0ole")
@@ -160,6 +161,10 @@ position = Vector2(752, 110)
 script = ExtResource("4_0eu5p")
 WhipScene = ExtResource("5_fy7lv")
 DefaultWhipDistance = 48.0
+KnockbackHorizontal = 320.0
+KnockbackVertical = 260.0
+KnockbackDuration = 0.45
+IFramesDuration = 1.0
 PushSpeed = 150.0
 
 [node name="Stage" type="TileMapLayer" parent="." unique_id=854476079]
@@ -197,3 +202,6 @@ position = Vector2(498, 175)
 
 [node name="PDoor" parent="." unique_id=205209727 instance=ExtResource("13_6j65p")]
 position = Vector2(803, 201)
+
+[node name="Boss" parent="." unique_id=1708371713 instance=ExtResource("13_p4ecc")]
+position = Vector2(387, 75)
