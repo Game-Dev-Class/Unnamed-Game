@@ -2,16 +2,16 @@ using Godot;
 
 public partial class Enemy : CharacterBody2D
 {
-    [Export] public float MoveSpeed = 100f;
-    [Export] public AnimatedSprite2D EnemySprite;
+	[Export] public float MoveSpeed = 100f;
+	[Export] public AnimatedSprite2D EnemySprite;
 
-    private bool _movingRight = true;
+	private bool _movingRight = true;
 
-    public override void _Ready()
-    {
-        if (EnemySprite == null)
-            EnemySprite = GetNodeOrNull<AnimatedSprite2D>("AnimatedSprite2D");
-    }
+	public override void _Ready()
+	{
+		if (EnemySprite == null)
+			EnemySprite = GetNodeOrNull<AnimatedSprite2D>("AnimatedSprite2D");
+	}
 
     public override void _PhysicsProcess(double delta)
     {
@@ -29,7 +29,7 @@ public partial class Enemy : CharacterBody2D
             Velocity = new Vector2(0, Velocity.Y);
         }
 
-        MoveAndSlide();
+		MoveAndSlide();
 
         for (int i = 0; i < GetSlideCollisionCount(); i++)
         {

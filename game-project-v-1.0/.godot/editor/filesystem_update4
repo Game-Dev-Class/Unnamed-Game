@@ -16,3 +16,15 @@ res://Scenes/TestScene.cs
 res://Scripts/TestScene.cs
 res://Scenes/test.tscn
 res://Scenes/whip.tscn
+res://Scripts/reset.cs
+res://visuals4_files/LevelExit.cs
+res://Scripts/Pbutton.cs
+res://Scripts/Enemy.cs
+res://Scripts/Whip.cs
+res://Scripts/Player.cs
+res://Scripts/Hud.cs
+res://Scripts/MainScene.cs
+res://Scenes/level_2.tscn
+res://Scenes/Level2.cs
+res://visuals4_files/level_exit.tscn
+res://Scenes/level_2.5.tscn

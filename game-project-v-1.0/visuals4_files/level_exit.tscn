@@ -1,15 +1,42 @@
 [gd_scene format=3 uid="uid://bt2namyhpp4nw"]
 
 [ext_resource type="Script" uid="uid://cubq7mea85t11" path="res://visuals4_files/LevelExit.cs" id="1_0mfe3"]
+[ext_resource type="Texture2D" uid="uid://61rbadx2pw3q" path="res://Sprites/pixilart-sprite (2).png" id="2_3gpfq"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_0mfe3"]
-size = Vector2(43, 35)
+[sub_resource type="CircleShape2D" id="CircleShape2D_l25cp"]
+radius = 33.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u4pr3"]
+atlas = ExtResource("2_3gpfq")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_koljb"]
+atlas = ExtResource("2_3gpfq")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1mxyt"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u4pr3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_koljb")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [node name="LevelExit" type="Area2D" unique_id=1768640012]
 script = ExtResource("1_0mfe3")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2127865145]
-position = Vector2(11.5, 7.5)
-shape = SubResource("RectangleShape2D_0mfe3")
+shape = SubResource("CircleShape2D_l25cp")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2067583653]
+sprite_frames = SubResource("SpriteFrames_1mxyt")
+autoplay = "default"
+frame_progress = 0.26381195
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
