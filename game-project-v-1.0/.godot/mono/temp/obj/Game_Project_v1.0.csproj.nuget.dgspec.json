@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Dev\\CSE290-game\\Unnamed-Game\\Unnamed-Game\\game-project-v-1.0\\Game_Project_v1.0.csproj": {}
+    "C:\\Users\\colte\\OneDrive\\Documents\\GitHub\\Unnamed-Game\\game-project-v-1.0\\Game_Project_v1.0.csproj": {}
   },
   "projects": {
-    "C:\\Dev\\CSE290-game\\Unnamed-Game\\Unnamed-Game\\game-project-v-1.0\\Game_Project_v1.0.csproj": {
+    "C:\\Users\\colte\\OneDrive\\Documents\\GitHub\\Unnamed-Game\\game-project-v-1.0\\Game_Project_v1.0.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Dev\\CSE290-game\\Unnamed-Game\\Unnamed-Game\\game-project-v-1.0\\Game_Project_v1.0.csproj",
+        "projectUniqueName": "C:\\Users\\colte\\OneDrive\\Documents\\GitHub\\Unnamed-Game\\game-project-v-1.0\\Game_Project_v1.0.csproj",
         "projectName": "Game_Project_v1.0",
-        "projectPath": "C:\\Dev\\CSE290-game\\Unnamed-Game\\Unnamed-Game\\game-project-v-1.0\\Game_Project_v1.0.csproj",
-        "packagesPath": "C:\\Users\\logan\\.nuget\\packages\\",
-        "outputPath": "C:\\Dev\\CSE290-game\\Unnamed-Game\\Unnamed-Game\\game-project-v-1.0\\.godot\\mono\\temp\\obj\\",
+        "projectPath": "C:\\Users\\colte\\OneDrive\\Documents\\GitHub\\Unnamed-Game\\game-project-v-1.0\\Game_Project_v1.0.csproj",
+        "packagesPath": "C:\\Users\\colte\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\colte\\OneDrive\\Documents\\GitHub\\Unnamed-Game\\game-project-v-1.0\\.godot\\mono\\temp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\logan\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\colte\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -74,15 +74,15 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.22, 8.0.22]"
+              "version": "[8.0.23, 8.0.23]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.22, 8.0.22]"
+              "version": "[8.0.23, 8.0.23]"
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[8.0.22, 8.0.22]"
+              "version": "[8.0.23, 8.0.23]"
             }
           ],
           "frameworkReferences": {
@@ -90,7 +90,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

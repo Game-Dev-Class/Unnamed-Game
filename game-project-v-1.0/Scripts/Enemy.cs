@@ -13,49 +13,49 @@ public partial class Enemy : CharacterBody2D
 			EnemySprite = GetNodeOrNull<AnimatedSprite2D>("AnimatedSprite2D");
 	}
 
-    public override void _PhysicsProcess(double delta)
-    {
+	public override void _PhysicsProcess(double delta)
+	{
 
-        if (!IsOnFloor())
-            Velocity += GetGravity() * (float)delta;
+		if (!IsOnFloor())
+			Velocity += GetGravity() * (float)delta;
 
-        if (IsOnFloor())
-        {
-            float direction = _movingRight ? 1f : -1f;
-            Velocity = new Vector2(direction * MoveSpeed, Velocity.Y);
-        }
-        else
-        {
-            Velocity = new Vector2(0, Velocity.Y);
-        }
+		if (IsOnFloor())
+		{
+			float direction = _movingRight ? 1f : -1f;
+			Velocity = new Vector2(direction * MoveSpeed, Velocity.Y);
+		}
+		else
+		{
+			Velocity = new Vector2(0, Velocity.Y);
+		}
 
 		MoveAndSlide();
 
-        for (int i = 0; i < GetSlideCollisionCount(); i++)
-        {
-            var collision = GetSlideCollision(i);
-            if (collision.GetCollider() is Player player)
-            {
-                player.TakeEnemyHit(GlobalPosition);
-            }
+		for (int i = 0; i < GetSlideCollisionCount(); i++)
+		{
+			var collision = GetSlideCollision(i);
+			if (collision.GetCollider() is Player player)
+			{
+				player.TakeEnemyHit(GlobalPosition);
+			}
 
-            if (collision.GetCollider() is PhysicsBody2D collider)
-            {
-                if ((collider.CollisionLayer & (1 << 2)) != 0)
-                {
-                    if (Mathf.Abs(collision.GetNormal().X) > 0.7f)
-                    {
-                        _movingRight = !_movingRight;
-                        break;
-                    }
-                }
-            }
-        }
-    }
+			if (collision.GetCollider() is PhysicsBody2D collider)
+			{
+				if ((collider.CollisionLayer & (1 << 2)) != 0)
+				{
+					if (Mathf.Abs(collision.GetNormal().X) > 0.7f)
+					{
+						_movingRight = !_movingRight;
+						break;
+					}
+				}
+			}
+		}
+	}
 
-    public override void _Process(double delta)
-    {
-        if (EnemySprite != null)
-            EnemySprite.FlipH = !_movingRight;
-    }
+	public override void _Process(double delta)
+	{
+		if (EnemySprite != null)
+			EnemySprite.FlipH = !_movingRight;
+	}
 }

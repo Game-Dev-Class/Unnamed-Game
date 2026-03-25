@@ -231,6 +231,10 @@ position = Vector2(572, 237)
 script = ExtResource("3_xjqmg")
 WhipScene = ExtResource("4_4kw2n")
 DefaultWhipDistance = 48.0
+KnockbackHorizontal = 320.0
+KnockbackVertical = 260.0
+KnockbackDuration = 0.45
+IFramesDuration = 1.0
 PushSpeed = 150.0
 
 [node name="Pbutton" parent="." unique_id=737130439 instance=ExtResource("5_567hc")]
