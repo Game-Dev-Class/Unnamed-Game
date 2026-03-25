@@ -1,11 +1,9 @@
-res://Scripts/Enemy.cs
-res://Scripts/Player.cs
-res://Scenes/Level2.cs
-res://Scripts/reset.cs
 res://visuals4_files/LevelExit.cs
+res://PDoor.cs
 res://Scripts/Pbutton.cs
+res://Scripts/Enemy.cs
 res://Scripts/Whip.cs
+res://Scripts/Player.cs
 res://Scripts/Hud.cs
 res://Scripts/MainScene.cs
-res://Scenes/level_2.5.tscn
 res://Scenes/main_scene.tscn

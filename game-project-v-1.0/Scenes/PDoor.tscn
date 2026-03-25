@@ -1,9 +1,7 @@
 [gd_scene format=3 uid="uid://b53s88qk6ncg3"]
 
-[ext_resource type="Script" uid="uid://cq4vnylkqtduc" path="res://Scripts/PDoor.cs" id="1_354wx"]
+[ext_resource type="Script" uid="uid://cq4vnylkqtduc" path="res://PDoor.cs" id="1_354wx"]
 [ext_resource type="Texture2D" uid="uid://dspine7d4uqit" path="res://Sprites/Door.png" id="2_3kdv2"]
-[ext_resource type="PackedScene" uid="uid://bdglykxy43ai7" path="res://Scenes/Pbutton.tscn" id="3_rcb2m"]
-
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_354wx"]
 size = Vector2(22, 108)
@@ -19,6 +17,3 @@ texture = ExtResource("2_3kdv2")
 [node name="DoorCollision" type="CollisionShape2D" parent="." unique_id=1765463137]
 position = Vector2(-1, -3)
 shape = SubResource("RectangleShape2D_354wx")
-
-[node name="Pbutton" parent="." unique_id=737130439 instance=ExtResource("3_rcb2m")]
-position = Vector2(112, 37)

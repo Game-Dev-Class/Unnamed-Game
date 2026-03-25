@@ -51,6 +51,11 @@ public partial class Player : CharacterBody2D
 		Velocity = Vector2.Zero;
 	}
 
+	public bool GetCanMove()
+	{
+		return _canMove;
+	}
+
 	public override void _PhysicsProcess(double delta)
 	{
 		if (!_canMove)
