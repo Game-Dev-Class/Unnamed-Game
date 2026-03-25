@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://84a78r8nvygt"]
 
 [ext_resource type="Texture2D" uid="uid://buhrr3ntyulgu" path="res://Sprites/pixilart-sprite.png" id="1_4flbx"]
+[ext_resource type="AudioStream" uid="uid://bfi31e8cot3y" path="res://sound/freesound_community-cartoon-jump-6462.mp3" id="2_cvnsp"]
 
 [sub_resource type="GDScript" id="GDScript_4flbx"]
 script/source = "extends CharacterBody2D
@@ -73,5 +74,11 @@ limit_left = 0
 limit_top = 0
 limit_right = 1500
 position_smoothing_enabled = true
+
+[node name="JumpSoundPlayer" type="AudioStreamPlayer2D" parent="." unique_id=1058784887]
+stream = ExtResource("2_cvnsp")
+
+[node name="EnemyDeathSoundPlayer" type="AudioStreamPlayer2D" parent="." unique_id=1703489217]
+stream = ExtResource("2_cvnsp")
 
 [connection signal="input_event" from="." to="." method="_on_input_event"]

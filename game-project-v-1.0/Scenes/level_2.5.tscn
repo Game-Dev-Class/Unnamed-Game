@@ -13,6 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://dhxn4a045ytlf" path="res://Scenes/invisable_block.tscn" id="11_hq263"]
 [ext_resource type="PackedScene" uid="uid://cesul71vygkeu" path="res://Scenes/enemy.tscn" id="12_dju48"]
 [ext_resource type="PackedScene" uid="uid://bibwqy6q4pa2q" path="res://Scenes/platform.tscn" id="13_oc1ce"]
+[ext_resource type="PackedScene" uid="uid://1e1pdlxib7aw" path="res://Scenes/sign.tscn" id="14_py4ex"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_u3gjj"]
 texture = ExtResource("9_yo34o")
@@ -227,15 +228,15 @@ _data = {
 script = ExtResource("1_77p6a")
 
 [node name="Player" parent="." unique_id=2054929316 instance=ExtResource("2_py4ex")]
-position = Vector2(572, 237)
+position = Vector2(574, 162)
 script = ExtResource("3_xjqmg")
+PushSpeed = 150.0
 WhipScene = ExtResource("4_4kw2n")
 DefaultWhipDistance = 48.0
 KnockbackHorizontal = 320.0
 KnockbackVertical = 260.0
 KnockbackDuration = 0.45
 IFramesDuration = 1.0
-PushSpeed = 150.0
 
 [node name="Pbutton" parent="." unique_id=737130439 instance=ExtResource("5_567hc")]
 position = Vector2(146, 174)
@@ -276,3 +277,15 @@ position = Vector2(729, 218)
 [node name="AnimationPlayer" type="AnimationPlayer" parent="B_Platform" unique_id=1754007490]
 libraries/ = SubResource("AnimationLibrary_pu1a0")
 autoplay = &"platform_2"
+
+[node name="Sign" parent="." unique_id=1780301741 instance=ExtResource("14_py4ex")]
+position = Vector2(575, 272)
+SignText = "Use WASD to move."
+
+[node name="Sign2" parent="." unique_id=2084606584 instance=ExtResource("14_py4ex")]
+position = Vector2(195, 175)
+SignText = "Press buttons to trigger effects"
+
+[node name="Sign3" parent="." unique_id=791512228 instance=ExtResource("14_py4ex")]
+position = Vector2(446, 272)
+SignText = "Push blocks to reach high places."
