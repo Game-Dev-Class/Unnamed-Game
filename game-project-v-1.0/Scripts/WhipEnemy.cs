@@ -6,6 +6,17 @@ public partial class WhipEnemy : CharacterBody2D
     [Export] public AnimatedSprite2D WhipEnemySprite;
 
     private bool _movingRight = true;
+    private bool _canMove;
+
+    public void DisableMovement()
+    {
+        _canMove = false;
+    }
+
+    public void EnableMovement()
+    {
+        _canMove = true;
+    }
 
     public override void _Ready()
     {
@@ -22,6 +33,14 @@ public partial class WhipEnemy : CharacterBody2D
             Velocity += GetGravity() * dt;
         else
             Velocity = new Vector2(Velocity.X, 0); // lock to floor
+
+        if (_canMove == false)
+		{
+			// Stop horizontal movement
+			Velocity = Vector2.Zero;
+			MoveAndSlide();
+			return;
+        }
 
         // ✅ Horizontal movement ONLY when grounded
         if (IsOnFloor())

@@ -38,13 +38,7 @@ public partial class Enemy : CharacterBody2D
 			MoveAndSlide();
 			return;
         }
-
-        // else if (_canMove == true)
-        // {
-            
-        // }
-
-        // Move only while on floor
+        
         if (IsOnFloor())
         {
             float direction = _movingRight ? 1f : -1f;
