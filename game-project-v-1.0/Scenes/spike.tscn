@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://dfqfvmoagmbxg"]
+
+[ext_resource type="Script" uid="uid://bedbp5yhofai4" path="res://Scripts/Spike.cs" id="1_1hotg"]
+[ext_resource type="Texture2D" uid="uid://dxootnn6acnfx" path="res://Sprites/Evil Spike Sprite.png" id="1_cdj5a"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cdj5a"]
+size = Vector2(32, 27)
+
+[node name="Spike" type="Node2D" unique_id=1666117747]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2085476374]
+texture = ExtResource("1_cdj5a")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1207420925]
+collision_layer = 64
+script = ExtResource("1_1hotg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=79727764]
+position = Vector2(0, 2.5)
+shape = SubResource("RectangleShape2D_cdj5a")

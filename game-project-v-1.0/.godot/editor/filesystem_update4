@@ -1,3 +1,9 @@
+res://Scenes/spike.tscn
+res://Scenes/boss_room.tscn
+res://Scenes/player.tscn
+res://Scenes/Spike.cs
+res://Scripts/WhipEnemy.cs
+res://Scripts/BossRoom.cs
 res://Scripts/Boss.cs
 res://Scripts/reset.cs
 res://visuals4_files/LevelExit.cs
@@ -8,7 +14,4 @@ res://Scripts/Whip.cs
 res://Scripts/Player.cs
 res://Scripts/Hud.cs
 res://Scripts/MainScene.cs
-res://Scenes/final_level.tscn
-res://Scenes/boss_room.tscn
-res://Scripts/WhipEnemy.cs
-res://Scripts/BossRoom.cs
+res://Scripts/Spike.cs
