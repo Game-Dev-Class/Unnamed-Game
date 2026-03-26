@@ -6,8 +6,7 @@ public partial class Boss : CharacterBody2D
     [Export] public AnimatedSprite2D EnemySprite;
 
     private bool _movingRight = true;
-
-    private bool _canMove;
+    private bool _canMove = true;
 
     public void EnableMovement()
     {
@@ -19,6 +18,11 @@ public partial class Boss : CharacterBody2D
         _canMove = false;
     }
 
+    public bool GetCanMove()
+    {
+        return _canMove;
+    }
+
     public override void _Ready()
     {
         if (EnemySprite == null)
@@ -27,48 +31,46 @@ public partial class Boss : CharacterBody2D
 
     public override void _PhysicsProcess(double delta)
     {
-        // Apply gravity (same as player)
+        float dt = (float)delta;
+
         if (!IsOnFloor())
-            Velocity += GetGravity() * (float)delta;
+            Velocity += GetGravity() * dt;
+        else
+            Velocity = new Vector2(Velocity.X, 0);
 
         if (_canMove == false)
         {
-            // Stop horizontal movement
-            Velocity = Vector2.Zero;
+            Velocity = new Vector2(0, Velocity.Y);
             MoveAndSlide();
             return;
         }
 
-        // else if (_canMove == true)
-        // {
-
-        // }
-
-        // Move only while on floor
         if (IsOnFloor())
         {
             float direction = _movingRight ? 1f : -1f;
             Velocity = new Vector2(direction * MoveSpeed, Velocity.Y);
         }
-        else
-        {
-            Velocity = new Vector2(0, Velocity.Y);
-        }
 
         MoveAndSlide();
 
-        // Check collisions to turn around
         for (int i = 0; i < GetSlideCollisionCount(); i++)
         {
             var collision = GetSlideCollision(i);
+            var collider = collision.GetCollider();
+            Vector2 normal = collision.GetNormal();
 
-            if (collision.GetCollider() is PhysicsBody2D collider)
+            // Hit player → knockback
+            if (collider is Player player)
             {
-                // Check if collider is on Layer 3
-                if ((collider.CollisionLayer & (1 << 2)) != 0)
+                player.TakeEnemyHit(GlobalPosition);
+            }
+
+            // Flip on invisible wall (layer 3)
+            if (collider is PhysicsBody2D body)
+            {
+                if ((body.CollisionLayer & (1 << 2)) != 0)
                 {
-                    // Make sure it was a side collision
-                    if (Mathf.Abs(collision.GetNormal().X) > 0.7f)
+                    if (Mathf.Abs(normal.X) > 0.7f)
                     {
                         _movingRight = !_movingRight;
                         break;
@@ -78,7 +80,6 @@ public partial class Boss : CharacterBody2D
         }
     }
 
-    // Flip sprite AFTER physics (same system as Player)
     public override void _Process(double delta)
     {
         if (EnemySprite != null)

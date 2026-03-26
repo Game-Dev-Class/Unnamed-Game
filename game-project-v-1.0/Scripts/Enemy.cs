@@ -5,8 +5,10 @@ public partial class Enemy : CharacterBody2D
     [Export] public float MoveSpeed = 100f;
     [Export] public AnimatedSprite2D EnemySprite;
 
-    private bool _movingRight = true;
+    // Inspector toggle: default false
+    [Export] public bool StartCanMove = false;
 
+    private bool _movingRight = true;
     private bool _canMove;
 
     public void EnableMovement()
@@ -15,44 +17,47 @@ public partial class Enemy : CharacterBody2D
     }
 
     public void DisableMovement()
-	{
-		_canMove = false;
-	}
+    {
+        _canMove = false;
+    }
+
+    public bool GetCanMove()
+    {
+        return _canMove;
+    }
 
     public override void _Ready()
     {
         if (EnemySprite == null)
             EnemySprite = GetNodeOrNull<AnimatedSprite2D>("AnimatedSprite2D");
+
+        // Set starting movement state from inspector
+        _canMove = StartCanMove;
     }
 
     public override void _PhysicsProcess(double delta)
     {
-        // Apply gravity (same as player)
-        if (!IsOnFloor())
-            Velocity += GetGravity() * (float)delta;
+        float dt = (float)delta;
 
+        // Always apply gravity
+        if (!IsOnFloor())
+            Velocity += GetGravity() * dt;
+        else
+            Velocity = new Vector2(Velocity.X, 0);
+
+        // If movement is disabled, only stop horizontal movement
         if (_canMove == false)
-		{
-			// Stop horizontal movement
-			Velocity = Vector2.Zero;
-			MoveAndSlide();
-			return;
+        {
+            Velocity = new Vector2(0, Velocity.Y);
+            MoveAndSlide();
+            return;
         }
 
-        // else if (_canMove == true)
-        // {
-            
-        // }
-
-        // Move only while on floor
+        // Horizontal movement only when grounded
         if (IsOnFloor())
         {
             float direction = _movingRight ? 1f : -1f;
             Velocity = new Vector2(direction * MoveSpeed, Velocity.Y);
-        }
-        else
-        {
-            Velocity = new Vector2(0, Velocity.Y);
         }
 
         MoveAndSlide();
@@ -78,7 +83,6 @@ public partial class Enemy : CharacterBody2D
         }
     }
 
-    // Flip sprite AFTER physics (same system as Player)
     public override void _Process(double delta)
     {
         if (EnemySprite != null)

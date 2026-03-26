@@ -115,6 +115,18 @@ public partial class Player : CharacterBody2D
 				if (!_isKnocked)
 					TakeEnemyHit(whipEnemy.GlobalPosition);
 			}
+			else if (collider is Boss bossEnemy) // <-- added
+			{
+				if (normal.Y < -0.7f) // stomp from above
+				{
+					bossEnemy.QueueFree();
+					Bounce(350); // optional bounce
+					continue;
+				}
+
+				if (Mathf.Abs(normal.X) > 0.7f)
+					TakeEnemyHit(bossEnemy.GlobalPosition);
+			}
 
 			if (collider is RigidBody2D block)
 			{
@@ -208,6 +220,13 @@ public partial class Player : CharacterBody2D
 		if (body is WhipEnemy whipEnemy)
 		{
 			TakeEnemyHit(whipEnemy.GlobalPosition);
+			return;
+		}
+
+		if (body is Boss bossEnemy) // <-- added
+		{
+			bossEnemy.QueueFree();
+			Bounce(350); // optional bounce
 			return;
 		}
 	}

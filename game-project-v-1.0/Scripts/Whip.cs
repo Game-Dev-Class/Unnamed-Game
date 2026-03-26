@@ -44,6 +44,10 @@ public partial class Whip : Node2D
         {
             whipEnemy.QueueFree();
         }
+        else if (body is Boss bossEnemy) // <-- added
+        {
+            bossEnemy.QueueFree();
+        }
         else
         {
             // You can add more types here later, e.g. destructible objects

@@ -1,3 +1,4 @@
+res://Scripts/Boss.cs
 res://Scripts/reset.cs
 res://visuals4_files/LevelExit.cs
 res://Scripts/PDoor.cs
@@ -8,9 +9,6 @@ res://Scripts/Player.cs
 res://Scripts/Hud.cs
 res://Scripts/MainScene.cs
 res://Scenes/final_level.tscn
-res://Scenes/boss.tscn
 res://Scenes/boss_room.tscn
-res://Scenes/Boss.cs
-res://Level_2.tscn
-res://Scripts/Boss.cs
-res://Scenes/Level1.tscn
+res://Scripts/WhipEnemy.cs
+res://Scripts/BossRoom.cs
