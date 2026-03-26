@@ -4,7 +4,7 @@ using System;
 public partial class LevelExit : Area2D
 {
 	[Export]
-	public string NextLevelPath = "res://Scenes/Level_1.tscn"; 
+	public string NextLevelPath = "res://Scenes/Level1.tscn"; 
 
 	public override void _Ready()
 	{
