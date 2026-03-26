@@ -1,7 +1,8 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1774475216
+::res://::1774533509
 icon.svg::CompressedTexture2D/CompressedTexture2D::8349551825098459537::1772555905::1772556501::1::::<><><>0<>0<>43b1e8af9c7dcda7e66851ad1bb3f02d<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-::res://Scenes/::1774476369
+::res://Scenes/::1774476529
+Camera.tscn::PackedScene::3846102036471051781::1774475344::0::1::::<><><>0<>0<><>::uid://b3ekn1wrpu4s8::::res://Scenes/hearts.tscn
 enemy.tscn::PackedScene::5091991246998273684::1774469945::0::1::::<><><>0<>0<><>::uid://duhkfw8jgj5f7::::res://Scripts/Enemy.cs<>uid://5da7vnxmfbb4::::res://Sprites/Evil Man animation sprite sheet.png
 enemy_whip.tscn::PackedScene::2865962747094954039::1774469945::0::1::::<><><>0<>0<><>::uid://duq3w17kib6f::::res://Sprites/Evil Man whip only animation sprite sheet.png<>uid://lsu7fijjeatv::::res://WhipEnemy.cs
 hearts.tscn::PackedScene::4360597602208743593::1774469945::0::1::::<><><>0<>0<><>::uid://j26a5fdrute0::::res://Scripts/Hearts.cs<>uid://cnhoinwhh11eb::::res://Sprites/Hearts animation sprite sheet.png
@@ -14,8 +15,7 @@ main_scene.tscn::PackedScene::4901515150290933111::1774473046::0::1::::<><><>0<>
 Pbutton.tscn::PackedScene::2610084789000013216::1773756308::0::1::::<><><>0<>0<><>::uid://4cguvfgl8dte::::res://Scripts/Pbutton.cs<>uid://cmtywltbm8oan::::res://Sprites/button_sprite_sheet.png
 PDoor.tscn::PackedScene::4551042165500123784::1774473404::0::1::::<><><>0<>0<><>::uid://cq4vnylkqtduc::::res://Scripts/PDoor.cs<>uid://dspine7d4uqit::::res://Sprites/Door.png
 platform.tscn::PackedScene::2951361466310411822::1774469963::0::1::::<><><>0<>0<><>::uid://dwanf8dte1qiv::::res://Sprites/pixil-frame-0 (8).png
-player.tscn::PackedScene::2376157701377583383::1774476369::0::1::::<><><>0<>0<><>::uid://buhrr3ntyulgu::::res://Sprites/pixilart-sprite.png<>uid://bfi31e8cot3y::::res://sound/freesound_community-cartoon-jump-6462.mp3<>uid://b1eycyxwaigu7::::res://sound/edr-video-game-hit-noise-001-135821.mp3<>uid://2mavdnbc2r5u::::res://sound/freesound_community-jump-climb-or-damage-sound-f-95942.mp3
-Camera.tscn::PackedScene::3846102036471051781::1774475344::0::1::::<><><>0<>0<><>::uid://b3ekn1wrpu4s8::::res://Scenes/hearts.tscn
+player.tscn::PackedScene::2376157701377583383::1774476529::0::1::::<><><>0<>0<><>::uid://buhrr3ntyulgu::::res://Sprites/pixilart-sprite.png<>uid://bfi31e8cot3y::::res://sound/freesound_community-cartoon-jump-6462.mp3<>uid://b1eycyxwaigu7::::res://sound/edr-video-game-hit-noise-001-135821.mp3<>uid://2mavdnbc2r5u::::res://sound/freesound_community-jump-climb-or-damage-sound-f-95942.mp3<>uid://bvrulqtp4lv02::::res://sound/universfield-whip-02-242215.mp3
 reset.tscn::PackedScene::6024977813979887827::1774469963::0::1::::<><><>0<>0<><>::uid://bc0fgaqxehq7b::::res://Scripts/reset.cs
 sign.tscn::PackedScene::1834773049944263358::1774475978::0::1::::<><><>0<>0<><>::uid://bi846qnst4h5w::::res://Sprites/Sign sprite.png<>uid://cadugbuxkeq40::::res://Scripts/Sign.cs
 small_platform.tscn::PackedScene::1545587234573222053::1774469963::0::1::::<><><>0<>0<><>::uid://dwanf8dte1qiv::::res://Sprites/pixil-frame-0 (8).png

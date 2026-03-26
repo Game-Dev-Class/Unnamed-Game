@@ -236,13 +236,13 @@ script = ExtResource("1_drdnd")
 [node name="Player" parent="." unique_id=2054929316 instance=ExtResource("3_7ewk0")]
 position = Vector2(752, 110)
 script = ExtResource("4_lhp3t")
+PushSpeed = 150.0
 WhipScene = ExtResource("5_gnsmo")
 DefaultWhipDistance = 48.0
 KnockbackHorizontal = 320.0
 KnockbackVertical = 260.0
 KnockbackDuration = 0.45
 IFramesDuration = 1.0
-PushSpeed = 150.0
 
 [node name="Stage" type="TileMapLayer" parent="." unique_id=854476079]
 z_index = 1
@@ -284,4 +284,4 @@ position = Vector2(567, 246)
 position = Vector2(498, 175)
 
 [node name="LevelExit" parent="." unique_id=1768640012 instance=ExtResource("12_drdnd")]
-position = Vector2(61, 92)
+position = Vector2(60, 81)
