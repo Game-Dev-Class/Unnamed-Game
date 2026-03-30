@@ -1,7 +1,4 @@
-res://Scenes/spike.tscn
-res://Scenes/boss_room.tscn
-res://Scenes/player.tscn
-res://Scenes/Spike.cs
+res://Scripts/Spike.cs
 res://Scripts/WhipEnemy.cs
 res://Scripts/BossRoom.cs
 res://Scripts/Boss.cs
@@ -14,4 +11,6 @@ res://Scripts/Whip.cs
 res://Scripts/Player.cs
 res://Scripts/Hud.cs
 res://Scripts/MainScene.cs
-res://Scripts/Spike.cs
+res://Scenes/player.tscn
+res://Scenes/boss_room.tscn
+res://Scripts/Hearts.cs

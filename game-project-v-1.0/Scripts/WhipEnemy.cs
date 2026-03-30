@@ -5,43 +5,16 @@ public partial class WhipEnemy : CharacterBody2D
     [Export] public float MoveSpeed = 100f;
     [Export] public AnimatedSprite2D WhipEnemySprite;
 
-    [Export] public bool StartCanMove = true;
-
     private bool _movingRight = true;
-    private bool _canMove;
-
-    public void EnableMovement()
-    {
-        _canMove = true;
-    }
-
-    public void DisableMovement()
-    {
-        _canMove = false;
-    }
-
-    public bool GetCanMove()
-    {
-        return _canMove;
-    }
 
     public override void _Ready()
     {
         if (WhipEnemySprite == null)
             WhipEnemySprite = GetNodeOrNull<AnimatedSprite2D>("AnimatedSprite2D");
-
-        _canMove = StartCanMove;
     }
 
     public override void _PhysicsProcess(double delta)
     {
-        if (!_canMove)
-        {
-            Velocity = Vector2.Zero;
-            MoveAndSlide();
-            return;
-        }
-
         float dt = (float)delta;
 
         if (!IsOnFloor())

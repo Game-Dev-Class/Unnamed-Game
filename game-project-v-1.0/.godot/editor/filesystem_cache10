@@ -1,8 +1,8 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1774536322
+::res://::1774858065
 icon.svg::CompressedTexture2D/CompressedTexture2D::8349551825098459537::1772090239::1772090294::1::::<><><>0<>0<>43b1e8af9c7dcda7e66851ad1bb3f02d<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 Level_2.tscn::PackedScene::3547145503157409340::1774476032::0::1::::<><><>0<>0<><>::uid://cjlavr3bruxcw::::res://Scripts/MainScene.cs<>uid://cc7cfd3pp5li6::::res://Scenes/hud.tscn<>uid://84a78r8nvygt::::res://Scenes/player.tscn<>uid://6a2jh0mobu6o::::res://Scripts/Player.cs<>uid://bs6cmnu8w1lsj::::res://Scenes/whip.tscn<>uid://dwanf8dte1qiv::::res://Sprites/pixil-frame-0 (8).png<>uid://dbtyq8f5q3yht::::res://Sprites/pixil-frame-0 (4).png<>uid://bibwqy6q4pa2q::::res://Scenes/platform.tscn<>uid://cesul71vygkeu::::res://Scenes/enemy.tscn<>uid://dhxn4a045ytlf::::res://Scenes/invisable_block.tscn<>uid://bdglykxy43ai7::::res://Scenes/Pbutton.tscn<>uid://b53s88qk6ncg3::::res://Scenes/PDoor.tscn<>uid://bfmkj356p71ku::::res://Scenes/boss.tscn
-::res://Scenes/::1774536876
+::res://Scenes/::1774538329
 boss.tscn::PackedScene::2762762195432556832::1774476015::0::1::::<><><>0<>0<><>::uid://b86mtq0ck8wor::::res://Scripts/Boss.cs<>uid://dujnwlsm2att2::::res://Sprites/Boss Man animations sprite sheet.png
 boss_room.tscn::PackedScene::733511790532934973::1774536460::0::1::::<><><>0<>0<><>::uid://brtqrfrqjjyju::::res://Scripts/BossRoom.cs<>uid://84a78r8nvygt::::res://Scenes/player.tscn<>uid://6a2jh0mobu6o::::res://Scripts/Player.cs<>uid://bs6cmnu8w1lsj::::res://Scenes/whip.tscn<>uid://bdglykxy43ai7::::res://Scenes/Pbutton.tscn<>uid://byqp14kubwxah::::res://visuals4_files/block.tscn<>uid://bt2namyhpp4nw::::res://visuals4_files/level_exit.tscn<>uid://cr3srfaok2jhj::::res://Scenes/reset.tscn<>uid://dbtyq8f5q3yht::::res://Sprites/pixil-frame-0 (4).png<>uid://dwanf8dte1qiv::::res://Sprites/pixil-frame-0 (8).png<>uid://dhxn4a045ytlf::::res://Scenes/invisable_block.tscn<>uid://cesul71vygkeu::::res://Scenes/enemy.tscn<>uid://bibwqy6q4pa2q::::res://Scenes/platform.tscn<>uid://bfmkj356p71ku::::res://Scenes/boss.tscn<>uid://bg3j8t2o2rg8f::::res://Scenes/enemy_whip.tscn<>uid://dfqfvmoagmbxg::::res://Scenes/spike.tscn
 enemy.tscn::PackedScene::5091991246998273684::1774367763::0::1::::<><><>0<>0<><>::uid://duhkfw8jgj5f7::::res://Scripts/Enemy.cs<>uid://5da7vnxmfbb4::::res://Sprites/Evil Man animation sprite sheet.png
@@ -16,14 +16,14 @@ main_scene.tscn::PackedScene::4901515150290933111::1774472489::0::1::::<><><>0<>
 Pbutton.tscn::PackedScene::2610084789000013216::1774366125::0::1::::<><><>0<>0<><>::uid://4cguvfgl8dte::::res://Scripts/Pbutton.cs<>uid://cmtywltbm8oan::::res://Sprites/button_sprite_sheet.png
 PDoor.tscn::PackedScene::4551042165500123784::1774472530::0::1::::<><><>0<>0<><>::uid://cq4vnylkqtduc::::res://PDoor.cs<>uid://dspine7d4uqit::::res://Sprites/Door.png
 platform.tscn::PackedScene::2951361466310411822::1774472489::0::1::::<><><>0<>0<><>::uid://dwanf8dte1qiv::::res://Sprites/pixil-frame-0 (8).png
-player.tscn::PackedScene::2376157701377583383::1774536018::0::1::::<><><>0<>0<><>::uid://buhrr3ntyulgu::::res://Sprites/pixilart-sprite.png
+player.tscn::PackedScene::2376157701377583383::1774538329::0::1::::<><><>0<>0<><>::uid://buhrr3ntyulgu::::res://Sprites/pixilart-sprite.png
 reset.tscn::PackedScene::6024977813979887827::1774472530::0::1::::<><><>0<>0<><>::uid://bc0fgaqxehq7b::::res://Scripts/reset.cs
 sign.tscn::PackedScene::1834773049944263358::1774367034::0::1::::<><><>0<>0<><>::uid://bi846qnst4h5w::::res://Sprites/Sign sprite.png<>uid://cadugbuxkeq40::::res://Sign.cs
 small_platform.tscn::PackedScene::1545587234573222053::1774472530::0::1::::<><><>0<>0<><>::uid://dwanf8dte1qiv::::res://Sprites/pixil-frame-0 (8).png
-spike.tscn::PackedScene::7543578051886211800::1774536876::0::1::::<><><>0<>0<><>::uid://citib6p6ubd54::::res://Scripts/Spike.cs<>uid://dxootnn6acnfx::::res://Sprites/Evil Spike Sprite.png
+spike.tscn::PackedScene::7543578051886211800::1774538329::0::1::::<><><>0<>0<><>::uid://bedbp5yhofai4::::res://Scripts/Spike.cs<>uid://dxootnn6acnfx::::res://Sprites/Evil Spike Sprite.png
 test.tscn::PackedScene::2775187675142194092::1774370318::0::1::::<><><>0<>0<><>::uid://cjlavr3bruxcw::::res://Scripts/MainScene.cs<>uid://cc7cfd3pp5li6::::res://Scenes/hud.tscn<>uid://84a78r8nvygt::::res://Scenes/player.tscn<>uid://6a2jh0mobu6o::::res://Scripts/Player.cs<>uid://bs6cmnu8w1lsj::::res://Scenes/whip.tscn<>uid://bhk425mynbpdi::::res://Sprites/pixil-frame-0 (2).png<>uid://doap5hxidi0wr::::res://Sprites/pixil-frame-0 (3).png<>uid://dbtyq8f5q3yht::::res://Sprites/pixil-frame-0 (4).png<>uid://bibwqy6q4pa2q::::res://Scenes/platform.tscn<>uid://cesul71vygkeu::::res://Scenes/enemy.tscn<>uid://dhxn4a045ytlf::::res://Scenes/invisable_block.tscn<>uid://bdglykxy43ai7::::res://Scenes/Pbutton.tscn<>uid://bg3j8t2o2rg8f::::res://Scenes/enemy_whip.tscn<>uid://1e1pdlxib7aw::::res://Scenes/sign.tscn<>uid://b3ekn1wrpu4s8::::res://Scenes/hearts.tscn
 whip.tscn::PackedScene::3713959158295372521::1774374195::0::1::::<><><>0<>0<><>::uid://bhv2xi8xk8wum::::res://Scripts/Whip.cs<>uid://dbi31nbw8anwm::::res://Sprites/Whip/whip.png
-::res://Scripts/::1774537378
+::res://Scripts/::1774538329
 Boss.cs::CSharpScript::4767411647220683245::1774511319::0::1::::<>CharacterBody2D<><>0<>0<><>::
 BossRoom.cs::CSharpScript::3619856322865235390::1774512895::0::1::::<>Node2D<><>0<>0<><>::
 Enemy.cs::CSharpScript::8578106873925132746::1774513189::0::1::::<>CharacterBody2D<><>0<>0<><>::
@@ -33,9 +33,9 @@ MainScene.cs::CSharpScript::5427287553315595910::1774472489::0::1::::<>Node2D<><
 Pbutton.cs::CSharpScript::2040006349848743886::1774366125::0::1::::<>Area2D<><>0<>0<><>::
 PDoor.cs::CSharpScript::5957029370661051726::1774472489::0::1::::<>StaticBody2D<><>0<>0<><>::
 Player.cs::CSharpScript::2177509990576401188::1774511627::0::1::::<>CharacterBody2D<><>0<>0<><>::
-Spike.cs::CSharpScript::2673458308521513621::1774536493::0::1::::<><><>0<>0<><>::
 reset.cs::CSharpScript::2578722140315447385::1774472489::0::1::::<>Node<><>0<>0<><>::
 Sign.cs::CSharpScript::4780259639745133395::1774367084::0::1::::<>Sprite2D<><>0<>0<><>::
+Spike.cs::CSharpScript::2673458308521513621::1774538329::0::1::::<>StaticBody2D<><>0<>0<><>::
 Whip.cs::CSharpScript::2922775426284138324::1774511783::0::1::::<>Node2D<><>0<>0<><>::
 whip.gd::GDScript::7796045558083886187::1774366125::0::1::::<>Node2D<><>0<>0<><>::
 WhipEnemy.cs::CSharpScript::810507840248007915::1774512001::0::1::::<>CharacterBody2D<><>0<>0<><>::

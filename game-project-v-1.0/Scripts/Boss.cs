@@ -6,22 +6,6 @@ public partial class Boss : CharacterBody2D
     [Export] public AnimatedSprite2D EnemySprite;
 
     private bool _movingRight = true;
-    private bool _canMove = true;
-
-    public void EnableMovement()
-    {
-        _canMove = true;
-    }
-
-    public void DisableMovement()
-    {
-        _canMove = false;
-    }
-
-    public bool GetCanMove()
-    {
-        return _canMove;
-    }
 
     public override void _Ready()
     {
@@ -37,13 +21,6 @@ public partial class Boss : CharacterBody2D
             Velocity += GetGravity() * dt;
         else
             Velocity = new Vector2(Velocity.X, 0);
-
-        if (_canMove == false)
-        {
-            Velocity = new Vector2(0, Velocity.Y);
-            MoveAndSlide();
-            return;
-        }
 
         if (IsOnFloor())
         {

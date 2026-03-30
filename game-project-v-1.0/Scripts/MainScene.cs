@@ -10,8 +10,7 @@ public partial class MainScene : Node2D
 	private PDoor _door;
 	private Enemy _enemy1;
 	private Enemy _enemy2;
-	
-	// Called when the node enters the scene tree for the first time.
+
 	public override void _Ready()
 	{
 		_tileMap = GetNode<TileMapLayer>("Stage");
@@ -21,48 +20,15 @@ public partial class MainScene : Node2D
 		_door = GetNode<PDoor>("PDoor");
 		_enemy1 = GetNode<Enemy>("Enemy");
 		_enemy2 = GetNode<Enemy>("enemy");
-		
+
 		_button.ButtonTrigger += _door.OnButtonTrigger;
 		_hud.StartGame += StartStage;
-		_player.DisableMovement(); 
-		_enemy1.DisableMovement();
-        _enemy2.DisableMovement();
 	}
-	
+
 	public void StartStage()
 	{
 		GD.Print("The stage started.");
 		_tileMap.Visible = true;
 		_player.Visible = true;
-		_player.EnableMovement();
-		_enemy1.EnableMovement();
-		_enemy2.EnableMovement();
-	}
-
-	private void PauseGame()
-	{
-		if (_player.GetCanMove() == true)
-		{
-			_player.DisableMovement();
-			_enemy1.DisableMovement();
-			_enemy2.DisableMovement();
-		}
-
-		else if (_player.GetCanMove() == false)
-		{
-			_player.EnableMovement();
-			_enemy1.EnableMovement();
-			_enemy2.EnableMovement();
-		}
-	}	
-	
-	// Called every frame. 'delta' is the elapsed time since the previous frame.
-	public override void _Process(double delta)
-	{
-
-		if (Input.IsActionJustPressed("pause"))
-		{
-			PauseGame();
-		}
 	}
 }

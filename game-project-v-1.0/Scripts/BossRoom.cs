@@ -13,8 +13,6 @@ public partial class BossRoom : Node2D
 	private WhipEnemy _whipEnemy;
 	private Boss _boss;
 
-	private bool _isPaused = false;
-
 	public override void _Ready()
 	{
 		_tileMap = GetNodeOrNull<TileMapLayer>("Stage");
@@ -31,18 +29,9 @@ public partial class BossRoom : Node2D
 			_button.ButtonTrigger += _door.OnButtonTrigger;
 
 		if (_hud != null)
-		{
 			_hud.StartGame += StartStage;
-			_player?.DisableMovement();
-			_enemy1?.DisableMovement();
-			_enemy2?.DisableMovement();
-			_whipEnemy?.DisableMovement();
-			_boss?.DisableMovement();
-		}
 		else
-		{
 			StartStage();
-		}
 	}
 
 	public void StartStage()
@@ -53,44 +42,6 @@ public partial class BossRoom : Node2D
 			_tileMap.Visible = true;
 
 		if (_player != null)
-		{
 			_player.Visible = true;
-			_player.EnableMovement();
-		}
-
-		_enemy1?.EnableMovement();
-		_enemy2?.EnableMovement();
-		_whipEnemy?.EnableMovement();
-		_boss?.EnableMovement();
-
-		_isPaused = false;
-	}
-
-	private void PauseGame()
-	{
-		_isPaused = !_isPaused;
-
-		if (_isPaused)
-		{
-			_player?.DisableMovement();
-			_enemy1?.DisableMovement();
-			_enemy2?.DisableMovement();
-			_whipEnemy?.DisableMovement();
-			_boss?.DisableMovement();
-		}
-		else
-		{
-			_player?.EnableMovement();
-			_enemy1?.EnableMovement();
-			_enemy2?.EnableMovement();
-			_whipEnemy?.EnableMovement();
-			_boss?.EnableMovement();
-		}
-	}
-
-	public override void _Process(double delta)
-	{
-		if (Input.IsActionJustPressed("pause"))
-			PauseGame();
 	}
 }

@@ -5,9 +5,10 @@ public partial class Player : CharacterBody2D
 {
 	private const float SPEED = 300.0f;
 	private const float JUMP_VELOCITY = -350.0f;
-	public int Health = 3;
 
-	private bool _canMove = true;
+	[Export] public int MaxHealth = 3;
+	public int Health { get; private set; }
+
 	private bool _facingRight = true;
 	private bool _isKnocked = false;
 	private bool _isIFrames = false;
@@ -26,10 +27,14 @@ public partial class Player : CharacterBody2D
 
 	[Export] public float PushSpeed = 150.0f;
 
-	[Signal] public delegate void HealthChangedEventHandler(int health);
+	[Signal]
+	public delegate void HealthChangedEventHandler(int health);
 
 	public override void _Ready()
 	{
+		Health = MaxHealth;
+		EmitSignal(SignalName.HealthChanged, Health);
+
 		if (PlayerSprite == null)
 			PlayerSprite = GetNodeOrNull<AnimatedSprite2D>("AnimatedSprite2D");
 
@@ -40,31 +45,8 @@ public partial class Player : CharacterBody2D
 			FeetArea.BodyEntered += OnFeetBodyEntered;
 	}
 
-	public void EnableMovement()
-	{
-		_canMove = true;
-	}
-
-	public void DisableMovement()
-	{
-		_canMove = false;
-		Velocity = Vector2.Zero;
-	}
-
-	public bool GetCanMove()
-	{
-		return _canMove;
-	}
-
 	public override void _PhysicsProcess(double delta)
 	{
-		if (!_canMove)
-		{
-			Velocity = Vector2.Zero;
-			MoveAndSlide();
-			return;
-		}
-
 		if (!IsOnFloor())
 			Velocity += GetGravity() * (float)delta;
 
@@ -115,12 +97,12 @@ public partial class Player : CharacterBody2D
 				if (!_isKnocked)
 					TakeEnemyHit(whipEnemy.GlobalPosition);
 			}
-			else if (collider is Boss bossEnemy) // <-- added
+			else if (collider is Boss bossEnemy)
 			{
-				if (normal.Y < -0.7f) // stomp from above
+				if (normal.Y < -0.7f)
 				{
 					bossEnemy.QueueFree();
-					Bounce(350); // optional bounce
+					Bounce(350);
 					continue;
 				}
 
@@ -176,7 +158,7 @@ public partial class Player : CharacterBody2D
 			return;
 
 		GD.Print("damage taken");
-		Health -= 1;
+		Health = Mathf.Max(Health - 1, 0);
 		EmitSignal(SignalName.HealthChanged, Health);
 
 		if (Health <= 0)
@@ -223,10 +205,10 @@ public partial class Player : CharacterBody2D
 			return;
 		}
 
-		if (body is Boss bossEnemy) // <-- added
+		if (body is Boss bossEnemy)
 		{
 			bossEnemy.QueueFree();
-			Bounce(350); // optional bounce
+			Bounce(350);
 			return;
 		}
 	}
