@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://1e1pdlxib7aw"]
 
 [ext_resource type="Texture2D" uid="uid://bi846qnst4h5w" path="res://Sprites/Sign sprite.png" id="1_mbcot"]
-[ext_resource type="Script" uid="uid://cadugbuxkeq40" path="res://Sign.cs" id="2_w2mlg"]
+[ext_resource type="Script" uid="uid://cadugbuxkeq40" path="res://Scripts/Sign.cs" id="2_w2mlg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_w2mlg"]
 size = Vector2(28, 16)
@@ -20,8 +20,9 @@ position = Vector2(0, 2)
 shape = SubResource("RectangleShape2D_w2mlg")
 
 [node name="Label" type="Label" parent="." unique_id=1030558150]
-offset_left = -80.0
-offset_top = -48.0
-offset_right = 82.0
-offset_bottom = -25.0
+offset_left = -106.0
+offset_top = -67.0
+offset_right = 107.0
+offset_bottom = -44.0
 horizontal_alignment = 1
+autowrap_mode = 2

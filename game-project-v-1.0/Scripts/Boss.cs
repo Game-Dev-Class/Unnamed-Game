@@ -3,14 +3,33 @@ using Godot;
 public partial class Boss : CharacterBody2D
 {
     [Export] public float MoveSpeed = 100f;
+    [Export] public int MaxHealth = 3;
+    [Export] public float DamageCooldown = 0.5f;
     [Export] public AnimatedSprite2D EnemySprite;
 
+    [Export] public AudioStream DamageSound; // <-- assign in inspector
+
+    public int Health { get; private set; }
+
     private bool _movingRight = true;
+    private bool _canTakeDamage = true;
+
+    private AudioStreamPlayer2D _audioPlayer;
 
     public override void _Ready()
     {
+        Health = MaxHealth;
+
         if (EnemySprite == null)
             EnemySprite = GetNodeOrNull<AnimatedSprite2D>("AnimatedSprite2D");
+
+        // Create AudioStreamPlayer2D if we have a sound assigned
+        if (DamageSound != null)
+        {
+            _audioPlayer = new AudioStreamPlayer2D();
+            AddChild(_audioPlayer);
+            _audioPlayer.Stream = DamageSound;
+        }
     }
 
     public override void _PhysicsProcess(double delta)
@@ -36,13 +55,12 @@ public partial class Boss : CharacterBody2D
             var collider = collision.GetCollider();
             Vector2 normal = collision.GetNormal();
 
-            // Hit player → knockback
             if (collider is Player player)
             {
                 player.TakeEnemyHit(GlobalPosition);
+                continue;
             }
 
-            // Flip on invisible wall (layer 3)
             if (collider is PhysicsBody2D body)
             {
                 if ((body.CollisionLayer & (1 << 2)) != 0)
@@ -61,5 +79,30 @@ public partial class Boss : CharacterBody2D
     {
         if (EnemySprite != null)
             EnemySprite.FlipH = !_movingRight;
+    }
+
+    public void TakeDamage(int amount = 1)
+    {
+        if (!_canTakeDamage)
+            return;
+
+        Health = Mathf.Max(Health - amount, 0);
+        GD.Print("Boss HP: ", Health);
+
+        // Play damage sound
+        if (_audioPlayer != null)
+            _audioPlayer.Play();
+
+        if (Health <= 0)
+        {
+            _audioPlayer.Play();
+            QueueFree();
+            return;
+        }
+
+        _canTakeDamage = false;
+
+        var timer = GetTree().CreateTimer(DamageCooldown);
+        timer.Timeout += () => _canTakeDamage = true;
     }
 }

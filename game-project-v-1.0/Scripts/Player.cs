@@ -12,11 +12,14 @@ public partial class Player : CharacterBody2D
 	private bool _facingRight = true;
 	private bool _isKnocked = false;
 	private bool _isIFrames = false;
+	private bool _canWhip = true;
 
 	[Export] public PackedScene WhipScene;
 	[Export] public float DefaultWhipDistance = 48.0f;
 	[Export] public Godot.Range WhipDistanceSlider;
 	[Export] public AnimatedSprite2D PlayerSprite;
+
+	[Export] public float WhipCooldown = 0.5f;
 
 	[Export] public float KnockbackHorizontal = 320f;
 	[Export] public float KnockbackVertical = 260f;
@@ -70,7 +73,7 @@ public partial class Player : CharacterBody2D
 				Velocity = new Vector2(Mathf.MoveToward(Velocity.X, 0, SPEED), Velocity.Y);
 		}
 
-		if (Input.IsActionJustPressed("whip"))
+		if (Input.IsActionJustPressed("whip") && _canWhip)
 			SpawnWhip();
 
 		MoveAndSlide();
@@ -86,6 +89,7 @@ public partial class Player : CharacterBody2D
 				if (normal.Y < -0.7f)
 				{
 					normalEnemy.QueueFree();
+					Bounce(350);
 					continue;
 				}
 
@@ -108,6 +112,11 @@ public partial class Player : CharacterBody2D
 
 				if (Mathf.Abs(normal.X) > 0.7f)
 					TakeEnemyHit(bossEnemy.GlobalPosition);
+			}
+			else if (collider is Spike spike)
+			{
+				PlayerDies();
+				return;
 			}
 
 			if (collider is RigidBody2D block)
@@ -133,6 +142,8 @@ public partial class Player : CharacterBody2D
 		if (WhipScene == null)
 			return;
 
+		_canWhip = false;
+
 		float distance = DefaultWhipDistance;
 		if (WhipDistanceSlider != null)
 			distance = (float)WhipDistanceSlider.Value;
@@ -143,6 +154,9 @@ public partial class Player : CharacterBody2D
 		float dir = _facingRight ? 1f : -1f;
 		whipNode.GlobalPosition = GlobalPosition + new Vector2(distance * dir, 0);
 		whipNode.Scale = new Vector2(_facingRight ? -1f : 1f, 1f);
+
+		var timer = GetTree().CreateTimer(WhipCooldown);
+		timer.Timeout += () => _canWhip = true;
 	}
 
 	private void SetInvulnerableCollision(bool enabled)
@@ -196,6 +210,7 @@ public partial class Player : CharacterBody2D
 		if (body is Enemy normalEnemy)
 		{
 			normalEnemy.QueueFree();
+			Bounce(350);
 			return;
 		}
 
@@ -209,6 +224,12 @@ public partial class Player : CharacterBody2D
 		{
 			bossEnemy.QueueFree();
 			Bounce(350);
+			return;
+		}
+
+		if (body is Spike spike)
+		{
+			PlayerDies();
 			return;
 		}
 	}

@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://bfmkj356p71ku"]
 
 [ext_resource type="Script" uid="uid://b86mtq0ck8wor" path="res://Scripts/Boss.cs" id="1_wwfse"]
+[ext_resource type="AudioStream" uid="uid://bssfflilkd81i" path="res://Audio/boss_hit.mp3" id="2_cxrok"]
 [ext_resource type="Texture2D" uid="uid://dujnwlsm2att2" path="res://Sprites/Boss Man animations sprite sheet.png" id="2_wwfse"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7k104"]
@@ -32,6 +33,7 @@ animations = [{
 collision_layer = 2
 collision_mask = 7
 script = ExtResource("1_wwfse")
+DamageSound = ExtResource("2_cxrok")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=580514302]
 position = Vector2(0, -0.5)
