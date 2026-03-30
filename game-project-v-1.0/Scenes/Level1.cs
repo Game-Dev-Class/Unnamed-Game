@@ -1,16 +1,15 @@
 using Godot;
 using System;
 
-public partial class MainScene : Node2D
+public partial class Level1 : Node2D
 {
 	private TileMapLayer _tileMap;
 	private Hud _hud;
 	private Player _player;
 	private Pbutton _button;
 	private PDoor _door;
-	private Enemy _enemy1;
-	private Enemy _enemy2;
-	
+	private Pbutton _button2;
+	private PDoor _door2;
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
@@ -19,50 +18,31 @@ public partial class MainScene : Node2D
 		_player = GetNode<Player>("Player");
 		_button = GetNode<Pbutton>("Pbutton");
 		_door = GetNode<PDoor>("PDoor");
-		_enemy1 = GetNode<Enemy>("Enemy");
-		_enemy2 = GetNode<Enemy>("enemy");
-		
+		_button2 = GetNode<Pbutton>("Pbutton2");
+		_door2 = GetNode<PDoor>("PDoor2");
+
 		_button.ButtonTrigger += _door.OnButtonTrigger;
+		_button2.ButtonTrigger += _door2.OnButtonTrigger;
+		var player = GetNode<Player>("Player");
+		var hearts = GetNode<Hearts>("Hearts");
+		player.HealthChanged += hearts.OnHealthChanged;
+		hearts.OnHealthChanged(player.Health);
+
 		_hud.StartGame += StartStage;
-		_player.DisableMovement(); 
-		_enemy1.DisableMovement();
-		_enemy2.DisableMovement();
+		_player.DisableMovement();
 	}
-	
-	public void StartStage()
+
+	private void StartStage()
 	{
-		GD.Print("The stage started.");
 		_tileMap.Visible = true;
 		_player.Visible = true;
 		_player.EnableMovement();
-		_enemy1.EnableMovement();
-		_enemy2.EnableMovement();
 	}
 
-	private void PauseGame()
-	{
-		if (_player.GetCanMove() == true)
-		{
-			_player.DisableMovement();
-			_enemy1.DisableMovement();
-			_enemy2.DisableMovement();
-		}
 
-		else if (_player.GetCanMove() == false)
-		{
-			_player.EnableMovement();
-			_enemy1.EnableMovement();
-			_enemy2.EnableMovement();
-		}
-	}	
-	
+
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta)
 	{
-
-		if (Input.IsActionJustPressed("pause"))
-		{
-			PauseGame();
-		}
 	}
 }

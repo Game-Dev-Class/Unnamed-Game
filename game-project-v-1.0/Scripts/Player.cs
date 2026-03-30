@@ -12,18 +12,24 @@ public partial class Player : CharacterBody2D
 	private bool _isKnocked = false;
 	private bool _isIFrames = false;
 
+	[ExportGroup("Scenes and Nodes")]
 	[Export] public PackedScene WhipScene;
 	[Export] public float DefaultWhipDistance = 48.0f;
 	[Export] public Godot.Range WhipDistanceSlider;
 	[Export] public AnimatedSprite2D PlayerSprite;
+	[Export] public Area2D FeetArea;
 
+	[ExportGroup("Audio")]
+	[Export] public AudioStreamPlayer2D JumpSound;
+	[Export] public AudioStreamPlayer2D WhipSound;
+	[Export] public AudioStreamPlayer2D HurtSound;
+	[Export] public AudioStreamPlayer2D EnemyDeathSound;
+
+	[ExportGroup("Combat Mechanics")]
 	[Export] public float KnockbackHorizontal = 320f;
 	[Export] public float KnockbackVertical = 260f;
 	[Export] public float KnockbackDuration = 0.45f;
 	[Export] public float IFramesDuration = 1f;
-
-	[Export] public Area2D FeetArea;
-
 	[Export] public float PushSpeed = 150.0f;
 
 	[Signal] public delegate void HealthChangedEventHandler(int health);
@@ -36,14 +42,17 @@ public partial class Player : CharacterBody2D
 		if (FeetArea == null)
 			FeetArea = GetNodeOrNull<Area2D>("FeetArea");
 
+		// Attempt to auto-grab sound nodes if they aren't assigned in the inspector
+		JumpSound ??= GetNodeOrNull<AudioStreamPlayer2D>("JumpSound");
+		WhipSound ??= GetNodeOrNull<AudioStreamPlayer2D>("WhipSound");
+		HurtSound ??= GetNodeOrNull<AudioStreamPlayer2D>("HurtSound");
+		EnemyDeathSound ??= GetNodeOrNull<AudioStreamPlayer2D>("EnemyDeathSound");
+
 		if (FeetArea != null)
 			FeetArea.BodyEntered += OnFeetBodyEntered;
 	}
 
-	public void EnableMovement()
-	{
-		_canMove = true;
-	}
+	public void EnableMovement() => _canMove = true;
 
 	public void DisableMovement()
 	{
@@ -51,10 +60,7 @@ public partial class Player : CharacterBody2D
 		Velocity = Vector2.Zero;
 	}
 
-	public bool GetCanMove()
-	{
-		return _canMove;
-	}
+	public bool GetCanMove() => _canMove;
 
 	public override void _PhysicsProcess(double delta)
 	{
@@ -68,8 +74,12 @@ public partial class Player : CharacterBody2D
 		if (!IsOnFloor())
 			Velocity += GetGravity() * (float)delta;
 
+		// --- JUMP ---
 		if (!_isKnocked && Input.IsActionJustPressed("ui_accept") && IsOnFloor())
+		{
 			Velocity = new Vector2(Velocity.X, JUMP_VELOCITY);
+			JumpSound?.Play();
+		}
 
 		float direction = 0f;
 		if (!_isKnocked)
@@ -88,6 +98,7 @@ public partial class Player : CharacterBody2D
 				Velocity = new Vector2(Mathf.MoveToward(Velocity.X, 0, SPEED), Velocity.Y);
 		}
 
+		// --- WHIP ---
 		if (Input.IsActionJustPressed("whip"))
 			SpawnWhip();
 
@@ -101,9 +112,10 @@ public partial class Player : CharacterBody2D
 
 			if (collider is Enemy normalEnemy)
 			{
+				// --- STOMP (Collision Loop) ---
 				if (normal.Y < -0.7f)
 				{
-					normalEnemy.QueueFree();
+					KillEnemy(normalEnemy);
 					continue;
 				}
 
@@ -139,6 +151,8 @@ public partial class Player : CharacterBody2D
 		if (WhipScene == null)
 			return;
 
+		WhipSound?.Play();
+
 		float distance = DefaultWhipDistance;
 		if (WhipDistanceSlider != null)
 			distance = (float)WhipDistanceSlider.Value;
@@ -163,6 +177,7 @@ public partial class Player : CharacterBody2D
 		if (_isIFrames)
 			return;
 
+		HurtSound?.Play();
 		GD.Print("damage taken");
 		Health -= 1;
 		EmitSignal(SignalName.HealthChanged, Health);
@@ -177,7 +192,6 @@ public partial class Player : CharacterBody2D
 			return;
 
 		float dir = Mathf.Sign(GlobalPosition.X - enemyPosition.X);
-
 		Velocity = new Vector2(dir * KnockbackHorizontal, -KnockbackVertical);
 
 		_facingRight = dir > 0;
@@ -199,9 +213,10 @@ public partial class Player : CharacterBody2D
 
 	private void OnFeetBodyEntered(Node body)
 	{
+		// --- STOMP (Area2D) ---
 		if (body is Enemy normalEnemy)
 		{
-			normalEnemy.QueueFree();
+			KillEnemy(normalEnemy);
 			return;
 		}
 
@@ -210,6 +225,12 @@ public partial class Player : CharacterBody2D
 			TakeEnemyHit(whipEnemy.GlobalPosition);
 			return;
 		}
+	}
+
+	private void KillEnemy(Node enemy)
+	{
+		EnemyDeathSound?.Play();
+		enemy.QueueFree();
 	}
 
 	private void PlayerDies()

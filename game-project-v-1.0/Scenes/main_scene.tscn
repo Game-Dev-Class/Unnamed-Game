@@ -12,7 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://cesul71vygkeu" path="res://Scenes/enemy.tscn" id="10_b48ew"]
 [ext_resource type="PackedScene" uid="uid://dhxn4a045ytlf" path="res://Scenes/invisable_block.tscn" id="11_8edxt"]
 [ext_resource type="PackedScene" uid="uid://bdglykxy43ai7" path="res://Scenes/Pbutton.tscn" id="12_5oxhp"]
-[ext_resource type="PackedScene" uid="uid://b53s88qk6ncg3" path="res://PDoor.tscn" id="13_ioaeq"]
+[ext_resource type="PackedScene" uid="uid://b53s88qk6ncg3" path="res://Scenes/PDoor.tscn" id="13_ioaeq"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_d5x1h"]
 texture = ExtResource("6_psl12")
@@ -158,6 +158,10 @@ position = Vector2(752, 110)
 script = ExtResource("4_lhp3t")
 WhipScene = ExtResource("5_gnsmo")
 DefaultWhipDistance = 48.0
+KnockbackHorizontal = 320.0
+KnockbackVertical = 260.0
+KnockbackDuration = 0.45
+IFramesDuration = 1.0
 PushSpeed = 150.0
 
 [node name="Stage" type="TileMapLayer" parent="." unique_id=854476079]

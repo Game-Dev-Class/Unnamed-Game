@@ -1,21 +1,23 @@
-[gd_scene format=4 uid="uid://boqq52sf4bxel"]
+[gd_scene format=4 uid="uid://d1ckqm6qa1b5a"]
 
-[ext_resource type="Script" uid="uid://cjlavr3bruxcw" path="res://Scripts/MainScene.cs" id="1_77p6a"]
-[ext_resource type="PackedScene" uid="uid://84a78r8nvygt" path="res://Scenes/player.tscn" id="2_py4ex"]
-[ext_resource type="Script" uid="uid://6a2jh0mobu6o" path="res://Scripts/Player.cs" id="3_xjqmg"]
-[ext_resource type="PackedScene" uid="uid://bs6cmnu8w1lsj" path="res://Scenes/whip.tscn" id="4_4kw2n"]
-[ext_resource type="PackedScene" uid="uid://bdglykxy43ai7" path="res://Scenes/Pbutton.tscn" id="5_567hc"]
-[ext_resource type="PackedScene" uid="uid://byqp14kubwxah" path="res://visuals4_files/block.tscn" id="6_i14ll"]
-[ext_resource type="PackedScene" uid="uid://bt2namyhpp4nw" path="res://visuals4_files/level_exit.tscn" id="7_xcxu7"]
-[ext_resource type="PackedScene" uid="uid://cr3srfaok2jhj" path="res://Scenes/reset.tscn" id="8_8ha17"]
-[ext_resource type="Texture2D" uid="uid://dbtyq8f5q3yht" path="res://Sprites/pixil-frame-0 (4).png" id="9_yo34o"]
-[ext_resource type="Texture2D" uid="uid://dwanf8dte1qiv" path="res://Sprites/pixil-frame-0 (8).png" id="10_xl404"]
-[ext_resource type="PackedScene" uid="uid://dhxn4a045ytlf" path="res://Scenes/invisable_block.tscn" id="11_hq263"]
-[ext_resource type="PackedScene" uid="uid://cesul71vygkeu" path="res://Scenes/enemy.tscn" id="12_dju48"]
-[ext_resource type="PackedScene" uid="uid://bibwqy6q4pa2q" path="res://Scenes/platform.tscn" id="13_oc1ce"]
+[ext_resource type="Script" uid="uid://crxcbfk5cxxrt" path="res://Scenes/Level1.cs" id="1_ubfni"]
+[ext_resource type="PackedScene" uid="uid://84a78r8nvygt" path="res://Scenes/player.tscn" id="2_wwu6c"]
+[ext_resource type="Script" uid="uid://6a2jh0mobu6o" path="res://Scripts/Player.cs" id="3_yymuf"]
+[ext_resource type="PackedScene" uid="uid://bs6cmnu8w1lsj" path="res://Scenes/whip.tscn" id="4_esggg"]
+[ext_resource type="PackedScene" uid="uid://byqp14kubwxah" path="res://visuals4_files/block.tscn" id="5_nolpu"]
+[ext_resource type="PackedScene" uid="uid://bt2namyhpp4nw" path="res://visuals4_files/level_exit.tscn" id="6_mcj63"]
+[ext_resource type="PackedScene" uid="uid://cr3srfaok2jhj" path="res://Scenes/reset.tscn" id="7_af2a1"]
+[ext_resource type="Texture2D" uid="uid://dbtyq8f5q3yht" path="res://Sprites/pixil-frame-0 (4).png" id="8_ocmlb"]
+[ext_resource type="Texture2D" uid="uid://dwanf8dte1qiv" path="res://Sprites/pixil-frame-0 (8).png" id="9_tlxhh"]
+[ext_resource type="PackedScene" uid="uid://dhxn4a045ytlf" path="res://Scenes/invisable_block.tscn" id="10_rxhxl"]
+[ext_resource type="PackedScene" uid="uid://cesul71vygkeu" path="res://Scenes/enemy.tscn" id="11_h54da"]
+[ext_resource type="PackedScene" uid="uid://bibwqy6q4pa2q" path="res://Scenes/platform.tscn" id="12_fg80b"]
+[ext_resource type="PackedScene" uid="uid://1e1pdlxib7aw" path="res://Scenes/sign.tscn" id="13_icduq"]
+[ext_resource type="PackedScene" uid="uid://b53s88qk6ncg3" path="res://Scenes/PDoor.tscn" id="14_pmaet"]
+[ext_resource type="PackedScene" uid="uid://bdglykxy43ai7" path="res://Scenes/Pbutton.tscn" id="15_x7ktg"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_u3gjj"]
-texture = ExtResource("9_yo34o")
+texture = ExtResource("8_ocmlb")
 texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
@@ -72,7 +74,7 @@ texture_region_size = Vector2i(32, 32)
 15:3/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wudnq"]
-texture = ExtResource("10_xl404")
+texture = ExtResource("9_tlxhh")
 texture_region_size = Vector2i(32, 32)
 1:0/0 = 0
 1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, 1.5550232, -16, -16, 16, -16, 16, 16, -16, 16)
@@ -114,7 +116,7 @@ sources/2 = SubResource("TileSetAtlasSource_u3gjj")
 sources/3 = SubResource("TileSetAtlasSource_wudnq")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ddsnb"]
-texture = ExtResource("10_xl404")
+texture = ExtResource("9_tlxhh")
 texture_region_size = Vector2i(32, 32)
 3:0/0 = 0
 4:0/0 = 0
@@ -223,13 +225,13 @@ _data = {
 &"platform_2": SubResource("Animation_42uki")
 }
 
-[node name="Main Scene" type="Node2D" unique_id=157301859]
-script = ExtResource("1_77p6a")
+[node name="Level1" type="Node2D" unique_id=157301859]
+script = ExtResource("1_ubfni")
 
-[node name="Player" parent="." unique_id=2054929316 instance=ExtResource("2_py4ex")]
-position = Vector2(572, 237)
-script = ExtResource("3_xjqmg")
-WhipScene = ExtResource("4_4kw2n")
+[node name="Player" parent="." unique_id=2054929316 instance=ExtResource("2_wwu6c")]
+position = Vector2(574, 162)
+script = ExtResource("3_yymuf")
+WhipScene = ExtResource("4_esggg")
 DefaultWhipDistance = 48.0
 KnockbackHorizontal = 320.0
 KnockbackVertical = 260.0
@@ -237,17 +239,14 @@ KnockbackDuration = 0.45
 IFramesDuration = 1.0
 PushSpeed = 150.0
 
-[node name="Pbutton" parent="." unique_id=737130439 instance=ExtResource("5_567hc")]
-position = Vector2(146, 174)
-
-[node name="Block" parent="." unique_id=77543997 instance=ExtResource("6_i14ll")]
+[node name="Block" parent="." unique_id=77543997 instance=ExtResource("5_nolpu")]
 position = Vector2(403, 259)
 
-[node name="LevelExit" parent="." unique_id=1768640012 instance=ExtResource("7_xcxu7")]
+[node name="LevelExit" parent="." unique_id=1768640012 instance=ExtResource("6_mcj63")]
 position = Vector2(1082, 84)
 collision_mask = 3
 
-[node name="reset" parent="." unique_id=1775733007 instance=ExtResource("8_8ha17")]
+[node name="reset" parent="." unique_id=1775733007 instance=ExtResource("7_af2a1")]
 
 [node name="Stage2" type="TileMapLayer" parent="." unique_id=1941575229]
 z_index = 1
@@ -261,18 +260,51 @@ z_index = -1
 tile_map_data = PackedByteArray("AAAHAAYAAAAAAAMAAAAHAAcAAAAAAAMAAAAHAAgAAAAAAAMAAAAIAAYAAAAAAAMAAAAIAAcAAAAAAAMAAAAIAAgAAAAAAAMAAAAJAAYAAAAAAAMAAAAJAAcAAAAAAAMAAAAJAAgAAAAAAAMAAAAKAAYAAAAAAAMAAAAKAAcAAAAAAAMAAAAKAAgAAAAAAAMAAAALAAYAAAAAAAMAAAALAAcAAAAAAAMAAAALAAgAAAAAAAMAAAAMAAYAAAAAAAMAAAAMAAcAAAAAAAMAAAAMAAgAAAAAAAMAAAANAAYAAAAAAAMAAAANAAcAAAAAAAMAAAANAAgAAAAAAAMAAAAOAAYAAAAAAAMAAAAOAAcAAAAAAAMAAAAOAAgAAAAAAAMAAAAPAAYAAAAAAAMAAAAPAAcAAAAAAAMAAAAPAAgAAAAAAAMAAAAQAAYAAAAAAAMAAAAQAAcAAAAAAAMAAAAQAAgAAAAAAAMAAAARAAYAAAAAAAMAAAARAAcAAAAAAAMAAAARAAgAAAAAAAMAAAASAAYAAAAAAAMAAAASAAcAAAAAAAMAAAASAAgAAAAAAAMAAAATAAYAAAAAAAMAAAATAAcAAAAAAAMAAAATAAgAAAAAAAMAAAAUAAYAAAAAAAMAAAAUAAcAAAAAAAMAAAAUAAgAAAAAAAMAAAAVAAYAAAAAAAMAAAAVAAcAAAAAAAMAAAAVAAgAAAAAAAMAAAAWAAYAAAAAAAMAAAAWAAcAAAAAAAMAAAAWAAgAAAAAAAMAAAAXAAYAAAAAAAMAAAAXAAcAAAAAAAMAAAAXAAgAAAAAAAMAAAAYAAYAAAAAAAMAAAAYAAcAAAAAAAMAAAAYAAgAAAAAAAMAAAAZAAYAAAAAAAMAAAAZAAcAAAAAAAMAAAAZAAgAAAAAAAMAAAAaAAYAAAAAAAMAAAAaAAcAAAAAAAMAAAAaAAgAAAAAAAMAAAAbAAYAAAAAAAMAAAAbAAcAAAAAAAMAAAAbAAgAAAAAAAMAAAAcAAYAAAAAAAMAAAAcAAcAAAAAAAMAAAAcAAgAAAAAAAMAAAAdAAYAAAAAAAMAAAAdAAcAAAAAAAMAAAAdAAgAAAAAAAMAAAAeAAYAAAAAAAMAAAAeAAcAAAAAAAMAAAAeAAgAAAAAAAMAAAAfAAYAAAAAAAMAAAAfAAcAAAAAAAMAAAAfAAgAAAAAAAMAAAAgAAYAAAAAAAMAAAAgAAcAAAAAAAMAAAAgAAgAAAAAAAMAAAAhAAYAAAAAAAMAAAAhAAcAAAAAAAMAAAAhAAgAAAAAAAMAAAAiAAYAAAAAAAMAAAAiAAcAAAAAAAMAAAAiAAgAAAAAAAMAAAADAAMAAAABAAMAAAAEAAMAAAABAAMAAAAFAAMAAAABAAMAAAAGAAMAAAABAAMAAAAHAAMAAAABAAMAAAAIAAMAAAABAAMAAAAJAAMAAAABAAMAAAAKAAMAAAABAAMAAAALAAMAAAABAAMAAAAMAAMAAAABAAMAAAANAAMAAAABAAMAAAAOAAMAAAABAAMAAAAPAAMAAAABAAMAAAAQAAMAAAABAAMAAAARAAMAAAABAAMAAAASAAMAAAABAAMAAAATAAMAAAABAAMAAAAUAAMAAAABAAMAAAAVAAMAAAABAAMAAAAWAAMAAAABAAMAAAAXAAMAAAABAAMAAAAAAAMAAAABAAMAAAAAAAQAAAABAAMAAAAAAAUAAAABAAMAAAABAAMAAAABAAMAAAABAAQAAAABAAMAAAABAAUAAAABAAMAAAACAAMAAAABAAMAAAACAAQAAAABAAMAAAACAAUAAAABAAMAAAADAAQAAAABAAMAAAADAAUAAAABAAMAAAAEAAQAAAABAAMAAAAEAAUAAAABAAMAAAAFAAQAAAABAAMAAAAFAAUAAAABAAMAAAAGAAQAAAABAAMAAAAGAAUAAAABAAMAAAAHAAQAAAABAAMAAAAHAAUAAAABAAMAAAAIAAQAAAABAAMAAAAIAAUAAAABAAMAAAAJAAQAAAABAAMAAAAJAAUAAAABAAMAAAAKAAQAAAABAAMAAAAKAAUAAAABAAMAAAALAAQAAAABAAMAAAALAAUAAAABAAMAAAAMAAQAAAABAAMAAAAMAAUAAAABAAMAAAANAAQAAAABAAMAAAANAAUAAAABAAMAAAAOAAQAAAABAAMAAAAOAAUAAAABAAMAAAAPAAQAAAABAAMAAAAPAAUAAAABAAMAAAAQAAQAAAABAAMAAAAQAAUAAAABAAMAAAARAAQAAAABAAMAAAARAAUAAAABAAMAAAASAAQAAAABAAMAAAASAAUAAAABAAMAAAATAAQAAAABAAMAAAATAAUAAAABAAMAAAAUAAQAAAABAAMAAAAUAAUAAAABAAMAAAAVAAQAAAABAAMAAAAVAAUAAAABAAMAAAAWAAQAAAABAAMAAAAWAAUAAAABAAMAAAAXAAQAAAABAAMAAAAXAAUAAAABAAMAAAAYAAMAAAABAAMAAAAYAAQAAAABAAMAAAAYAAUAAAABAAMAAAAZAAMAAAABAAMAAAAaAAMAAAABAAMAAAAbAAMAAAABAAMAAAAcAAMAAAABAAMAAAAdAAMAAAABAAMAAAAeAAMAAAABAAMAAAAfAAMAAAABAAMAAAAgAAMAAAABAAMAAAAhAAMAAAABAAMAAAAiAAMAAAABAAMAAAAjAAMAAAABAAMAAAAAAAAAAAACAAMAAAAAAAEAAAACAAMAAAAAAAIAAAACAAMAAAABAAAAAAACAAMAAAABAAEAAAACAAMAAAABAAIAAAACAAMAAAACAAAAAAACAAMAAAACAAEAAAACAAMAAAACAAIAAAACAAMAAAADAAAAAAACAAMAAAADAAEAAAACAAMAAAADAAIAAAACAAMAAAAEAAAAAAACAAMAAAAEAAEAAAACAAMAAAAEAAIAAAACAAMAAAAFAAAAAAACAAMAAAAFAAEAAAACAAMAAAAFAAIAAAACAAMAAAAGAAAAAAACAAMAAAAGAAEAAAACAAMAAAAGAAIAAAACAAMAAAAHAAAAAAACAAMAAAAHAAEAAAACAAMAAAAHAAIAAAACAAMAAAAIAAAAAAACAAMAAAAIAAEAAAACAAMAAAAIAAIAAAACAAMAAAAJAAAAAAACAAMAAAAJAAEAAAACAAMAAAAJAAIAAAACAAMAAAAKAAAAAAACAAMAAAAKAAEAAAACAAMAAAAKAAIAAAACAAMAAAALAAAAAAACAAMAAAALAAEAAAACAAMAAAALAAIAAAACAAMAAAAMAAAAAAACAAMAAAAMAAEAAAACAAMAAAAMAAIAAAACAAMAAAANAAAAAAACAAMAAAANAAEAAAACAAMAAAANAAIAAAACAAMAAAAOAAAAAAACAAMAAAAOAAEAAAACAAMAAAAOAAIAAAACAAMAAAAPAAAAAAACAAMAAAAPAAEAAAACAAMAAAAPAAIAAAACAAMAAAAQAAAAAAACAAMAAAAQAAEAAAACAAMAAAAQAAIAAAACAAMAAAARAAAAAAACAAMAAAARAAEAAAACAAMAAAARAAIAAAACAAMAAAASAAAAAAACAAMAAAASAAEAAAACAAMAAAASAAIAAAACAAMAAAATAAAAAAACAAMAAAATAAEAAAACAAMAAAATAAIAAAACAAMAAAAUAAAAAAACAAMAAAAUAAEAAAACAAMAAAAUAAIAAAACAAMAAAAVAAAAAAACAAMAAAAVAAEAAAACAAMAAAAVAAIAAAACAAMAAAAWAAAAAAACAAMAAAAWAAEAAAACAAMAAAAWAAIAAAACAAMAAAAXAAAAAAACAAMAAAAXAAEAAAACAAMAAAAXAAIAAAACAAMAAAAYAAEAAAACAAMAAAAYAAIAAAACAAMAAAAZAAEAAAACAAMAAAAZAAIAAAACAAMAAAAaAAEAAAACAAMAAAAaAAIAAAACAAMAAAAbAAEAAAACAAMAAAAbAAIAAAACAAMAAAAcAAEAAAACAAMAAAAcAAIAAAACAAMAAAAdAAEAAAACAAMAAAAdAAIAAAACAAMAAAAeAAEAAAACAAMAAAAeAAIAAAACAAMAAAAfAAEAAAACAAMAAAAfAAIAAAACAAMAAAAgAAEAAAACAAMAAAAgAAIAAAACAAMAAAAhAAEAAAACAAMAAAAhAAIAAAACAAMAAAAiAAEAAAACAAMAAAAiAAIAAAACAAMAAAAjAAEAAAACAAMAAAAjAAIAAAACAAMAAAAYAAAAAAACAAMAAAA=")
 tile_set = SubResource("TileSet_vcs6k")
 
-[node name="Invisible Block" parent="." unique_id=1096889786 instance=ExtResource("11_hq263")]
-position = Vector2(810, 275)
+[node name="Invisible Block" parent="." unique_id=1096889786 instance=ExtResource("10_rxhxl")]
+position = Vector2(848, 274)
 
-[node name="Invisible Block2" parent="." unique_id=1293256678 instance=ExtResource("11_hq263")]
+[node name="Invisible Block2" parent="." unique_id=1293256678 instance=ExtResource("10_rxhxl")]
 position = Vector2(1036, 275)
 
-[node name="enemy" parent="." unique_id=564250950 instance=ExtResource("12_dju48")]
+[node name="enemy" parent="." unique_id=564250950 instance=ExtResource("11_h54da")]
 position = Vector2(924, 272)
 
-[node name="B_Platform" parent="." unique_id=105072403 instance=ExtResource("13_oc1ce")]
+[node name="B_Platform" parent="." unique_id=105072403 instance=ExtResource("12_fg80b")]
 position = Vector2(729, 218)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="B_Platform" unique_id=1754007490]
 libraries/ = SubResource("AnimationLibrary_pu1a0")
 autoplay = &"platform_2"
+
+[node name="Sign" parent="." unique_id=1780301741 instance=ExtResource("13_icduq")]
+position = Vector2(575, 272)
+SignText = "Use WASD to move."
+
+[node name="Sign2" parent="." unique_id=2084606584 instance=ExtResource("13_icduq")]
+position = Vector2(195, 175)
+SignText = "Press buttons to trigger effects"
+
+[node name="Sign3" parent="." unique_id=791512228 instance=ExtResource("13_icduq")]
+position = Vector2(446, 272)
+SignText = "Push blocks to reach high places."
+
+[node name="Sign4" parent="." unique_id=427330912 instance=ExtResource("13_icduq")]
+position = Vector2(728, 272)
+SignText = "Jump on an enemy to defeat them."
+
+[node name="Sign5" parent="." unique_id=1511799654 instance=ExtResource("13_icduq")]
+z_index = 0
+position = Vector2(862, 112)
+SignText = "Jump into a portal to switch levels"
+
+[node name="PDoor" parent="." unique_id=205209727 instance=ExtResource("14_pmaet")]
+position = Vector2(824, 242)
+
+[node name="PDoor2" parent="." unique_id=348609247 instance=ExtResource("14_pmaet")]
+position = Vector2(823, 83)
+
+[node name="Pbutton" parent="." unique_id=737130439 instance=ExtResource("15_x7ktg")]
+position = Vector2(148, 176)
+
+[node name="Pbutton2" parent="." unique_id=579793056 instance=ExtResource("15_x7ktg")]
+position = Vector2(1087, 272)
