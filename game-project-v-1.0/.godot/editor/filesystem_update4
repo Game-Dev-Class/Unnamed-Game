@@ -1,3 +1,5 @@
+res://Scripts/Level2.cs
+res://Level_2.tscn
 res://Scripts/PDoor2.cs
 res://Scripts/Pbutton2.cs
 res://Scripts/FinalLevel.cs
@@ -17,4 +19,3 @@ res://Scripts/Whip.cs
 res://Scripts/Player.cs
 res://Scripts/Hud.cs
 res://Scripts/MainScene.cs
-res://Scenes/Level1.tscn

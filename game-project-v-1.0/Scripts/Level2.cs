@@ -24,45 +24,11 @@ public partial class Level2 : Node2D
 		
 		_button.ButtonTrigger += _door.OnButtonTrigger;
 		// _hud.StartGame += StartStage;
-        _enemy2.EnableMovement();
-		_player.EnableMovement(); 
-		_enemy1.EnableMovement();
 	}
 	
-	// public void StartStage()
-	// {
-	// 	GD.Print("The stage started.");
-	// 	_tileMap.Visible = true;
-	// 	_player.Visible = true;
-	// 	_player.EnableMovement();
-	// 	_enemy1.EnableMovement();
-	// 	_enemy2.EnableMovement();
-	// }
-
-	private void PauseGame()
-	{
-		if (_player.GetCanMove() == true)
-		{
-			_player.DisableMovement();
-			_enemy1.DisableMovement();
-			_enemy2.DisableMovement();
-		}
-
-		else if (_player.GetCanMove() == false)
-		{
-			_player.EnableMovement();
-			_enemy1.EnableMovement();
-			_enemy2.EnableMovement();
-		}
-	}	
 	
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta)
 	{
-
-		if (Input.IsActionJustPressed("pause"))
-		{
-			PauseGame();
-		}
 	}
 }

@@ -118,8 +118,10 @@ visible = false
 [node name="Player" parent="." unique_id=2054929316 instance=ExtResource("3_576va")]
 position = Vector2(471, -209)
 script = ExtResource("4_0eu5p")
+MaxHealth = 3
 WhipScene = ExtResource("5_fy7lv")
 DefaultWhipDistance = 48.0
+WhipCooldown = 0.5
 KnockbackHorizontal = 320.0
 KnockbackVertical = 260.0
 KnockbackDuration = 0.45
