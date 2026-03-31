@@ -15,6 +15,8 @@ public partial class Player : CharacterBody2D
 	private bool _isIFrames = false;
 	private bool _canWhip = true;
 
+	public int _killCount;
+
 	[ExportGroup("Scenes and Nodes")]
 	[Export] public PackedScene WhipScene;
 	[Export] public float DefaultWhipDistance = 48.0f;
@@ -118,6 +120,7 @@ public partial class Player : CharacterBody2D
 				{
 					KillEnemy(normalEnemy);
 					Bounce(350);
+					_killCount += 1;
 					continue;
 				}
 				if (Mathf.Abs(normal.X) > 0.7f)

@@ -39,13 +39,6 @@ public partial class PDoor : StaticBody2D
 			_collision.SetDeferred("disabled", false);
 			_isOpen = false;
 		}
-		
-		
-		// if (_isOpen == false)
-		// {
-		// 	_door.Position += new Vector2(0, -100);
-		// 	_isOpen = true;
-		// }
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.

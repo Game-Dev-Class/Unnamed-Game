@@ -9,6 +9,9 @@ public partial class Whip : Node2D
 
     [Export] public float Lifetime = 0.5f; // seconds
 
+    [Signal]
+    public delegate void KillCheckEventHandler();
+
     public override void _Ready()
     {
         _area = GetNodeOrNull<Area2D>("Area2D");
@@ -49,6 +52,7 @@ public partial class Whip : Node2D
         {
             enemy.QueueFree();
             HitSound?.Play();
+            EmitSignal(SignalName.KillCheck);
             return;
         }
 
@@ -57,6 +61,7 @@ public partial class Whip : Node2D
         {
             whipEnemy.QueueFree();
             HitSound?.Play();
+            EmitSignal(SignalName.KillCheck);
             return;
         }
 
