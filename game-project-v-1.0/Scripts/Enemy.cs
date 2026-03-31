@@ -5,54 +5,37 @@ public partial class Enemy : CharacterBody2D
     [Export] public float MoveSpeed = 100f;
     [Export] public AnimatedSprite2D EnemySprite;
 
+    [ExportGroup("Audio")]
+    [Export] public AudioStreamPlayer2D HurtSound;
+    [Export] public AudioStreamPlayer2D DeathSound;
+
     private bool _movingRight = true;
-
-    private bool _canMove;
-
-    public void EnableMovement()
-    {
-        _canMove = true;
-    }
-
-    public void DisableMovement()
-	{
-		_canMove = false;
-	}
 
     public override void _Ready()
     {
         if (EnemySprite == null)
             EnemySprite = GetNodeOrNull<AnimatedSprite2D>("AnimatedSprite2D");
+
+        // Auto-grab audio nodes if not assigned
+        HurtSound ??= GetNodeOrNull<AudioStreamPlayer2D>("HurtSound");
+        DeathSound ??= GetNodeOrNull<AudioStreamPlayer2D>("DeathSound");
     }
 
     public override void _PhysicsProcess(double delta)
     {
-        // Apply gravity (same as player)
+        float dt = (float)delta;
+
+        // Always apply gravity
         if (!IsOnFloor())
-            Velocity += GetGravity() * (float)delta;
+            Velocity += GetGravity() * dt;
+        else
+            Velocity = new Vector2(Velocity.X, 0);
 
-        if (_canMove == false)
-		{
-			// Stop horizontal movement
-			Velocity = Vector2.Zero;
-			MoveAndSlide();
-			return;
-        }
-
-        // else if (_canMove == true)
-        // {
-            
-        // }
-
-        // Move only while on floor
+        // Horizontal movement only when grounded
         if (IsOnFloor())
         {
             float direction = _movingRight ? 1f : -1f;
             Velocity = new Vector2(direction * MoveSpeed, Velocity.Y);
-        }
-        else
-        {
-            Velocity = new Vector2(0, Velocity.Y);
         }
 
         MoveAndSlide();
@@ -64,10 +47,10 @@ public partial class Enemy : CharacterBody2D
 
             if (collision.GetCollider() is PhysicsBody2D collider)
             {
-                // Check if collider is on Layer 3
+                // Check if collider is on Layer 3 (solid objects)
                 if ((collider.CollisionLayer & (1 << 2)) != 0)
                 {
-                    // Make sure it was a side collision
+                    // Side collision only
                     if (Mathf.Abs(collision.GetNormal().X) > 0.7f)
                     {
                         _movingRight = !_movingRight;
@@ -78,10 +61,24 @@ public partial class Enemy : CharacterBody2D
         }
     }
 
-    // Flip sprite AFTER physics (same system as Player)
     public override void _Process(double delta)
     {
+        // Flip sprite to match movement
         if (EnemySprite != null)
             EnemySprite.FlipH = !_movingRight;
+    }
+
+    // --- Optional combat methods ---
+    public void TakeDamage(int amount)
+    {
+        HurtSound?.Play();
+        // Add health system if desired
+        // If dead, call Die()
+    }
+
+    public void Die()
+    {
+        DeathSound?.Play();
+        QueueFree();
     }
 }

@@ -27,45 +27,24 @@ public partial class Level1 : Node2D
 		_button2.ButtonTrigger += _door2.OnButtonTrigger;
 		var player = GetNode<Player>("Player");
 		var hearts = GetNode<Hearts>("Hearts");
-		player.HealthChanged += hearts.OnHealthChanged;
-		hearts.OnHealthChanged(player.Health);
+		// player.HealthChanged += hearts.OnHealthChanged;
+		// hearts.OnHealthChanged(player.Health);
 
 		_hud.StartGame += StartStage;
-		_player.DisableMovement();
 	}
 
 	private void StartStage()
 	{
 		_tileMap.Visible = true;
 		_player.Visible = true;
-		_player.EnableMovement();
-		_enemy1.EnableMovement();
-		
-	}
-	private void PauseGame()
-	{
-		if (_player.GetCanMove() == true)
-		{
-			_player.DisableMovement();
-			_enemy1.DisableMovement();
-			
-		}
 
-		else if (_player.GetCanMove() == false)
-		{
-			_player.EnableMovement();
-			_enemy1.EnableMovement();
-			
-		}
-	}	
+	}
+
 
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta)
 	{
-		if (Input.IsActionJustPressed("pause"))
-		{
-			PauseGame();
-		}
+
 	}
 }

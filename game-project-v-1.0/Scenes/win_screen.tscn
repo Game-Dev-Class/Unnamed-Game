@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://b7iq81foi5gqf"]
+
+[node name="WinScreen" type="Node2D" unique_id=192389559]
+
+[node name="Label" type="Label" parent="." unique_id=803463132]
+offset_left = 129.0
+offset_top = 124.0
+offset_right = 1024.0
+offset_bottom = 515.0
+theme_override_font_sizes/font_size = 30
+text = "Congratulations, YOU WIN!!!
+
+
+Thanks for playing the Dungeon Detectives demo.
+
+
+Cocreators: Ashton Fairhurst, Colter Jorgensen, Logan Hansen"
+horizontal_alignment = 1
+vertical_alignment = 1

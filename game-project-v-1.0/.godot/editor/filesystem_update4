@@ -1,4 +1,8 @@
-res://Scenes/main_scene.tscn
+res://Scripts/Hearts.cs
+res://Scripts/Spike.cs
+res://Scripts/WhipEnemy.cs
+res://Scripts/Boss.cs
+res://Scripts/BossRoom.cs
 res://Scripts/Sign.cs
 res://Scripts/reset.cs
 res://visuals4_files/LevelExit.cs
@@ -10,4 +14,10 @@ res://Scripts/Whip.cs
 res://Scripts/Player.cs
 res://Scripts/Hud.cs
 res://Scripts/MainScene.cs
+res://Scenes/boss_room.tscn
+res://Scenes/final_level.tscn
+res://Scenes/player.tscn
+res://Scripts/PDoor2.cs
+res://Scripts/Pbutton2.cs
+res://Scripts/FinalLevel.cs
 res://Scenes/Level1.tscn
