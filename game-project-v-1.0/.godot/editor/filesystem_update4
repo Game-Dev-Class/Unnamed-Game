@@ -1,4 +1,5 @@
-res://Level_2.tscn
+res://Button.cs
+res://start_screen.tscn
 res://Scripts/Level2.cs
 res://Scripts/PDoor2.cs
 res://Scripts/Pbutton2.cs
@@ -11,7 +12,7 @@ res://Scripts/Hearts.cs
 res://Scripts/Sign.cs
 res://Scripts/reset.cs
 res://visuals4_files/LevelExit.cs
-res://Scenes/Level1.cs
+res://Scripts/Level1.cs
 res://Scripts/PDoor.cs
 res://Scripts/Pbutton.cs
 res://Scripts/Enemy.cs
@@ -19,8 +20,6 @@ res://Scripts/Whip.cs
 res://Scripts/Player.cs
 res://Scripts/Hud.cs
 res://Scripts/MainScene.cs
-res://Scenes/sign.tscn
-res://Scenes/player.tscn
-res://Scenes/final_level.tscn
+res://Scenes/start_screen.tscn
+res://Scripts/LevelExitButton.cs
 res://Scenes/Level1.tscn
-res://Scripts/Level1.cs

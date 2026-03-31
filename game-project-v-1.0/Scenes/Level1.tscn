@@ -231,7 +231,7 @@ script = ExtResource("1_ubfni")
 
 [node name="Player" parent="." unique_id=2054929316 instance=ExtResource("2_wwu6c")]
 unique_name_in_owner = true
-position = Vector2(574, 162)
+position = Vector2(576, 246)
 script = ExtResource("3_yymuf")
 MaxHealth = 3
 WhipScene = ExtResource("4_esggg")

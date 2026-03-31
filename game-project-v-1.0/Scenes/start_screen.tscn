@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://36iid7p01ooy"]
+
+[ext_resource type="Script" uid="uid://daugr1o3fkohw" path="res://Scripts/LevelExitButton.cs" id="1_i8r30"]
+
+[node name="StartScreen" type="Node2D" unique_id=1063566211]
+
+[node name="LevelExitButton" type="Button" parent="." unique_id=1293008831]
+offset_left = 417.0
+offset_top = 336.0
+offset_right = 731.0
+offset_bottom = 436.0
+theme_override_font_sizes/font_size = 48
+text = "Start"
+script = ExtResource("1_i8r30")
+
+[node name="Label" type="Label" parent="." unique_id=478366459]
+offset_left = 312.0
+offset_top = 24.0
+offset_right = 1039.0
+offset_bottom = 113.0
+theme_override_font_sizes/font_size = 55
+text = "Dungeon Detectives"
+
+[node name="Label2" type="Label" parent="." unique_id=2122774428]
+offset_left = 368.0
+offset_top = 110.0
+offset_right = 782.0
+offset_bottom = 160.0
+theme_override_font_sizes/font_size = 25
+text = "The Demo"
+horizontal_alignment = 1
