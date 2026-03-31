@@ -1,6 +1,6 @@
 [gd_scene format=4 uid="uid://d1ckqm6qa1b5a"]
 
-[ext_resource type="Script" uid="uid://crxcbfk5cxxrt" path="res://Scenes/Level1.cs" id="1_ubfni"]
+[ext_resource type="Script" uid="uid://crxcbfk5cxxrt" path="res://Scripts/Level1.cs" id="1_ubfni"]
 [ext_resource type="PackedScene" uid="uid://84a78r8nvygt" path="res://Scenes/player.tscn" id="2_wwu6c"]
 [ext_resource type="Script" uid="uid://6a2jh0mobu6o" path="res://Scripts/Player.cs" id="3_yymuf"]
 [ext_resource type="PackedScene" uid="uid://bs6cmnu8w1lsj" path="res://Scenes/whip.tscn" id="4_esggg"]
@@ -249,6 +249,7 @@ position = Vector2(403, 259)
 [node name="LevelExit" parent="." unique_id=1768640012 instance=ExtResource("6_mcj63")]
 position = Vector2(1082, 84)
 collision_mask = 3
+NextLevelPath = "res://Scenes/Level_2.tscn"
 
 [node name="reset" parent="." unique_id=1775733007 instance=ExtResource("7_af2a1")]
 
@@ -297,7 +298,6 @@ position = Vector2(728, 272)
 SignText = "Jump on an enemy to defeat them."
 
 [node name="Sign5" parent="." unique_id=1511799654 instance=ExtResource("13_icduq")]
-z_index = 0
 position = Vector2(862, 112)
 SignText = "Jump into a portal to switch levels"
 

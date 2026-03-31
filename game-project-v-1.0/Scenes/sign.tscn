@@ -7,7 +7,6 @@
 size = Vector2(28, 16)
 
 [node name="Sign" type="Sprite2D" unique_id=1780301741]
-z_index = -1
 texture = ExtResource("1_mbcot")
 script = ExtResource("2_w2mlg")
 TextLabelPath = NodePath("Label")

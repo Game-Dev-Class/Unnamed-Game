@@ -64,6 +64,7 @@ collision_mask = 91
 script = SubResource("GDScript_4flbx")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=855521739]
+z_index = 1
 sprite_frames = SubResource("SpriteFrames_hqtel")
 autoplay = "default"
 frame_progress = 0.8313066

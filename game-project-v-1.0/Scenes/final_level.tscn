@@ -15,7 +15,7 @@
 [ext_resource type="PackedScene" uid="uid://bibwqy6q4pa2q" path="res://Scenes/platform.tscn" id="13_61xft"]
 [ext_resource type="PackedScene" uid="uid://b53s88qk6ncg3" path="res://Scenes/PDoor.tscn" id="14_4vpy6"]
 [ext_resource type="Script" uid="uid://dswnfw4ik6g0f" path="res://Scripts/PDoor2.cs" id="14_784bq"]
-[ext_resource type="PackedScene" path="res://Scenes/spike.tscn" id="16_784bq"]
+[ext_resource type="PackedScene" uid="uid://dfqfvmoagmbxg" path="res://Scenes/spike.tscn" id="16_784bq"]
 [ext_resource type="PackedScene" uid="uid://bg3j8t2o2rg8f" path="res://Scenes/enemy_whip.tscn" id="17_vpnb2"]
 [ext_resource type="PackedScene" uid="uid://1e1pdlxib7aw" path="res://Scenes/sign.tscn" id="18_4qx0g"]
 [ext_resource type="PackedScene" uid="uid://b3ekn1wrpu4s8" path="res://Scenes/hearts.tscn" id="19_4qx0g"]
@@ -300,10 +300,10 @@ position = Vector2(253, 275)
 position = Vector2(897, 277)
 
 [node name="enemy" parent="." unique_id=564250950 instance=ExtResource("12_p0sn4")]
-position = Vector2(441, 269)
+position = Vector2(441, 271)
 
 [node name="enemy2" parent="." unique_id=408565610 instance=ExtResource("12_p0sn4")]
-position = Vector2(703, 269)
+position = Vector2(610, 271)
 
 [node name="Pbutton" parent="." unique_id=737130439 instance=ExtResource("5_20vd3")]
 position = Vector2(1035, 272)
