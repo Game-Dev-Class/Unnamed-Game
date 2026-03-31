@@ -14,9 +14,9 @@
 [ext_resource type="PackedScene" uid="uid://dhxn4a045ytlf" path="res://Scenes/invisable_block.tscn" id="11_ielx5"]
 [ext_resource type="PackedScene" uid="uid://cesul71vygkeu" path="res://Scenes/enemy.tscn" id="12_7u4hm"]
 [ext_resource type="PackedScene" uid="uid://bibwqy6q4pa2q" path="res://Scenes/platform.tscn" id="13_6qujl"]
-[ext_resource type="PackedScene" path="res://Scenes/boss.tscn" id="13_w6sin"]
+[ext_resource type="PackedScene" uid="uid://bfmkj356p71ku" path="res://Scenes/boss.tscn" id="13_w6sin"]
 [ext_resource type="PackedScene" uid="uid://bg3j8t2o2rg8f" path="res://Scenes/enemy_whip.tscn" id="15_wtlo8"]
-[ext_resource type="PackedScene" path="res://Scenes/spike.tscn" id="16_66pg5"]
+[ext_resource type="PackedScene" uid="uid://dfqfvmoagmbxg" path="res://Scenes/spike.tscn" id="16_66pg5"]
 [ext_resource type="PackedScene" uid="uid://b3ekn1wrpu4s8" path="res://Scenes/hearts.tscn" id="17_sqv62"]
 [ext_resource type="PackedScene" uid="uid://1e1pdlxib7aw" path="res://Scenes/sign.tscn" id="19_wmg7a"]
 

@@ -2,14 +2,11 @@
 
 [ext_resource type="Script" uid="uid://4cguvfgl8dte" path="res://Scripts/Pbutton.cs" id="1_n4tde"]
 [ext_resource type="Texture2D" uid="uid://cmtywltbm8oan" path="res://Sprites/button_sprite_sheet.png" id="1_r04n3"]
-
+[ext_resource type="Texture2D" uid="uid://di4q80t63tjut" path="res://visuals4_files/pixil-frame-0 (5).png" id="2_8ak1w"]
+[ext_resource type="AudioStream" uid="uid://chy4xayie16ob" path="res://Sounds/dragon-studio-button-press-382713.mp3" id="4_gshdf"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_n4tde"]
 size = Vector2(23.2989, 15.3740835)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_vxja4"]
-atlas = ExtResource("1_r04n3")
-region = Rect2(0, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_lt4la"]
 atlas = ExtResource("1_r04n3")
@@ -19,7 +16,7 @@ region = Rect2(32, 0, 32, 32)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_vxja4")
+"texture": ExtResource("2_8ak1w")
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_lt4la")
@@ -39,5 +36,9 @@ shape = SubResource("RectangleShape2D_n4tde")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=180960945]
 sprite_frames = SubResource("SpriteFrames_4amfo")
+
+[node name="ClickSound" type="AudioStreamPlayer2D" parent="." unique_id=447367803]
+stream = ExtResource("4_gshdf")
+volume_db = 1.0
 
 [connection signal="body_entered" from="." to="." method="OnBodyEntered"]
