@@ -16,6 +16,7 @@
 [ext_resource type="PackedScene" uid="uid://bt2namyhpp4nw" path="res://visuals4_files/level_exit.tscn" id="15_0eu5p"]
 [ext_resource type="PackedScene" uid="uid://cr3srfaok2jhj" path="res://Scenes/reset.tscn" id="15_576va"]
 [ext_resource type="PackedScene" uid="uid://b3ekn1wrpu4s8" path="res://Scenes/hearts.tscn" id="16_0eu5p"]
+[ext_resource type="PackedScene" uid="uid://b6weg0i1wqjsr" path="res://Scenes/cloud.tscn" id="17_25io1"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hq1ik"]
 texture = ExtResource("8_t0ole")
@@ -264,3 +265,9 @@ NextLevelPath = "res://Scenes/final_level.tscn"
 [node name="Hearts" parent="CanvasLayer" unique_id=242589138 instance=ExtResource("16_0eu5p")]
 position = Vector2(55.240383, 19.375)
 scale = Vector2(1.9423076, 1.9423077)
+
+[node name="Cloud" parent="." unique_id=1291610678 instance=ExtResource("17_25io1")]
+position = Vector2(187, -341)
+
+[node name="Cloud2" parent="." unique_id=2103276721 instance=ExtResource("17_25io1")]
+position = Vector2(606, -388)

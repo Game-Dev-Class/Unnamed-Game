@@ -1,5 +1,4 @@
-res://Button.cs
-res://start_screen.tscn
+res://Scripts/LevelExitButton.cs
 res://Scripts/Level2.cs
 res://Scripts/PDoor2.cs
 res://Scripts/Pbutton2.cs
@@ -20,6 +19,8 @@ res://Scripts/Whip.cs
 res://Scripts/Player.cs
 res://Scripts/Hud.cs
 res://Scripts/MainScene.cs
-res://Scenes/start_screen.tscn
-res://Scripts/LevelExitButton.cs
+res://Scenes/spike.tscn
+res://Scenes/player.tscn
 res://Scenes/Level1.tscn
+res://Scenes/Level_2.tscn
+res://Scenes/final_level.tscn

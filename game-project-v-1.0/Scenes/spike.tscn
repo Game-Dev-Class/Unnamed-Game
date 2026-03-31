@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://dxootnn6acnfx" path="res://Sprites/Evil Spike Sprite.png" id="1_cdj5a"]
 
 [sub_resource type="ConvexPolygonShape2D" id="ConvexPolygonShape2D_1hotg"]
-points = PackedVector2Array(0, -10, 15, 12, -15, 12)
+points = PackedVector2Array(0, -8.5, 13, 11.5, -13, 11.5)
 
 [node name="Spike" type="Node2D" unique_id=1666117747]
 
