@@ -12,6 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://dhxn4a045ytlf" path="res://Scenes/invisable_block.tscn" id="11_f1yu6"]
 [ext_resource type="Script" uid="uid://chvt1m4m0ftqy" path="res://Scripts/Pbutton2.cs" id="12_aybdy"]
 [ext_resource type="PackedScene" uid="uid://cesul71vygkeu" path="res://Scenes/enemy.tscn" id="12_p0sn4"]
+[ext_resource type="AudioStream" uid="uid://chy4xayie16ob" path="res://Sounds/dragon-studio-button-press-382713.mp3" id="13_34wir"]
 [ext_resource type="PackedScene" uid="uid://bibwqy6q4pa2q" path="res://Scenes/platform.tscn" id="13_61xft"]
 [ext_resource type="PackedScene" uid="uid://b53s88qk6ncg3" path="res://Scenes/PDoor.tscn" id="14_4vpy6"]
 [ext_resource type="Script" uid="uid://dswnfw4ik6g0f" path="res://Scripts/PDoor2.cs" id="14_784bq"]
@@ -311,6 +312,7 @@ position = Vector2(1035, 272)
 [node name="Pbutton2" parent="." unique_id=1436511682 instance=ExtResource("5_20vd3")]
 position = Vector2(1089, -80)
 script = ExtResource("12_aybdy")
+ClickSound = ExtResource("13_34wir")
 
 [node name="PDoor" parent="." unique_id=205209727 instance=ExtResource("14_4vpy6")]
 position = Vector2(205, 146)
