@@ -11,6 +11,14 @@ public partial class LevelExitButton : Button
         Pressed += OnPressed;
     }
 
+    public override void _Input(InputEvent @event)
+    {
+        if (@event.IsActionPressed("ui_accept"))
+        {
+            OnPressed();
+        }
+    }
+
     private void OnPressed()
     {
         GD.Print("Button pressed! Queuing scene switch...");

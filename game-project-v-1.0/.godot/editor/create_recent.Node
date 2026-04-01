@@ -1,6 +1,6 @@
+Label
 AudioStreamPlayer2D
 Sprite2D
-Label
 Button
 AnimatedSprite2D
 CollisionShape2D

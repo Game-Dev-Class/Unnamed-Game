@@ -29,3 +29,12 @@ offset_bottom = 160.0
 theme_override_font_sizes/font_size = 25
 text = "The Demo"
 horizontal_alignment = 1
+
+[node name="Label3" type="Label" parent="." unique_id=1221887804]
+offset_left = 291.0
+offset_top = 463.0
+offset_right = 856.0
+offset_bottom = 527.0
+theme_override_font_sizes/font_size = 20
+text = "Press the button or the spacebar/A button to start"
+horizontal_alignment = 1

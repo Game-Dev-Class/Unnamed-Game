@@ -1,13 +1,13 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1775016218
+::res://::1775081415
 icon.svg::CompressedTexture2D/CompressedTexture2D::8349551825098459537::1772090239::1772090294::1::::<><><>0<>0<>43b1e8af9c7dcda7e66851ad1bb3f02d<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-::res://Scenes/::1775016198
+::res://Scenes/::1775017214
 boss.tscn::PackedScene::2762762195432556832::1774915327::0::1::::<><><>0<>0<><>::uid://b86mtq0ck8wor::::res://Scripts/Boss.cs<>uid://bssfflilkd81i::::res://Audio/boss_hit.mp3<>uid://dujnwlsm2att2::::res://Sprites/Boss Man animations sprite sheet.png
 boss_room.tscn::PackedScene::3701896598573378620::1775016198::0::1::::<><><>0<>0<><>::uid://brtqrfrqjjyju::::res://Scripts/BossRoom.cs<>uid://84a78r8nvygt::::res://Scenes/player.tscn<>uid://6a2jh0mobu6o::::res://Scripts/Player.cs<>uid://bs6cmnu8w1lsj::::res://Scenes/whip.tscn<>uid://bdglykxy43ai7::::res://Scenes/Pbutton.tscn<>uid://byqp14kubwxah::::res://visuals4_files/block.tscn<>uid://b53s88qk6ncg3::::res://Scenes/PDoor.tscn<>uid://bt2namyhpp4nw::::res://visuals4_files/level_exit.tscn<>uid://cr3srfaok2jhj::::res://Scenes/reset.tscn<>uid://dbtyq8f5q3yht::::res://Sprites/pixil-frame-0 (4).png<>uid://dwanf8dte1qiv::::res://Sprites/pixil-frame-0 (8).png<>uid://dhxn4a045ytlf::::res://Scenes/invisable_block.tscn<>uid://cesul71vygkeu::::res://Scenes/enemy.tscn<>uid://bibwqy6q4pa2q::::res://Scenes/platform.tscn<>uid://bfmkj356p71ku::::res://Scenes/boss.tscn<>uid://bg3j8t2o2rg8f::::res://Scenes/enemy_whip.tscn<>uid://dfqfvmoagmbxg::::res://Scenes/spike.tscn<>uid://b3ekn1wrpu4s8::::res://Scenes/hearts.tscn<>uid://1e1pdlxib7aw::::res://Scenes/sign.tscn
 cloud.tscn::PackedScene::4607946056449464505::1775016198::0::1::::<><><>0<>0<><>::uid://ry0s06sjh2nl::::res://Sprites/pixil-frame-0 (10).png
 enemy.tscn::PackedScene::5091991246998273684::1774367763::0::1::::<><><>0<>0<><>::uid://duhkfw8jgj5f7::::res://Scripts/Enemy.cs<>uid://5da7vnxmfbb4::::res://Sprites/Evil Man animation sprite sheet.png
 enemy_whip.tscn::PackedScene::2865962747094954039::1774367016::0::1::::<><><>0<>0<><>::uid://duq3w17kib6f::::res://Sprites/Evil Man whip only animation sprite sheet.png<>uid://lsu7fijjeatv::::res://WhipEnemy.cs
-final_level.tscn::PackedScene::5555396219129190290::1775016198::0::1::::<><><>0<>0<><>::uid://bq8ekl8um7mm3::::res://Scripts/FinalLevel.cs<>uid://84a78r8nvygt::::res://Scenes/player.tscn<>uid://6a2jh0mobu6o::::res://Scripts/Player.cs<>uid://bs6cmnu8w1lsj::::res://Scenes/whip.tscn<>uid://bdglykxy43ai7::::res://Scenes/Pbutton.tscn<>uid://bt2namyhpp4nw::::res://visuals4_files/level_exit.tscn<>uid://cr3srfaok2jhj::::res://Scenes/reset.tscn<>uid://dbtyq8f5q3yht::::res://Sprites/pixil-frame-0 (4).png<>uid://dwanf8dte1qiv::::res://Sprites/pixil-frame-0 (8).png<>uid://dhxn4a045ytlf::::res://Scenes/invisable_block.tscn<>uid://chvt1m4m0ftqy::::res://Scripts/Pbutton2.cs<>uid://cesul71vygkeu::::res://Scenes/enemy.tscn<>uid://bibwqy6q4pa2q::::res://Scenes/platform.tscn<>uid://b53s88qk6ncg3::::res://Scenes/PDoor.tscn<>uid://dswnfw4ik6g0f::::res://Scripts/PDoor2.cs<>uid://dfqfvmoagmbxg::::res://Scenes/spike.tscn<>uid://bg3j8t2o2rg8f::::res://Scenes/enemy_whip.tscn<>uid://1e1pdlxib7aw::::res://Scenes/sign.tscn<>uid://b3ekn1wrpu4s8::::res://Scenes/hearts.tscn
+final_level.tscn::PackedScene::5555396219129190290::1775016884::0::1::::<><><>0<>0<><>::uid://bq8ekl8um7mm3::::res://Scripts/FinalLevel.cs<>uid://84a78r8nvygt::::res://Scenes/player.tscn<>uid://6a2jh0mobu6o::::res://Scripts/Player.cs<>uid://bs6cmnu8w1lsj::::res://Scenes/whip.tscn<>uid://bdglykxy43ai7::::res://Scenes/Pbutton.tscn<>uid://bt2namyhpp4nw::::res://visuals4_files/level_exit.tscn<>uid://cr3srfaok2jhj::::res://Scenes/reset.tscn<>uid://dbtyq8f5q3yht::::res://Sprites/pixil-frame-0 (4).png<>uid://dwanf8dte1qiv::::res://Sprites/pixil-frame-0 (8).png<>uid://dhxn4a045ytlf::::res://Scenes/invisable_block.tscn<>uid://chvt1m4m0ftqy::::res://Scripts/Pbutton2.cs<>uid://cesul71vygkeu::::res://Scenes/enemy.tscn<>uid://chy4xayie16ob::::res://Sounds/dragon-studio-button-press-382713.mp3<>uid://bibwqy6q4pa2q::::res://Scenes/platform.tscn<>uid://b53s88qk6ncg3::::res://Scenes/PDoor.tscn<>uid://dswnfw4ik6g0f::::res://Scripts/PDoor2.cs<>uid://dfqfvmoagmbxg::::res://Scenes/spike.tscn<>uid://bg3j8t2o2rg8f::::res://Scenes/enemy_whip.tscn<>uid://1e1pdlxib7aw::::res://Scenes/sign.tscn<>uid://b3ekn1wrpu4s8::::res://Scenes/hearts.tscn
 hearts.tscn::PackedScene::4360597602208743593::1774367408::0::1::::<><><>0<>0<><>::uid://j26a5fdrute0::::res://Scripts/Hearts.cs<>uid://cnhoinwhh11eb::::res://Sprites/Hearts animation sprite sheet.png
 hud.tscn::PackedScene::4979409707274579739::1774366125::0::1::::<><><>0<>0<><>::uid://ddhs8ue64fx8i::::res://Scripts/Hud.cs
 invisable_block.tscn::PackedScene::7698905793796904135::1774366125::0::1::::<><><>0<>0<><>::
@@ -22,7 +22,7 @@ reset.tscn::PackedScene::6024977813979887827::1774472530::0::1::::<><><>0<>0<><>
 sign.tscn::PackedScene::1834773049944263358::1774967910::0::1::::<><><>0<>0<><>::uid://bi846qnst4h5w::::res://Sprites/Sign sprite.png<>uid://cadugbuxkeq40::::res://Scripts/Sign.cs
 small_platform.tscn::PackedScene::1545587234573222053::1774472530::0::1::::<><><>0<>0<><>::uid://dwanf8dte1qiv::::res://Sprites/pixil-frame-0 (8).png
 spike.tscn::PackedScene::7543578051886211800::1775016198::0::1::::<><><>0<>0<><>::uid://bedbp5yhofai4::::res://Scripts/Spike.cs<>uid://dxootnn6acnfx::::res://Sprites/Evil Spike Sprite.png
-start_screen.tscn::PackedScene::2029783562253900780::1774970170::0::1::::<><><>0<>0<><>::uid://daugr1o3fkohw::::res://Scripts/LevelExitButton.cs
+start_screen.tscn::PackedScene::2029783562253900780::1775017214::0::1::::<><><>0<>0<><>::uid://daugr1o3fkohw::::res://Scripts/LevelExitButton.cs
 test.tscn::PackedScene::2775187675142194092::1774370318::0::1::::<><><>0<>0<><>::uid://cjlavr3bruxcw::::res://Scripts/MainScene.cs<>uid://cc7cfd3pp5li6::::res://Scenes/hud.tscn<>uid://84a78r8nvygt::::res://Scenes/player.tscn<>uid://6a2jh0mobu6o::::res://Scripts/Player.cs<>uid://bs6cmnu8w1lsj::::res://Scenes/whip.tscn<>uid://bhk425mynbpdi::::res://Sprites/pixil-frame-0 (2).png<>uid://doap5hxidi0wr::::res://Sprites/pixil-frame-0 (3).png<>uid://dbtyq8f5q3yht::::res://Sprites/pixil-frame-0 (4).png<>uid://bibwqy6q4pa2q::::res://Scenes/platform.tscn<>uid://cesul71vygkeu::::res://Scenes/enemy.tscn<>uid://dhxn4a045ytlf::::res://Scenes/invisable_block.tscn<>uid://bdglykxy43ai7::::res://Scenes/Pbutton.tscn<>uid://bg3j8t2o2rg8f::::res://Scenes/enemy_whip.tscn<>uid://1e1pdlxib7aw::::res://Scenes/sign.tscn<>uid://b3ekn1wrpu4s8::::res://Scenes/hearts.tscn
 whip.tscn::PackedScene::3713959158295372521::1774374195::0::1::::<><><>0<>0<><>::uid://bhv2xi8xk8wum::::res://Scripts/Whip.cs<>uid://dbi31nbw8anwm::::res://Sprites/Whip/whip.png
 win_screen.tscn::PackedScene::4650010479204839597::1774915327::0::1::::<><><>0<>0<><>::
@@ -37,7 +37,7 @@ Level1.cs::CSharpScript::6013655896787026761::1774917199::0::1::::<>Node2D<><>0<
 Level2.cs::CSharpScript::1621924636817845339::1774967456::0::1::::<>Node2D<><>0<>0<><>::
 LevelExitButton.cs::CSharpScript::7200945655127129308::1774969531::0::1::::<>Button<><>0<>0<><>::
 MainScene.cs::CSharpScript::5427287553315595910::1774915918::0::1::::<>Node2D<><>0<>0<><>::
-Pbutton2.cs::CSharpScript::5308715934850156540::1774914910::0::1::::<>Area2D<><>0<>0<><>::
+Pbutton2.cs::CSharpScript::5308715934850156540::1775017140::0::1::::<>Area2D<><>0<>0<><>::
 Pbutton.cs::CSharpScript::2040006349848743886::1775016198::0::1::::<>Area2D<><>0<>0<><>::
 PDoor2.cs::CSharpScript::8468876997719793863::1774914910::0::1::::<>StaticBody2D<><>0<>0<><>::
 PDoor.cs::CSharpScript::5957029370661051726::1774472489::0::1::::<>StaticBody2D<><>0<>0<><>::
@@ -48,7 +48,7 @@ Spike.cs::CSharpScript::2673458308521513621::1774914910::0::1::::<>StaticBody2D<
 Whip.cs::CSharpScript::2922775426284138324::1774915666::0::1::::<>Node2D<><>0<>0<><>::
 whip.gd::GDScript::7796045558083886187::1774366125::0::1::::<>Node2D<><>0<>0<><>::
 WhipEnemy.cs::CSharpScript::810507840248007915::1774917000::0::1::::<>CharacterBody2D<><>0<>0<><>::
-::res://Sounds/::1775016199
+::res://Sounds/::1775016220
 boss_hit.mp3::AudioStreamMP3::3687291773312713624::1774914910::1774915328::1::::<><><>0<>0<>9ac45ee4c0ae99aa57ba8dfd585be994<>res://.godot/imported/boss_hit.mp3-82bd339846897f1252c482c3e86d469b.mp3str::
 dragon-studio-button-press-382713.mp3::AudioStreamMP3::5315510242445096425::1775016199::1775016220::1::::<><><>0<>0<>2b4f23ee7dcab10836e205acc8bdcaf3<>res://.godot/imported/dragon-studio-button-press-382713.mp3-e7f2c43c78ad0c8aad0c32cc2c4fe7bc.mp3str::
 edr-video-game-hit-noise-001-135821.mp3::AudioStreamMP3::5876260149372396631::1774914962::1774914994::1::::<><><>0<>0<>e3dd3f77c3053d1749bba8d9b31665bb<>res://.godot/imported/edr-video-game-hit-noise-001-135821.mp3-fc378d0b3a00f5319188fe7079f4e244.mp3str::
@@ -57,7 +57,7 @@ freesound_community-jump-climb-or-damage-sound-f-95942 (1).mp3::AudioStreamMP3::
 Game_3.mp3::AudioStreamMP3::7139174895301589641::1775016198::1775016220::1::::<><><>0<>0<>c4890b464d8d15249bfe698c87edc2cc<>res://.godot/imported/Game_3.mp3-79870ea0c3c8b14c3dcaf0e8c37eabb6.mp3str::
 Game_4.mp3::AudioStreamMP3::1652727453809132621::1775016199::1775016220::1::::<><><>0<>0<>67e83117b900041b0822453c53afcfde<>res://.godot/imported/Game_4.mp3-f0d416b31307f8fb9613403c7f4d3805.mp3str::
 universfield-whip-02-242215.mp3::AudioStreamMP3::4177420483672188270::1774914962::1774914994::1::::<><><>0<>0<>dda5c5d8ae7ccd415da78bd8d11b4504<>res://.godot/imported/universfield-whip-02-242215.mp3-254678330712fb7521fb3c35d805cd5d.mp3str::
-::res://Sprites/::1775016199
+::res://Sprites/::1775016220
 Boss Man animations sprite sheet.png::CompressedTexture2D::8582447538143020445::1774914910::1774915328::1::::<><><>0<>0<>877819542a7c3226ee16a91954fbb976<>res://.godot/imported/Boss Man animations sprite sheet.png-84987304d8b23fd3c5f8a33762bd15db.ctex::
 button_sprite_sheet.png::CompressedTexture2D::5655827770832949485::1772090239::1772726073::1::::<><><>0<>0<>921e7a6651ae2865b9be07965f2f85ab<>res://.godot/imported/button_sprite_sheet.png-5291dc7e670d69190c3758c51b19fefd.ctex::
 Door.png::CompressedTexture2D::8454136113840684851::1774366125::1774366125::1::::<><><>0<>0<>fd3cab524131c89c2ec24e99e5e6f598<>res://.godot/imported/Door.png-c55366d45e28797e373179b2526bc38b.ctex::

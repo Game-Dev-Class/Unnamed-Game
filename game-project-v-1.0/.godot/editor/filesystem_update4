@@ -1,3 +1,4 @@
+res://Scenes/start_screen.tscn
 res://Scripts/LevelExitButton.cs
 res://Scripts/Hud.cs
 res://Scripts/Level2.cs
@@ -18,5 +19,3 @@ res://visuals4_files/LevelExit.cs
 res://Scripts/Whip.cs
 res://Scripts/Player.cs
 res://Scripts/Level1.cs
-res://Scenes/final_level.tscn
-res://Scenes/start_screen.tscn
