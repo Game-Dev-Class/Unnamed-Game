@@ -237,11 +237,11 @@ position = Vector2(979, -312)
 
 [node name="ResetTip" parent="." unique_id=1780301741 instance=ExtResource("14_4x2ic")]
 position = Vector2(-11, -80)
-SignText = "use the \"R\" key to reset the level"
+SignText = "use the \"Y\" button or to reset the level"
 
 [node name="WhipTip" parent="." unique_id=226764543 instance=ExtResource("14_4x2ic")]
 position = Vector2(530, -208)
-SignText = "You can use your whip with the \"F\" key"
+SignText = "You can use your whip with the \"X\" Button"
 
 [node name="EnemyTip" parent="." unique_id=1674878169 instance=ExtResource("14_4x2ic")]
 position = Vector2(743, -208)

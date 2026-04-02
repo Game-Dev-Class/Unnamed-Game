@@ -225,11 +225,11 @@ autoplay = &"platform_2"
 
 [node name="Sign" parent="." unique_id=1780301741 instance=ExtResource("13_icduq")]
 position = Vector2(575, 272)
-SignText = "Use the arrowkeys to move."
+SignText = "Use the Left joystick to move and \"A\" button to jump"
 
 [node name="Sign2" parent="." unique_id=2084606584 instance=ExtResource("13_icduq")]
 position = Vector2(195, 175)
-SignText = "Press buttons to trigger effects"
+SignText = "Touch on buttons to open doors"
 
 [node name="Sign3" parent="." unique_id=791512228 instance=ExtResource("13_icduq")]
 position = Vector2(446, 272)

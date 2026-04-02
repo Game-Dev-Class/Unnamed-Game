@@ -1,15 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "Y/GkeWlnRaI=",
+  "dgSpecHash": "f3UHIOq9oyk=",
   "success": true,
-  "projectFilePath": "C:\\Dev\\CSE290-game\\Unnamed-Game\\Unnamed-Game\\game-project-v-1.0\\Game_Project_v1.0.csproj",
+  "projectFilePath": "C:\\Users\\ashto\\Documents\\GitHub\\Unnamed-Game\\game-project-v-1.0\\Game_Project_v1.0.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\logan\\.nuget\\packages\\godot.sourcegenerators\\4.6.0\\godot.sourcegenerators.4.6.0.nupkg.sha512",
-    "C:\\Users\\logan\\.nuget\\packages\\godotsharp\\4.6.0\\godotsharp.4.6.0.nupkg.sha512",
-    "C:\\Users\\logan\\.nuget\\packages\\godotsharpeditor\\4.6.0\\godotsharpeditor.4.6.0.nupkg.sha512",
-    "C:\\Users\\logan\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.22\\microsoft.netcore.app.ref.8.0.22.nupkg.sha512",
-    "C:\\Users\\logan\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.22\\microsoft.windowsdesktop.app.ref.8.0.22.nupkg.sha512",
-    "C:\\Users\\logan\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.22\\microsoft.aspnetcore.app.ref.8.0.22.nupkg.sha512"
+    "C:\\Users\\ashto\\.nuget\\packages\\godot.sourcegenerators\\4.6.0\\godot.sourcegenerators.4.6.0.nupkg.sha512",
+    "C:\\Users\\ashto\\.nuget\\packages\\godotsharp\\4.6.0\\godotsharp.4.6.0.nupkg.sha512",
+    "C:\\Users\\ashto\\.nuget\\packages\\godotsharpeditor\\4.6.0\\godotsharpeditor.4.6.0.nupkg.sha512"
   ],
   "logs": []
 }
